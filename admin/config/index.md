@@ -9,6 +9,14 @@ La commande `/config afficher` pour voir la configuration actuelle du serveur.
 Les commandes suivantes fonctionnent à la fois pour les dés lancés en texte seul et pour les dés lancés avec des slashcommands (que ce soit `/roll` que `/dbd` et `/dbroll`).
 Sauf mention contraire, toutes les options sont, par défaut, désactivées.
 
+## Format
+
+- Les champs obligatoires sont indiqués entre crochets : `[champs]`.
+- Les champs facultatifs sont entre parenthèses : `(champs)`.
+- Les champs auto-complétés seront marqués d'un `*` : `(*champs)`.
+- Les champs demandant une mention seront marqués par `@` (`@champs`). Ces champs fonctionnent avec les noms (rôle ou utilisateur, en fonction de la commande) ou l'ID Discord. Si la mention ne s'affiche pas immédiatement, commencez à taper le début du nom pour l'auto-complétion.
+- De manière similaire, les commandes demandant un channel sont précédé par `#` comme `#champs`.
+
 ## Journalisation
 ### Administration: `logs`
 
@@ -62,7 +70,7 @@ Diverses options permettent de personnaliser l'affichage des résultats des jets
 
 Si l'option est sur **true**, affiche les timestamps dans les messages de résultats des jets de dés.
 
-![](/static/assets/rolls/config/timestamp.png)
+![](/assets/rolls/config/timestamp.png)
 
 :::tip
 Le timestamp s'adapte automatiquement à l'heure du client.
@@ -99,7 +107,7 @@ Permet d'ajouter un lien vers le contexte du dé dans la sauvegarde du dé.
 Si le message du contexte est supprimé, le lien ne fonctionnera plus.
 :::
 
-![Lien vers le contexte](/static/assets/rolls/config/context.png)
+![Lien vers le contexte](/assets/rolls/config/context.png)
 
 ### [Lancé] Lien vers la sauvegarde `lien_sauvegarde`
 
@@ -109,5 +117,5 @@ Si le message du contexte est supprimé, le lien ne fonctionnera plus.
 
 Permet d'ajouter un lien vers la sauvegarde du dé dans le message de résultat du dé.
 
-![Lien vers la sauvegarde](/static/assets/rolls/config/backup_link.png)
+![Lien vers la sauvegarde](/assets/rolls/config/backup_link.png)
 

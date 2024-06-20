@@ -1,5 +1,5 @@
 ---
-title: Enregistrement
+title: Enregistrement d'un Modèle
 sidebar_position: 1
 ---
 # Enregistrement d'un Modèle
