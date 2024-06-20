@@ -1,7 +1,8 @@
 ---
-title: Informations générales
+title: Information générale
 sidebar_position: 1
 ---
+
 
 ## Commandes auto-complétées
 

@@ -1,6 +1,6 @@
 ---
 title: Lancer de dés et scènes
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 ## Lancer de dés

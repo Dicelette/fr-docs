@@ -16,3 +16,6 @@ Ce bot détecte la notation des dés et envoie le résultat selon trois méthode
    - Exemple : `1d20 Mon message`
    - Le dé trouvé initialement sera lancé, et le reste du message sera envoyé dans le log, considéré comme un commentaire.
    ![Semi-directe](/assets/rolls/semi-direct.gif)
+
+
+Il est aussi possible d'utiliser des commandes slash pour lancer des dés, comme `/roll` ([voir ici pour plus d'information](roll.md)).
