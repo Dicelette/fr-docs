@@ -3,6 +3,10 @@ title: Comportement
 sidebar_position: 2
 ---
 
+:::info
+La [configuration](../admin/config/index.md) permet de modifier le comportement du bot. Ce document décrit le comportement par défaut.
+:::
+
 Le fonctionnement de ce bot repose sur l'utilisation de fils de discussion. Lors de son premier lancement, il recherchera un fil préfixé par `🎲` :
 
 - Si aucun fil n'est trouvé, le bot en créera un nouveau et y dirigera tous les logs à venir.
