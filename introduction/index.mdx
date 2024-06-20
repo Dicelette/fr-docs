@@ -1,0 +1,45 @@
+---
+title: Introduction
+sidebar_position: 1
+---
+
+Bienvenue ! 🎲 Voici un compagnon pour vos aventures sur Discord : un bot polyvalent, conçu pour rendre vos sessions de jeu de rôle plus fluides et agréables.
+
+## Fonctionnalités principales
+
+### Lancer de Dés
+
+Avec ce bot, vous pouvez effectuer des lancers de dés en toute simplicité : que ce soit pour déterminer le résultat d'une action cruciale ou pour pimenter vos conversations, le processus est facilité. Utilisez simplement la commande adéquate et le résultat sera affiché dans un fil de discussion plutôt que de polluer le canal dans lequel vous êtes.
+
+### Gestion de Fiches de Personnage
+
+Plus besoin de jongler avec des fiches de personnage complexes ! Ce bot permet de configurer un modèle de statistiques pour enregistrer les informations essentielles de vos personnages. Ainsi, vous pouvez effectuer des lancers de dés directement en utilisant ces données, sans vous soucier de les mémoriser.
+
+## Mécanique de Fonctionnement
+
+### Lancer de Dés
+
+Pour effectuer les lancers de dés, ce bot utilise l'API [@diceRoller](https://dice-roller.github.io/documentation/). Il prend également en charge la notation `4#(dés)` pour les lancers "en masse" (bulk roll), vous permettant ainsi de gagner du temps lors de vos sessions de jeu.
+
+### Gestion des Statistiques
+
+Plutôt que de sauvegarder l'intégralité de la feuille de personnage, ce bot enregistre uniquement le message et son identifiant. Ainsi, vous conservez un contrôle total sur vos données, puisque le contenu du message n'est pas sauvegardé en dehors du serveur.
+
+## Données
+
+Ce bot utilise une base de données[^1] pour stocker les informations essentielles, telles que l'identifiant du message, l'identifiant du canal, le nom de la statistique et les noms des personnages des utilisateurs. Cette base de données sera nettoyée dans divers cas, notamment lors de la suppression des messages ou des canaux enregistrés, de l'expulsion du bot du serveur, ou encore lors de l'utilisation des fonctionnalités `/register` ou `/logs`.
+
+:::note Remarque
+Les données d'un utilisateur ne sont pas supprimées lorsqu'il quitte un serveur. Dans le cas où vous souhaitez que vos données le soient, n'hésitez pas à me contacter. 
+
+Il vous suffit de fournir votre identifiant Discord ou l'ID de votre serveur (accompagné d'une preuve de propriété) via Discord (`@mara__li`) ou par e-mail (`lisandra_dev@yahoo.com`).
+::: 
+
+:::warning
+Dans de très rares cas, il est possible que les données ne soient pas supprimées (notamment lors de la suppression d'une très ancienne fiche). Dans ce cas, vous pouvez utiliser la commande `/supprimer_char` pour supprimer un personnage ou les données entières d'un joueur.
+Cette commande supprimera le message de la fiche s'il existe toujours.
+:::
+
+🚀 [Invitez le bot](https://discord.com/api/oauth2/authorize?client_id=1182819335878754385&permissions=395137215504&scope=bot+applications.commands)
+
+[^1]: C'est une base SQLITE3, utilisant [Enmap](https://enmap.evie.dev/).

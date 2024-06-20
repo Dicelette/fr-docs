@@ -1,0 +1,90 @@
+---
+title: Fiches de personnages
+sidebar_position: 4
+---
+
+<details id="danger">
+  <summary><Iconify icon="solar:danger-bold" height="26" class="danger-summary"/>Attention</summary>
+  {}
+   Par défaut, toutes les commandes sont désactivées et doivent être activées dans le panneau de configuration du serveur.
+   ![](/assets/tuto/allow_commands_1.png)
+   ![](/assets/tuto/allow_commands_2.png)
+   ![](/assets/tuto/allow_commands_3.png)
+   ![](/assets/tuto/allow_commands_4.png)
+   ![](/assets/tuto/allow_commands_5.png)
+</details> 
+
+## Lancer de dés
+
+### DBRoll (`/dbroll`)
+
+:::info
+La commande `dbroll` sert à lancer des dés sur des statistiques qui ont été enregistrées précédemment, permettant d'éviter de retenir les caractéristiques de base d'un personnage.
+:::
+
+:::usage
+**`/dbroll [statistique] (*personnage) (commentaire) (remplacer) (modificateurs)`**
+:::
+
+La commande demande de spécifier :
+- La statistique
+- Le nom du personnage
+- Les éventuels modificateurs (tels que l'avantage ou le désavantage)
+- Le remplacement de la valeur de réussite (par exemple, pour un jet difficile), avec indication sur la comparaison (exemple : >= 10)
+- Tout commentaire sur votre action
+
+![dbroll_1](/assets/rolls/db/dbroll_autocomplete.png)
+![example](/assets/rolls/db/example.png)
+
+### DBD (`/dbd`)
+
+:::info
+La commande `dbd` permet de lancer un dé enregistré.
+:::
+
+:::usage
+**`/dbd [*dice] (*personnage) (modificateurs) (commentaire)`**
+:::
+
+![dbd](/assets/rolls/db/dbd_example.png)
+
+
+## Autres
+
+Les deux commandes suivantes acceptent :
+- `(@joueur)` : Le nom du joueur
+- `(*personnage)` : Et/ou le nom du personnage
+
+### Afficher
+
+:::usage
+**`/afficher (@joueur) (*personnage)`**
+:::
+
+La commande `afficher` permet de consulter les statistiques et les dés d'un personnage enregistré dans la base de données.
+
+![afficher](/assets/rolls/db/display_ex.png)
+
+### Graphique (`/graph`)
+
+:::usage
+**`/graph (@joueur) (*personnage) (ligne) (fond) (min) (max)`**
+:::
+
+La commande `/graph` est une fonctionnalité "gimmick" qui permet de générer un graphique à partir des statistiques d'un personnage. 
+En option, vous pouvez spécifier des couleurs avec :
+- `ligne` : Pour les lignes (par défaut, `#0e47b2`).
+- `fond` : Pour le fond (par défaut, `#0e47b2`).
+
+Les couleurs peuvent être en hexadécimal ou en RGB. Par exemple, `#FF0000` ou `255,0,0`.
+
+Enfin, il est possible de définir un minimum et un maximum pour les axes avec `min` et `max`.
+
+Par défaut :
+- Le minimum est calculé selon le modèle de serveur (si existant).
+- Le maximum est déterminé de différentes manières :
+   - Si un maximum est défini par la template, il sera utilisé.
+   - Sinon, il sera basé sur la valeur du succès critique.
+   - Si aucune des deux options précédentes n'est disponible, il sera basé sur la valeur du dé (par exemple, si `1d20`, la valeur sera 20).
+   - En dernier recours, il sera automatiquement calculé en fonction des statistiques de l'utilisateur.
+![graph](/assets/graph.jpg)
