@@ -1,7 +1,8 @@
 ---
-title: Informations générales
+title: Information générale
 sidebar_position: 1
 ---
+
 
 ## Commandes auto-complétées
 
@@ -17,13 +18,7 @@ Si vous souhaitez afficher les personnages d'un autre joueur, vous devez mention
 
 Ce fonctionnement est étendue pour la commande `/mj dbd` car les dés listés seront basés sur le personnage, listé donc à partir du joueur. De fait, par défaut, les compétences sont listés à partir du joueur ayant fait la commande.
 
-## Format
 
-- Les champs obligatoires sont indiqués entre crochets : `[champs]`.
-- Les champs facultatifs sont entre parenthèses : `(champs)`.
-- Les champs auto-complétés seront marqués d'un `*` : `(*champs)`.
-- Les champs demandant une mention seront marqués par `@` (`@champs`). Ces champs fonctionnent avec les noms (rôle ou utilisateur, en fonction de la commande) ou l'ID Discord. Si la mention ne s'affiche pas immédiatement, commencez à taper le début du nom pour l'auto-complétion.
-- De manière similaire, les commandes demandant un channel sont précédé par `#` comme `#champs`.
 
 ## Aide
 
