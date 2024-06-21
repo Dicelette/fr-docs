@@ -16,7 +16,7 @@ Cette commande vous permet de créer un fichier `JSON` avec les paramètres suiv
 - `échec_critique` : La valeur considérée comme un échec critique.
 - `compétence` : Ajouter des champs pour des dés de compétences ou d'attaque.
 
-Consultez les exemples de modèle dans les fichiers `template` [ici](https://github.com/Dicelette/discord-dicelette/tree/main/template) ou [ici](register/template).
+Consultez les exemples de modèle dans les fichiers `template` [ici](https://github.com/Dicelette/discord-dicelette/tree/main/template).
 
 :::info Remarque
 Les statistiques et les dés sont facultatifs :
@@ -98,9 +98,9 @@ Si la fiche n'est pas marquée comme privée mais est publiée dans un channel a
 
 L'embed sera épinglé pour faciliter l'accès.
 
-
 ![embed](/assets/register/embed_template.png)
 
 :::warning Attention
-Les channels `#user_chan` et `#personnage_privé` ne peuvent pas être modifiés après l'enregistrement, car ils sont sauvegardés de manière globale dans la base de données.
+Vous devez réenregistrer le modèle si vous souhaitez modifier le canal par défaut pour les feuilles privées et publiques. Mais l'utilisateur enregistré n'a pas besoin d'être réenregistré car le canal et l'identifiant du message sont sauvegardés dans la base de données.
+Si vous souhaitez déplacer toutes les feuilles vers un autre canal, vous devez utiliser la commande [`/export`](../config/import_export.md).
 :::

@@ -20,10 +20,7 @@ Sauf mention contraire, toutes les options sont, par défaut, désactivées.
 ## Journalisation
 ### Administration: `logs`
 
-:::usage
-**`/config logs (#channel)`**
-:::
-
+##
 La commande `logs` offre la possibilité de d'enregister un channel afin de : 
 - Rapporter toutes les erreurs,
 - Enregistrer toute modification apportée à un personnage.
@@ -62,10 +59,10 @@ L'option sur **faux** réactive le comportement normal du bot.
 
 Diverses options permettent de personnaliser l'affichage des résultats des jets de dés, que ce soit dans la partie sauvegarde que dans le channel où le jet a été effectué.
 
-### Affichage des timestamp: `config_timestamp`
+### Affichage des timestamp: `timestamp`
 
 :::usage
-**`/config config_timestamp [true/false]`**
+**`/config timestamp [true/false]`**
 :::
 
 Si l'option est sur **true**, affiche les timestamps dans les messages de résultats des jets de dés.

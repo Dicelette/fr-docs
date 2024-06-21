@@ -13,7 +13,7 @@ Si toutes les informations sont enregistrées, vous aurez accès à trois bouton
 - Modifier les dés enregistrés (qui permet d'enregistrer plusieurs nouveaux dés, mais shh...)
 - Ajouter un nouveau dé.
 
-## Modification des Statistiques
+## Modification des statistiques
 
 ![edit stats](/assets/edit/edit_stats.png)
 
@@ -43,7 +43,7 @@ Enfin, les valeurs ne seront pas vérifiées par rapport au total enregistré in
 Si les statistiques sont modifiées et que les logs sont activés, un message de modification sera envoyé dans le canal configuré dans les logs.
 :::
 
-## Modification des Dés
+## Modification des dés
 
 Tout comme pour les statistiques, le modal sera pré-rempli par une liste comme suit :
 ```md
@@ -56,6 +56,6 @@ Comme pour les statistiques, il est essentiel de respecter la liste et sa syntax
 
 ![edit dice](/assets/edit/edit_dice.png)
 
-## Ajout d'un Nouveau Dé
+## Ajout d'un nouveau dé
 
 L'ajout d'un dé fonctionne exactement comme lors de l'enregistrement d'un personnage.

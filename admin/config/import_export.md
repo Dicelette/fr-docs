@@ -30,7 +30,7 @@ Et de désactiver la règle de vérification des erreurs "Nombres mis en forme e
 
 ![Example](/assets/csv/example.png)
 
-### Import
+## Import
 
 :::usage
 **`/import [csv]`**
@@ -56,7 +56,7 @@ Les colonnes suivantes sont facultatives :
 - `dice` : Les dés spécifiques pour la commande `/dbd`. Si vous n'utilisez pas cette commande, vous pouvez laisser cette colonne vide, voire la supprimer. 
 
 
-### Exporter des données
+## Exporter des données
 
 :::usage
 **`/export [csv] (fiche_privée_uniquement)`**
