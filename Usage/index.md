@@ -22,6 +22,6 @@ Ce fonctionnement est étendue pour la commande `/mj dbd` car les dés listés s
 Il existe plusieurs commandes d'aide, en fonction de ce dont vous avez besoin :
 - `/aide info` : Affiche les infos générales sur le bot, notament comment lancer un dé ou créer une scène.
 - `/aide admin` : Affiche les commandes d'administration, comme pour [logs](../admin/config/index.md#administration-logs) ou [result_channel](../admin/config/index.md#sauvegarde-des-résultats-result_channel).
-- `/aide register` : Affiche l'aide spécifique pour enregistrer un modèle de serveur et les fiches de personnages et vous dirige vers [la documentation](../admin/model/index.md).
+- `/aide enregister` : Affiche l'aide spécifique pour enregistrer un modèle de serveur et les fiches de personnages et vous dirige vers [la documentation](../admin/model/index.md).
 - `/aide bug` : Affiche un lien pour créer un rapport de bug.
 - `/aide suggestion` : Affiche un lien pour faire une suggestion.
