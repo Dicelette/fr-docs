@@ -27,8 +27,8 @@ Dicelette Bot ne collecte ni ne stocke de données personnelles des utilisateurs
 
 Les données enregistrées (dans la base de donnée) par Dicelette sont :
 - L'ID de l'utilisateur
-- Les identifiants des messages et des channels utilisés par le modèle de dés
-- Les identifiants des channels pour les logs, le channel de jet de dés
+- Les identifiants des messages et des salons utilisés par le modèle de dés
+- Les identifiants des salons pour les logs, le salon de jet de dés
 - Les noms des statistiques et des compétences
 - Le nom des personnages et leur compétences, ainsi que les identifiants correspondants au message des statistiques
 

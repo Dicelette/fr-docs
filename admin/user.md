@@ -16,10 +16,10 @@ Le premier formulaire sera toujours identique quel que soit le modèle :
 - Le nom de l'utilisateur, qui doit être soit son ID, soit son nom d'utilisateur. Cette donnée est obligatoire et sera pré-remplie par le bot avec le nom d'utilisateur de la personne qui a cliqué.
 - Si vous avez activé l'utilisation des fiches privées (voir [ici](../admin/model/index.md#prochaine-étape)), vous aurez un troisième champ pour choisir si la fiche doit être privée ou non. Si la fiche est privée, mettez simplement `x` dans le champ. Laissez vide sinon !
 - Vous pouvez fournir un lien vers une image (un avatar) qui servira comme image dans l'embed de la fiche. Si laissé vide, l'image utilisé sera l'avatar du joueur.
-- Enfin, il est possible d'envoyer la fiche de personnage dans un channel différent que ceux définis dans le modèle par `private_channel` et `public_channel`. Si vous ne voulez pas envoyer la fiche dans un channel spécifique, laissez le champ vide.
+- Enfin, il est possible d'envoyer la fiche de personnage dans un salon différent que ceux définis dans le modèle par `private_channel` et `public_channel`. Si vous ne voulez pas envoyer la fiche dans un salon spécifique, laissez le champ vide.
 
 	:::warning
-	La fiche ne peut être masqué **que** si la fiche est l'utilisation des fiches privées est activé. Même si la fiche est envoyé dans un channel inaccessibles pour les autres utilisateurs, ils seront capables de l'afficher en l'absence de cette option.
+	La fiche ne peut être masqué **que** si la fiche est l'utilisation des fiches privées est activé. Même si la fiche est envoyé dans un salon inaccessibles pour les autres utilisateurs, ils seront capables de l'afficher en l'absence de cette option.
 	:::
 
 
@@ -37,4 +37,4 @@ Chaque dé doit être enregistré manuellement.
 
 ![fin](/assets/register/fin_embed.png)
 
-Une fois tout cela fait, il suffit de cliquer sur "Valider" et la fiche sera repostée dans le channel choisi lors de l'enregistrement (ou dans un thread nommé `📝 • [STATS]` si aucun channel n'a été choisi lors de l'enregistrement du modèle, ou que celui-ci est inaccessible).
+Une fois tout cela fait, il suffit de cliquer sur "Valider" et la fiche sera repostée dans le salon choisi lors de l'enregistrement (ou dans un thread nommé `📝 • [STATS]` si aucun salon n'a été choisi lors de l'enregistrement du modèle, ou que celui-ci est inaccessible).

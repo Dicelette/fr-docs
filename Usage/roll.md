@@ -25,5 +25,5 @@ Le bot créera alors un nouveau fil de discussion, préfixé par `🎲`, où il 
 
 ![Scene](/assets/rolls/scene.gif)
 
-L'argument `tempo` permet de créer une "bulle temporelle", qui créera un thread préfixé par une horloge et, par défaut, le nom du channel sera la date du jour.
+L'argument `tempo` permet de créer une "bulle temporelle", qui créera un thread préfixé par une horloge et, par défaut, le nom du salon sera la date du jour.
 
