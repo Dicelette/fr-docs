@@ -9,9 +9,22 @@ Une fois que l'utilisateur est validé, sa fiche sera automatiquement publiée d
 Seul le modèle et l'utilisateur seront toujours présents, à moins qu'aucun dé-type et aucun succès/échec critique n'aient été enregistrés dans le modèle.
 
 Si toutes les informations sont enregistrées, vous aurez accès à trois boutons :
+- Modifier l'avatar de l'embed,
 - Modifier les statistiques
 - Modifier les dés enregistrés (qui permet d'enregistrer plusieurs nouveaux dés, mais shh...)
 - Ajouter un nouveau dé.
+
+## Modification de l'image
+
+![edit image](/assets/edit/edit_image.png)
+
+:::warning
+Les images stockés sur discord ne peuvent être utilisés car leurs liens changent régulièrement. Il est donc obligatoire d'utiliser des liens externes, par exemple, en utilisant [imgur](https://imgur.com/).
+
+[Voyez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
+:::
+
+Dans le cas où vous utilisez une ancienne version des fiches, il est possible de modifier l'image avec la commande [`/edit_avatar`](../Usage/model.mdx#modifier-limage-edit_avatar).
 
 ## Modification des statistiques
 

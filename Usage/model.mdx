@@ -51,7 +51,7 @@ La commande `dbd` permet de lancer un dé enregistré.
 
 ## Autres
 
-Les deux commandes suivantes acceptent :
+Les trois commandes suivantes acceptent :
 - `(@joueur)` : Le nom du joueur
 - `(*personnage)` : Et/ou le nom du personnage
 
@@ -88,3 +88,21 @@ Par défaut :
    - Si aucune des deux options précédentes n'est disponible, il sera basé sur la valeur du dé (par exemple, si `1d20`, la valeur sera 20).
    - En dernier recours, il sera automatiquement calculé en fonction des statistiques de l'utilisateur.
 ![graph](/assets/graph.jpg)
+
+### Modifier l'image (`/edit_avatar`)
+
+:::usage
+**`/edit_avatar [lien] (@joueur) (*personnage)`**
+:::
+
+La commande `edit_avatar` permet de modifier l'image d'un personnag enregistré dans la base de données.
+Cela modifiera l'embed de la fiche de personnage.
+
+Par défaut, la commande modifiera l'image de la personne ayant utilisé la commande. Seuls les modérateurs peuvent modifier l'image d'un autre joueur.
+
+:::warning
+Les images stockées sur Discord ne peuvent être utilisées car leurs liens changent régulièrement. Il est donc obligatoire d'utiliser des liens externes, par exemple, en utilisant [imgur](https://imgur.com/).
+[Voyez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
+:::
+
+Si l'embed ne possède pas le bouton `[MODIFIER L'IMAGE]`, le bouton sera automatiquement ajouté par la commande.
