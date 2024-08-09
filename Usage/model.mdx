@@ -89,10 +89,15 @@ Par défaut :
    - En dernier recours, il sera automatiquement calculé en fonction des statistiques de l'utilisateur.
 ![graph](/assets/graph.jpg)
 
-### Modifier l'image (`/edit_avatar`)
+### Modifier un utilisateur (`/edit`)
+
+Dans le cas où l'embed ne possède pas le bouton de sélection des actions d'édition, les commandes ci-dessous permettront de les rajouter.
+
+
+#### Modifier l'image (`/edit avatar`)
 
 :::usage
-**`/edit_avatar [lien] (@joueur) (*personnage)`**
+**`/edit avatar [lien] (@joueur) (*personnage)`**
 :::
 
 La commande `edit_avatar` permet de modifier l'image d'un personnag enregistré dans la base de données.
@@ -105,4 +110,29 @@ Les images stockées sur Discord ne peuvent être utilisées car leurs liens cha
 [Voyez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
 :::
 
-Si l'embed ne possède pas le bouton `[MODIFIER L'IMAGE]`, le bouton sera automatiquement ajouté par la commande.
+#### Renommer (`/edit rename`)
+
+:::usage
+**`/edit rename [nouveau_nom] (@joueur) (*personnage)`**
+:::
+
+Permet de changer le nom (renommer) un personnage.
+
+:::warning
+Cette commande ne permet pas les doublons de nom. Vous devez donc utiliser un nom différent pour chaque personnage !
+:::
+
+#### Utilisateur (`/edit user`)
+
+:::usage
+:::usage
+**`/edit user [@utilisateur] (@joueur) (*personnage)`**
+:::
+
+Permet de déplacer un personnage d'un utilisateur à un autre.
+
+:::warning
+Ce n'est pas une **copie** ! Cela supprimera l'ancien personnage de l'utilisateur précédent.
+:::
+
+Cette action sera annulée dans le cas où le nouvel utilisateur aura un personnage du même nom.

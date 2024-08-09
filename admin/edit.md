@@ -14,7 +14,19 @@ Si toutes les informations sont enregistrées, vous aurez accès à trois bouton
 - Modifier les dés enregistrés (qui permet d'enregistrer plusieurs nouveaux dés, mais shh...)
 - Ajouter un nouveau dé.
 
-## Modification de l'image
+### Modifier les données d'utilisateur
+
+![](/assets/edit/edit_user_fr.png)
+
+Les commandes du menu déroulant permettent de modifier les données correspondantes.
+Si vous utilisez une ancienne version, vous devez utiliser les commandes suivantes :
+- [`/edit avatar`](../Usage/model.mdx#edit-avatar-edit_avatar)
+- [`/edit rename`](../Usage/model.mdx#renommer)
+- [`/edit user`](../Usage/model.mdx#utilisateur)
+
+Pour ajouter le nouveau bouton.
+
+### Modification de l'image
 
 ![edit image](/assets/edit/edit_image.png)
 
@@ -24,7 +36,16 @@ Les images stockés sur discord ne peuvent être utilisés car leurs liens chang
 [Voyez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
 :::
 
-Dans le cas où vous utilisez une ancienne version des fiches, il est possible de modifier l'image avec la commande [`/edit_avatar`](../Usage/model.mdx#modifier-limage-edit_avatar).
+### Rename a character
+![rename](/assets/edit/edit_rename_fr.png)
+
+Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personnages ayant les mêmes noms pour un même utilisateur. Dans le cas contraire, l'action sera annulée et une erreur s'affichera.
+
+### Déplacer à un nouvel utilisateur
+![move](/assets/edit/move_fr.png)
+
+Cela **déplacera** le personnage à un nouvel utilisateur, supprimant les données du joueur précédent. 
+Dans le cas où l'utilisateur "receveur" a un personnage du même nom, l'action sera annulée et une erreur s'affichera.
 
 ## Modification des statistiques
 
