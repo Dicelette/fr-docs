@@ -16,11 +16,11 @@ Sauf mention contraire, toutes les options sont, par défaut, désactivées.
 - Les champs auto-complétés seront marqués d'un `*` : `(*champs)`.
 - Les champs demandant une mention seront marqués par `@` (`@champs`). Ces champs fonctionnent avec les noms (rôle ou utilisateur, en fonction de la commande) ou l'ID Discord. Si la mention ne s'affiche pas immédiatement, commencez à taper le début du nom pour l'auto-complétion.
 - De manière similaire, les commandes demandant un salon sont précédé par `#` comme `#champs`.
+- Les champs vrai/faux (`true` ou `false`) sont préfixés par `?` (`?champs`).
 
 ## Journalisation
 ### Administration: `logs`
 
-##
 La commande `logs` offre la possibilité de d'enregister un salon afin de : 
 - Rapporter toutes les erreurs,
 - Enregistrer toute modification apportée à un personnage.
@@ -40,10 +40,8 @@ Renvoyer la commande sans l'argument "salon" permet de supprimer le canal de ré
 ### Désactiver l'auto-création des threads: `désactiver_threads`
 
 :::usage
-**`/config désactiver_threads [true/false]`**
+**`/config désactiver_threads [?basculer]`**
 :::
-
-
 Si l'option est sur **true**, désactive la création, par défaut, des threads pour les jets de dés. Tout sera donc envoyé (sans suppression) dans le salon où la commande a été effectuée.
 
 :::warning
@@ -52,8 +50,22 @@ Cette option prend le pas sur la commande `/config result_channel`. C'est à dir
 
 Les channels et fils préfixés par `🎲` ne recevront plus les logs non plus.
 
-
 L'option sur **faux** réactive le comportement normal du bot.
+
+### Jets invisibles: `jet_invisible`
+
+:::usage
+**`/config jet_invisible [?basculer] (#channel)`**
+:::
+
+Cela active l'option `caché` pour les commandes `/gm` et `/roll` et permet de cacher le résultat aux autres joueurs.
+
+Il y a deux configurations possibles :
+- Si un salon est mentionné, ce channel sera utilisée pour la sauvegarde du jet, remplaçant le channel `result_channel` (si configuré).
+- Si aucun salon n'est utilisé, alors aucune sauvegarde du résultat ne sera faite.
+
+Dans les deux cas, le message sera envoyé comme un message [**éphémère**](https://support.discord.com/hc/fr/articles/1500000580222-Ephemeral-Messages-FAQ), signifiant qu'il n'y aura aucune trace du jet de dés dans le salon où la commande a été effectuée après un certain temps, et que personne d'autre que le lanceur ne verra le résultat.
+
 
 ## Affichages des résultats
 
@@ -62,7 +74,7 @@ Diverses options permettent de personnaliser l'affichage des résultats des jets
 ### Affichage des timestamp: `timestamp`
 
 :::usage
-**`/config timestamp [true/false]`**
+**`/config timestamp [?basculer]`**
 :::
 
 Si l'option est sur **true**, affiche les timestamps dans les messages de résultats des jets de dés.
@@ -93,7 +105,7 @@ Cette commande permet d'avoir à la fois les logs dans un channels dédiés, tou
 ### [Sauvegarde] Lien vers le contexte du dé : `contexte`
 
 :::usage
-**`/config contexte [true/false]`**
+**`/config contexte [?basculer]`**
 :::
 
 Permet d'ajouter un lien vers le contexte du dé dans la sauvegarde du dé.
@@ -109,7 +121,7 @@ Si le message du contexte est supprimé, le lien ne fonctionnera plus.
 ### [Lancé] Lien vers la sauvegarde `lien_sauvegarde`
 
 :::usage
-**`/config lien_sauvegarde [true/false]`**
+**`/config lien_sauvegarde [?basculer]`**
 :::
 
 Permet d'ajouter un lien vers la sauvegarde du dé dans le message de résultat du dé.

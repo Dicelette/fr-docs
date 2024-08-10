@@ -6,7 +6,7 @@ sidebar_position: 2
 ## Lancer de dés
 
 :::usage
-**`/roll (argument)`**
+**`/roll (argument) (?caché)`**
 :::
 
 Vous pouvez également utiliser la notation "semi-directe" en ajoutant un commentaire dans l'argument : `/roll (dés commentaire)`. 
@@ -14,6 +14,8 @@ Vous pouvez également utiliser la notation "semi-directe" en ajoutant un commen
 Veuillez noter que la notation "indirecte" n'est pas disponible dans ce mode.
 
 ![Roll](/assets/rolls/slash-commands.gif)
+
+L'option `caché` ne fonctionne que si les [jets invisibles](../admin/config/index.md#jets-invisibles-jet_invisible) sont activés. Si l'option est utilisée, le résultat sera envoyé en message éphémère, et utilisera le salon configuré (si existant) pour sauvegarder les résultats.
 
 ## Créer une nouvelle scène
 
