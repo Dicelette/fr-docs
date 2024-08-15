@@ -89,7 +89,7 @@ Chaque statistique a un nom, une valeur minimale (`min`), une valeur maximale (`
 Une fois que le modèle est prêt, utilisez `/register [#channel] [fichier] (#user_chan) (#personnage_privé)`. 
 - `#channel` est le canal où le modèle sera envoyée. Il sera ensuite utilisée pour la création de fiche.
 - `fichier` est le fichier `JSON` créé précédemment.
-- `#user_chan` est le canal où les fiches seront publiées.
+- `#user_chan` est le canal où les fiches seront publiées.[^1]
 - `#personnage_privé` est, de manière similaire à `#user_chan`, mais les fiches qui seront publiées dans ce salon seront uniquement visibles par l'utilisateur qui a enregistré la fiche, ou par ceux qui ont accès à ce salon (ainsi que les personnes ayant la permission `GÉRER LES RÔLES`). Si ce salon n'est pas défini, la fonction de fiche privée sera désactivée.
 
 :::warning À propos des fiches privées
@@ -104,3 +104,5 @@ L'embed sera épinglé pour faciliter l'accès.
 Vous devez réenregistrer le modèle si vous souhaitez modifier le canal par défaut pour les feuilles privées et publiques. Mais l'utilisateur enregistré n'a pas besoin d'être réenregistré car le canal et l'identifiant du message sont sauvegardés dans la base de données.
 Si vous souhaitez déplacer toutes les feuilles vers un autre canal, vous devez utiliser la commande [`/export`](../config/import_export.md).
 :::
+
+[^1]: Il est possible d'utiliser un forum, qui créera automatiquement un post pour le personnage. Le joueur (ainsi que les administrateurs) seront mentionnés dans le post. 

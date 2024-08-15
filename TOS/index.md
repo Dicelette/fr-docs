@@ -20,7 +20,7 @@ Dicelette Bot est un bot Discord conçu pour aider les utilisateurs à générer
 #### 4. Propriété Intellectuelle
 4.1. **Droits d'Auteur** : Dicelette Bot est un logiciel open source distribué sous la licence GPLv3. Vous êtes autorisé à utiliser, copier, modifier et distribuer Dicelette Bot conformément aux termes de cette licence. Le code source est disponible publiquement et peut être consulté et contribué sur le dépôt officiel.
 
-4.2. Licence d'Utilisation : En utilisant Dicelette Bot, vous acceptez les termes de la licence GPLv3. Cette licence vous permet d'utiliser Dicelette Bot de manière libre, tout en respectant les conditions stipulées par la GPLv3, notamment en ce qui concerne la redistribution et les modifications du code source.
+4.2. **Licence d'Utilisation** : En utilisant Dicelette Bot, vous acceptez les termes de la licence GPLv3. Cette licence vous permet d'utiliser Dicelette Bot de manière libre, tout en respectant les conditions stipulées par la GPLv3, notamment en ce qui concerne la redistribution et les modifications du code source.
 
 #### 5. Confidentialité et Données Personnelles
 Dicelette Bot ne collecte ni ne stocke de données personnelles des utilisateurs au-delà de ce qui est nécessaire pour fournir ses fonctionnalités. Cependant, les interactions avec le bot peuvent être enregistrées par Discord conformément à leur propre politique de confidentialité.

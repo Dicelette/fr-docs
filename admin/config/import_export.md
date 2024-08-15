@@ -52,7 +52,7 @@ Les colonnes suivantes sont nécessaires pour l'import :
 
 Les colonnes suivantes sont facultatives :
 - `avatar` : Le lien vers l'avatar du personnage. Si vous n'utilisez pas d'avatar, vous pouvez laisser cette colonne vide. L'avatar utilisé dans l'affichage sera celui du joueur.
-- `channel` : Permet de définir un channel où envoyé la fiche, plutôt que d'utiliser les channels par défaut définis lors de l'enregistrement du modèle.
+- `channel`: Permet de définir un channel (prend également en charge les fils et les forums[^1]), où sera envoyée la fiche, plutôt que d'utiliser les channels par défaut définis lors de l'enregistrement du modèle.
 - `dice` : Les dés spécifiques pour la commande `/dbd`. Si vous n'utilisez pas cette commande, vous pouvez laisser cette colonne vide, voire la supprimer. 
 
 
@@ -69,3 +69,5 @@ En fonction de l'option `private`, la liste fournie sera différente :
 - Si elle est omise, elle inclura **tous** les personnages, quelque soit le statut de la fiche.
 
 Le fichier CSV exporté utilise le point virgule comme séparateur.
+
+[^1]: Il est possible d'utiliser un forum, qui créera automatiquement un post pour le personnage. Le joueur (ainsi que les administrateurs) seront mentionnés dans le post. 
