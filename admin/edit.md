@@ -16,7 +16,7 @@ Si toutes les informations sont enregistrées, vous aurez accès à trois bouton
 
 ### Modifier les données d'utilisateur
 
-![](/assets/edit/edit_user_fr.png)
+![](/assets/edit/french/user.png)
 
 Les commandes du menu déroulant permettent de modifier les données correspondantes.
 Si vous utilisez une ancienne version, vous devez utiliser les commandes suivantes :
@@ -28,7 +28,7 @@ Pour ajouter le nouveau bouton.
 
 ### Modification de l'image
 
-![edit image](/assets/edit/edit_image.png)
+![edit image](/assets/edit/image.png)
 
 :::warning
 Les images stockés sur discord ne peuvent être utilisés car leurs liens changent régulièrement. Il est donc obligatoire d'utiliser des liens externes, par exemple, en utilisant [imgur](https://imgur.com/).
@@ -37,19 +37,19 @@ Les images stockés sur discord ne peuvent être utilisés car leurs liens chang
 :::
 
 ### Rename a character
-![rename](/assets/edit/edit_rename_fr.png)
+![rename](/assets/edit/french/rename.png)
 
 Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personnages ayant les mêmes noms pour un même utilisateur. Dans le cas contraire, l'action sera annulée et une erreur s'affichera.
 
 ### Déplacer à un nouvel utilisateur
-![move](/assets/edit/move_fr.png)
+![move](/assets/edit/french/move.png)
 
 Cela **déplacera** le personnage à un nouvel utilisateur, supprimant les données du joueur précédent. 
 Dans le cas où l'utilisateur "receveur" a un personnage du même nom, l'action sera annulée et une erreur s'affichera.
 
 ## Modification des statistiques
 
-![edit stats](/assets/edit/edit_stats.png)
+![edit stats](/assets/edit/stats.png)
 
 Le modal sera pré-rempli par une liste comme suit :
 ```md
@@ -88,7 +88,7 @@ Tout comme lors de l'enregistrement, les dés seront évalués pour vérifier le
 
 Comme pour les statistiques, il est essentiel de respecter la liste et sa syntaxe. Vous pouvez supprimer des champs en remplaçant la valeur par "X" ou "0".
 
-![edit dice](/assets/edit/edit_dice.png)
+![edit dice](/assets/edit/dice.png)
 
 ## Ajout d'un nouveau dé
 
