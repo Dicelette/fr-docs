@@ -1,6 +1,6 @@
 ---
 title: Configuration générale
-sidebar_position: 2
+sidebar_position: 1
 ---
 Toutes les commandes d'administration sont restreintes par défaut aux membres ayant la permission `Gérer les rôles`.
 
