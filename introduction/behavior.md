@@ -42,3 +42,9 @@ Le bot peut être :
 
 - Utilisé avec des commandes slash (voir [commandes](../Usage/roll.md)).
 - Mais également directement sur le message.
+
+## Reaction
+
+Il existe deux fonctions sur les réactions :
+- `📩` : Permet de recevoir le message du jet en DM. Dans le cas où la sauvegarde des résultats est activé, le message envoyé sera cette sauvegarde, utile notamment dans le cas où vous avez activé le lien vers le contexte !
+- Lien entre les réactions : Dans le cas où la sauvegarde du jet est activée, les réactions sur le message du jet seront liées à la sauvegarde du jet. Tant que le bot a accès à l'émoji, il pourra réagir avec celui-ci sur le message de sauvegarde pour le lier au message du jet. Supprimer la réaction la supprimera également du message du jet.
