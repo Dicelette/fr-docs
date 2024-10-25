@@ -23,7 +23,7 @@ Pour effectuer les lancers de dés, ce bot utilise l'API [@diceRoller](https://d
 
 #### Formules de dés
 
-De plus, il est possible d'utiliser la syntaxe `dé ; µ+x;µ*y` pour lancer un seul dé et appliquer différentes formules sur ce même dé, de façon à afficher le résultat de chaque formule. Le `µ` symbolise le résultat du dé.
+De plus, il est possible d'utiliser la syntaxe `dé;µ+x;µ*y` pour lancer un seul dé et appliquer différentes formules sur ce même dé, de façon à afficher le résultat de chaque formule. Le `µ` symbolise le résultat du dé.
 
 :::warning Attention
 Vous devez obligatoirement ne pas avoir d'espace avant et après la séparation entre les formules, sinon le bot considérera la suite comme des commentaires.
@@ -35,13 +35,13 @@ Vous devez obligatoirement ne pas avoir d'espace avant et après la séparation 
 ```
 Affichera comme résultat :
 ```
-    1d20 ⟶ [16] =  16
-  ✓ 1d20+5 ⟶ [16]+5 =  21
-  ✓ 1d20×2 ⟶ [16]×2 =  32
+  1d20 ⟶ [16] =  16
+  ◈ 1d20+5 ⟶ [16]+5 =  21
+  ◈ 1d20×2 ⟶ [16]×2 =  32
 ```
 :::
 
-Ces formules ne supportent pas la comparaison avec un résultat (`>=x` par exemple). Les commentaires entre chaque formule seront fusionnés en un seul commentaire.
+Les commentaires entre chaque formule seront fusionnés en un seul commentaire.
 
 ### Gestion des Statistiques
 
