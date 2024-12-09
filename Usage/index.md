@@ -11,7 +11,7 @@ Par défaut, les personnages affichés dans la liste sont ceux de l'utilisateur 
 Si vous souhaitez afficher les personnages d'un autre joueur, vous devez mentionner le joueur en premier. 
 
 :::warning
-À cause de certaines limitation de l'API Discord, si vous souhaitez changer de joueur, vous devez retaper la commande en entier.
+À cause de certaines limitations de l'API Discord, si vous souhaitez changer de joueur, vous devez retaper la commande en entier.
 :::
 
 Ce fonctionnement est étendue pour la commande `/mj dbd` car les dés listés seront basés sur le personnage, listé donc à partir du joueur. De fait, par défaut, les compétences sont listés à partir du joueur ayant fait la commande.

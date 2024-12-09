@@ -84,6 +84,38 @@ Chaque statistique a un nom, une valeur minimale (`min`), une valeur maximale (`
 ```
 </details> 
 
+## Critiques
+
+Il est possible de définir :
+- Des critiques "basiques", qui sont liés aux dés naturels, et peuvent être configuré pour être un échec critique et un succès critique.
+- Des critiques personnalisés, qui peuvent être sur des dés naturels ou des résultats totaux.
+
+Dans les deux cas, les critiques ne sont qu'actifs que sur la commande `/dbroll`, et permettent d'afficher un message spécial selon le résultat.
+
+### Les critiques basiques
+
+Ils ne peuvent être liés qu'à une égalité avec le dé naturel. La valeur est paramétrable, mais pas le message affiché.
+Ainsi, dans le cas où :
+- Vous aurez une valeur de succès critique, le message affiché sera : `Succès critique`
+- Dans le même cas, pour un échec critique, le message affiché sera `échec critique`
+Les messages peuvent être modifiés par les "critiques personnalisés"
+
+### Les critiques personnalisés
+
+Ces derniers permettent de créer une valeur pour lequel un message personnalisés sera affiché.
+Les critiques personnalisés, contrairement aux critiques basiques, permettent de comparer à un total **ou** un dé naturel, et supportent les formules.
+Il est possible d'avoir, en tout, jusqu'à 22 critiques personnalisés.
+
+Cela permet, par exemple, de créer des critiques liés à la valeur d'une statistique, en utilisant `$` comme pour la comparaison avec les dés types.
+
+:::example [Call of Cthulhu]
+*Référence* : [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html
+Dans le cas de Call of Cthulhu, les succès sont basés sur la valeur de la statistique. Le dé type sera donc `1D100<=$`.
+Les critiques personnalisés seront :
+- "Hard success" : `<=round($/2)`
+- "Extreme success" : `<=round($/5)`
+:::
+
 ## Prochaine étape
 
 Une fois que le modèle est prêt, utilisez `/register [#channel] [fichier] (#user_chan) (#personnage_privé)`. 

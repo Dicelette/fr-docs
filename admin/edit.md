@@ -36,7 +36,7 @@ Les images stockés sur discord ne peuvent être utilisés car leurs liens chang
 [Voyez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
 :::
 
-### Rename a character
+### Renommer un personnage
 ![rename](/assets/edit/french/rename.png)
 
 Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personnages ayant les mêmes noms pour un même utilisateur. Dans le cas contraire, l'action sera annulée et une erreur s'affichera.
