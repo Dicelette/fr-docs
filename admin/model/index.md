@@ -54,35 +54,7 @@ Il est également possible de comparer avec une formule :
 
 Chaque statistique a un nom, une valeur minimale (`min`), une valeur maximale (`max`) et une option de combinaison (`combinaison`). 
 - `min` et `max` correspondent à la minimale et/ou maximale que peut prendre cette valeur lors de l'enregistrement.
-- `combinaison` correspond à une combinaison de plusieurs autres statistiques. L'utilisation de ce champ ne peut coexister avec `min` et `max` et les statistiques combinées ne seront pas décomptées du total de point alloué dans le champ `total`. 
-
-<details>
-  <summary>Modèle vide</summary>
-  ```json
-  {
-  "charName": false,
-  "statistics": {
-    "NOM": {
-      "min": 1,
-	  "max": 20,
-	  "combinaison": ""
-    },
-	"COMBINAISON": {
-	  "combinaison": "NOM*2"
-    },
-  },
-  "diceType": "",
-  "critical": {
-    "failure": 0,
-    "success": 0
-  },
-  "total": 0,
-  "damage": {
-    "NOM": ""
-  }
-}
-```
-</details> 
+- `combinaison` correspond à une combinaison de plusieurs autres statistiques. L'utilisation de ce champ ne peut coexister avec `min` et `max` et les statistiques combinées ne seront pas décomptées du total de point alloué dans le champ `total`.
 
 ## Critiques
 
@@ -108,7 +80,7 @@ Ces derniers permettent de créer une valeur pour lequel un message personnalis�
 Les critiques personnalisés, contrairement aux critiques basiques, permettent de comparer à un total **ou** un dé naturel, et supportent les formules.
 Il est possible d'avoir, en tout, jusqu'à 22 critiques personnalisés.
 
-Cela permet, par exemple, de créer des critiques liés à la valeur d'une statistique, en utilisant `$` comme pour la comparaison avec les dés types. En outre, il est possibld d'utiliser le nom d'une statistique ou encore de combiner avec d'autre dés.
+Cela permet, par exemple, de créer des critiques liés à la valeur d'une statistique, en utilisant `$` comme pour la comparaison avec les dés types. En outre, il est possible d'utiliser le nom d'une statistique ou encore de combiner avec d'autres dés.
 
 :::example [Call of Cthulhu]
 *Référence* : [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html)
@@ -117,6 +89,45 @@ Les critiques personnalisés seront :
 - "Hard success" : `<=round($/2)`
 - "Extreme success" : `<=round($/5)`
 :::
+
+Enfin, il est possible d'affecter les critiques customisés et leur message avec les dés de compétences en cochant le bouton correspondant.
+
+:::note
+Seuls les dés avec un comparateur seront affectés par les critiques customisés.
+:::
+
+<details>
+  <summary>Modèle vide</summary>
+  ```json
+   {
+	"$schema": "https://raw.githubusercontent.com/Dicelette/discord-dicelette/main/template/schema.json",
+	"charName": false,
+	"statistics": {
+		"name": {
+			"min": 1,
+			"max": 20
+		},
+		"combinaison": {
+			"combinaison": "2d6"
+		}
+	},
+	"diceType": "1d20",
+	"critical": {
+		"failure": 1,
+		"success": 20
+	},
+	"total": 80,
+	"customCritical": {
+		"name": {
+			"sign": "=",
+			"value": "15",
+			"onNaturalDice": true,
+			"affectSkill": true
+            }
+        }
+    }
+    ```
+</details> 
 
 ## Prochaine étape
 
