@@ -62,8 +62,7 @@ Il est possible de définir :
 - Des critiques "basiques", qui sont liés aux dés naturels, et peuvent être configuré pour être un échec critique et un succès critique.
 - Des critiques personnalisés, qui peuvent être sur des dés naturels ou des résultats totaux.  
 
-
-Dans les deux cas, les critiques ne sont qu'actifs que sur la commande `/dbroll`, et permettent d'afficher un message spécial selon le résultat.
+Dans les deux cas, par défaut, les critiques ne sont qu'actifs que sur la commande `/dbroll`, et permettent d'afficher un message spécial selon le résultat.
 
 ### Les critiques basiques
 
