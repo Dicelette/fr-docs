@@ -86,8 +86,8 @@ Cela permet, par exemple, de créer des critiques liés à la valeur d'une stati
 *Référence* : [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html)
 Dans le cas de Call of Cthulhu, les succès sont basés sur la valeur de la statistique. Le dé type sera donc `1D100<=$`.
 Les critiques personnalisés seront :
-- "Hard success" : `<=round($/2)`
-- "Extreme success" : `<=round($/5)`
+- "Succès Majeur" : `<=round($/2)`
+- "Succès extrême" : `<=round($/5)`
 :::
 
 Enfin, il est possible d'affecter les critiques customisés et leur message avec les dés de compétences en cochant le bouton correspondant.
@@ -136,7 +136,8 @@ Une fois que le modèle est prêt, utilisez `/register [#channel] [fichier] (#us
 - `fichier` est le fichier `JSON` créé précédemment.
 - `#user_chan` est le canal où les fiches seront publiées.[^1]
 - `#personnage_privé` est, de manière similaire à `#user_chan`, mais les fiches qui seront publiées dans ce salon seront uniquement visibles par l'utilisateur qui a enregistré la fiche, ou par ceux qui ont accès à ce salon (ainsi que les personnes ayant la permission `GÉRER LES RÔLES`). Si ce salon n'est pas défini, la fonction de fiche privée sera désactivée.
-
+- `?mettre-à-jour` : Permet de mettre à jour toutes les anciennes fiches de personnages si elles existent.
+- `?tout_supprimer` : Supprime toutes les anciennes fiches de personnages si elles existent.
 :::warning À propos des fiches privées
 Si la fiche n'est pas marquée comme privée mais est publiée dans un salon auquel les utilisateurs n'ont pas normalement accès, ils pourront tout de même voir la fiche avec les commandes `/afficher` et `/graph`.
 :::
