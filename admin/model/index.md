@@ -91,9 +91,20 @@ Les critiques personnalisés seront :
 
 Enfin, il est possible d'affecter les critiques customisés et leur message avec les dés de compétences en cochant le bouton correspondant.
 
-:::note
-Seuls les dés avec un comparateur seront affectés par les critiques customisés.
+
+#### Dés de compétences et critiques customisé
+
+Seuls les dés avec un comparateur seront affectés par les critiques personnalisé.
+
+
+Dans le cas où un critique personnalisé utilise le symbole `$`, la valeur utilisé doit se trouver dsns le **nom** du dé de compétence, entre parenthèse. 
+
+:::example
+Pour un critique personnalisé dont la valeur est `<=$`, si le dé de compétence se nomme "Instinct Animal (Force)`, alors le `$` sera remplacé par la valeur statistique de force, si elle existe.
 :::
+
+Comme pour les autres types de comparaison, les dés et les formules sont acceptés.
+
 
 <details>
   <summary>Modèle vide</summary>
