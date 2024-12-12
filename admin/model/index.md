@@ -71,15 +71,13 @@ Ainsi, dans le cas où :
 - Vous aurez une valeur de succès critique, le message affiché sera : `Succès critique`
 - Dans le même cas, pour un échec critique, le message affiché sera `échec critique`.
 
-Les messages peuvent être modifiés par les "critiques personnalisés"
-
 ### Les critiques personnalisés
 
 Ces derniers permettent de créer une valeur pour lequel un message personnalisés sera affiché.
-Les critiques personnalisés, contrairement aux critiques basiques, permettent de comparer à un total **ou** un dé naturel, et supportent les formules.
+Les critiques personnalisés, contrairement aux critiques basiques, permettent de comparer à un total **ou** un dé naturel, et supportent les formules. De plus, ils peuvent être utilisés sur des dés de compétences.
 Il est possible d'avoir, en tout, jusqu'à 22 critiques personnalisés.
 
-Cela permet, par exemple, de créer des critiques liés à la valeur d'une statistique, en utilisant `$` comme pour la comparaison avec les dés types. En outre, il est possible d'utiliser le nom d'une statistique ou encore de combiner avec d'autres dés.
+Les critiques personnalisés autorisent l'utilisation du symbole joker `$` (comme pour la comparaison avec les dés types) afin de comparer contre la statistique qui est utilisé. En outre, il est possible d'utiliser le nom d'une statistique ou encore de combiner avec d'autres dés.
 
 :::example [Call of Cthulhu]
 *Référence* : [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html)
@@ -89,22 +87,21 @@ Les critiques personnalisés seront :
 - "Succès extrême" : `<=round($/5)`
 :::
 
-Enfin, il est possible d'affecter les critiques customisés et leur message avec les dés de compétences en cochant le bouton correspondant.
+#### Dés de compétences et critiques personnalisés
+Seuls les dés avec un comparateur seront affectés par les critiques personnalisés.
 
-
-#### Dés de compétences et critiques customisé
-
-Seuls les dés avec un comparateur seront affectés par les critiques personnalisé.
-
-
-Dans le cas où un critique personnalisé utilise le symbole `$`, la valeur utilisé doit se trouver dsns le **nom** du dé de compétence, entre parenthèse. 
+Dans le cas où un critique personnalisé utilise le symbole `$`, la valeur utilisée doit se trouver dans le **nom** du dé de compétence, entre parenthèse. 
 
 :::example
-Pour un critique personnalisé dont la valeur est `<=$`, si le dé de compétence se nomme "Instinct Animal (Force)`, alors le `$` sera remplacé par la valeur statistique de force, si elle existe.
+Pour un critique personnalisé dont la valeur est `<=$`, si le dé de compétence se nomme `Instinct Animal (Force)`, alors le `$` sera remplacé par la valeur statistique de force, si elle existe.
+Si le nom n'est pas trouvé, alors la comparaison ne sera pas utilisée et le dé sera jeté normalement. 
 :::
 
-Comme pour les autres types de comparaison, les dés et les formules sont acceptés.
+En outre, il est aussi possible de combiner dans le nom du dé différentes statistiques, ainsi que des formules ou des jets de dés.
 
+:::note
+Dans le cas où le nom contient lui-même un jet de dé, ce dernier sera affiché non pas dans le résultat, mais dans le commentaire du dé, à la place de la formule.
+:::
 
 <details>
   <summary>Modèle vide</summary>
