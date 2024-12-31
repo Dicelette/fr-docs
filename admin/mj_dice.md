@@ -9,7 +9,7 @@ Les trois commandes suivantes permettent aux maîtres de jeu de lancer des dés 
 :::usage
 - **`/mj dbroll [@Joueur] [statistique] (... autres options) (*personnage) (?caché)`**
 - **`/mj dbd [@Joueur] [*nom du dé] (... autres options) (*personnage) (?caché)`**
-- **`/mj calc [@joueur] [statistique] [signe] [expression] (*personnage) (?caché)`**
+- **`/mj calc [@joueur] [statistique] [signe] [expression]  (... autres options) (*personnage) (?caché)`**
 :::
 
 Les trois commandes sont similaires à [dbroll](../Usage/model.mdx#dbroll), [dbd](../Usage/model.mdx#dbd) et [calc](../Usage/model.mdx#Calcul), mais nécessite en plus de spécifier le joueur pour lequel le jet est effectué. Comme les autres commandes, il est possible de choisir un personnage appartenant à ce joueur ou de laisser le choix par défaut.
