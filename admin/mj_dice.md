@@ -7,8 +7,8 @@ Les trois commandes suivantes permettent aux maîtres de jeu de lancer des dés 
 :::
 
 :::usage
-- **`/mj dbroll [@Joueur] [statistique] (*personnage) (?caché)`**
-- **`/mj dbd [@Joueur] [*nom du dé] (*personnage) (?caché)`**
+- **`/mj dbroll [@Joueur] [statistique] (... autres options) (*personnage) (?caché)`**
+- **`/mj dbd [@Joueur] [*nom du dé] (... autres options) (*personnage) (?caché)`**
 - **`/mj calc [@joueur] [statistique] [signe] [expression] (*personnage) (?caché)`**
 :::
 
