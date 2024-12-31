@@ -3,6 +3,10 @@ title: Fiches de personnages
 sidebar_position: 3
 ---
 
+export function CL({ children }) {
+  return <code style={{ textDecoration: "underline", fontWeight: "bold"}}>{children.toLowerCase()}</code>;
+}
+
 <details id="danger">
   <summary><Iconify icon="solar:danger-bold" height="26" class="danger-summary"/>Attention</summary>
   {}
@@ -16,6 +20,13 @@ sidebar_position: 3
 
 ## Lancer de dés
 
+Les deux commandes demandent de spécifier :
+- <CL>Personnage</CL> : Le nom du personnage
+- <CL>Commentaire</CL> : Tout commentaire sur votre action
+- <CL>seuil_reussite</CL> : Le remplacement du seuil de réussite (par exemple, pour un jet difficile), avec indication sur la comparaison (exemple : >= 10). Tout comme les expressions, il est possible de combiner des dés, des formules et des statistiques.
+- <CL>expression</CL> : D'éventuelles expressions définissant des conditions ou des modifications (comme l'avantage ou le désavantage), qui peuvent inclure des jets de dés, des formules mathématiques, des noms de statistiques, ou même la valeur exacte de la statistique grâce au mot clé `$`.
+
+
 ### DBRoll (`/dbroll`)
 
 :::info
@@ -23,15 +34,10 @@ La commande `dbroll` sert à lancer des dés sur des statistiques qui ont été 
 :::
 
 :::usage
-**`/dbroll [statistique] (*personnage) (commentaire) (seuil_reussite) (modificateurs)`**
+**`/dbroll [statistique] (*personnage) (commentaire) (seuil_reussite) (expression)`**
 :::
 
-La commande demande de spécifier :
-- La statistique
-- Le nom du personnage
-- Les éventuels modificateurs (tels que l'avantage ou le désavantage), qui peuvent eux aussi des jets de dés incluant des formules, des noms de statistiques voire la valeur de la statistiques elle-même avec le mot clé `$`.
-- Le remplacement du seuil de réussite (par exemple, pour un jet difficile), avec indication sur la comparaison (exemple : >= 10). Tout comme les modificateurs, il est possible de combiner des dés, des formules et des statistiques.
-- Tout commentaire sur votre action
+La commande demande de choisir, obligatoirement, la statistique à utiliser.
 
 ![dbroll_1](/assets/rolls/db/dbroll_autocomplete.png)
 ![example](/assets/rolls/db/example.png)
@@ -43,10 +49,31 @@ La commande `dbd` permet de lancer un dé enregistré.
 :::
 
 :::usage
-**`/dbd [*dice] (*personnage) (modificateurs) (commentaire)`**
+**`/dbd [*dice] (*personnage) (expression) (commentaire)`**
 :::
 
 ![dbd](/assets/rolls/db/dbd_example.png)
+
+Ici, la commande demande de choisir, obligatoirement, le dé à utiliser. Il n'est pas possible de choisir un seuil de réussite, bien qu'il soit possible d'en spécifier dans le dé lui-même lors de son enregistrement.
+
+## Calcul (`/calc`)
+
+:::info
+La commande `calc` permet de réaliser des calculs mathématiques à partir d'une statistique et d'y appliquer une expression, qui peut inclure des dés, des formules mathématiques, des noms de statistiques, ou même la valeur exacte de la statistique grâce au mot clé `$`.
+:::
+
+:::usage
+**`/calc [statistique] [signe] [expression] (*personnage) (commentaire)`**
+:::
+
+La commande demande de choisir, obligatoirement, la statistique à utiliser, le signe de l'opération à effectuer, et l'expression à appliquer.
+Les signes valides sont : `+`, `-`, `*`, `/`, `^` (puissance), `%` (modulo), `/` (division), `≠` (différent de), `=` (égal à), `⩾` (supérieur ou égal à), `⩽` (inférieur ou égal à), `>` (supérieur à), `<` (inférieur à).
+
+:::note
+Il est possible d'utiliser la version "non ascii" des signes, par exemple `>=` pour `⩾` ou `!=` pour `≠` et `==` pour `=`.
+:::
+
+![calc](/assets/rolls/db/calc.png)
 
 
 ## Autres
