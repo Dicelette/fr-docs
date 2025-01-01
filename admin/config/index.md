@@ -128,3 +128,6 @@ Permet d'ajouter un lien vers la sauvegarde du dé dans le message de résultat 
 
 ![Lien vers la sauvegarde](/assets/rolls/config/backup_link.png)
 
+## Rolls et Calculs
+
+Pour plus d'informations sur les expressions mathématiques, les jets uniques partagés et les lancers en masse, consultez la [documentation sur les rolls et calculs](./rolls_and_calculations.md).

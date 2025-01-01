@@ -31,7 +31,7 @@ Il y a deux types de dés :
 - Le dé utilisé avec `dbroll` (le **dé type**).
 - Les dés enregistrés pour `dbd` (les **dés sauvegardés**).
 
-Les deux types de dés suivent la syntaxe de [dice-roller](https://dice-roller.github.io/documentation/). Vous pouvez utiliser des formules mathématiques complexes avec `{{` et `}}`.
+Les deux types de dés suivent la syntaxe de [dice-roller](https://dice-roller.github.io/documentation/).
 
 Pour viser une statistique, cela est différent selon le type de dé :
 - Pour un dé type, il faut utiliser `$`. Ce symbole sera utilisé par la valeur de la statistique utilisée par `/dbroll`.

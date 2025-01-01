@@ -19,43 +19,7 @@ Plus besoin de jongler avec des fiches de personnage complexes ! Ce bot permet d
 
 ### Lancer de Dés
 
-Pour effectuer les lancers de dés, ce bot utilise l'API [@diceRoller](https://dice-roller.github.io/documentation/). Il prend également en charge la notation `x#(dés)` pour les lancers "en masse" (bulk roll), vous permettant ainsi de gagner du temps lors de vos sessions de jeu.
-
-#### Jets uniques partagés (réutilisation de résultats)
-
-Il est possible d'utiliser la syntaxe `dé;&+x;µ*y` pour lancer un seul dé et appliquer différentes formules sur ce même dé, de façon à afficher le résultat de chaque formule. Le `&` symbolise le résultat du dé.
-
-:::warning[Attention]
-Vous devez obligatoirement ne pas avoir d'espace avant et après la séparation entre les formules, sinon le bot considérera la suite comme des commentaires.
-:::
-
-:::example
-```
-/roll 1d20;&+5;&*2
-```
-Affichera comme résultat :
-```
-  1d20 ⟶ [18] =  18
-  ◈ [1d20]+5 ⟶ [18]+5 =  23
-  ◈ [1d20]×2 ⟶ [18]×2 =  36
-```
-:::
-
-Les commentaires entre chaque formule seront fusionnés en un seul commentaire.
-
-::::tip
-Il est possible d'utiliser des dés dans les formules, mais seul le premier dé sera sauvegardé et réutilisé.
-:::example[ `1d20;&+1d4;&\*2`]
-```
-  1d20 ⟶ [11] =  11
-  ◈ [1d20]+1d4 ⟶  11+[2] =  13
-  ◈ [1d20]×2 ⟶ [11]×2 =  22
-```
-:::
-::::
-
-:::danger[Il n'est pas possible d'utiliser les dés en masse dans cette syntaxe.]
-:::
+Pour effectuer les lancers de dés, ce bot utilise l'API [@diceRoller](https://dice-roller.github.io/documentation/).
 
 ### Gestion des Statistiques
 
