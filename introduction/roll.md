@@ -1,5 +1,6 @@
 ---
 title: Jets de dés et calculs
+sidebar_position: 2
 ---
 
 ## Expressions Mathématiques avec MathJS
