@@ -1,6 +1,5 @@
 ---
 title: Configuration générale
-sidebar_position: 1
 ---
 Toutes les commandes d'administration sont restreintes par défaut aux membres ayant la permission `Gérer les rôles`.
 
@@ -9,14 +8,6 @@ La commande `/config afficher` pour voir la configuration actuelle du serveur.
 Les commandes suivantes fonctionnent à la fois pour les dés lancés en texte seul et pour les dés lancés avec des slashcommands (que ce soit `/roll` que `/dbd` et `/dbroll`).
 Sauf mention contraire, toutes les options sont, par défaut, désactivées.
 
-## Format
-
-- Les champs obligatoires sont indiqués entre crochets : `[champs]`.
-- Les champs facultatifs sont entre parenthèses : `(champs)`.
-- Les champs auto-complétés seront marqués d'un `*` : `(*champs)`.
-- Les champs demandant une mention seront marqués par `@` (`@champs`). Ces champs fonctionnent avec les noms (rôle ou utilisateur, en fonction de la commande) ou l'ID Discord. Si la mention ne s'affiche pas immédiatement, commencez à taper le début du nom pour l'auto-complétion.
-- De manière similaire, les commandes demandant un salon sont précédé par `#` comme `#champs`.
-- Les champs vrai/faux (`true` ou `false`) sont préfixés par `?` (`?champs`).
 
 ## Journalisation
 ### Administration: `logs`

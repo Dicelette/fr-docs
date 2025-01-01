@@ -31,10 +31,10 @@ Il y a deux types de dés :
 - Le dé utilisé avec `dbroll` (le **dé type**).
 - Les dés enregistrés pour `dbd` (les **dés sauvegardés**).
 
-Les deux types de dés suivent la syntaxe de [dice-roller](https://dice-roller.github.io/documentation/).
+Les deux types de dés suivent la syntaxe de [dice-roller](https://dice-roller.github.io/documentation/), mais supportent aussi les différentes [expressions](../Usage/expression.mdx).
 
 Pour viser une statistique, cela est différent selon le type de dé :
-- Pour un dé type, il faut utiliser `$`. Ce symbole sera utilisé par la valeur de la statistique utilisée par `/dbroll`.
+- Pour un dé type, il faut utiliser le mot-clé `$`. Ce symbole sera remplacé par la valeur de la statistique utilisée par `/dbroll`.
 - Pour les dés enregistrés, il suffit d'utiliser les noms des statistiques. 
 
 :::tip[Exemple]
@@ -49,6 +49,7 @@ Il est également possible de comparer avec une formule :
 - Pour un dé type : `1d6 > {{ceil($ / 2)}}`
 - Pour un dé enregistré : `1d6 > {{ceil(Force / 2)}}`
 :::
+
 
 ## Statistiques
 
@@ -71,7 +72,7 @@ Dans les deux cas, par défaut, les critiques ne sont qu'actifs que sur la comma
 Ils ne peuvent être liés qu'à une égalité avec le dé naturel. La valeur est paramétrable, mais pas le message affiché.
 Ainsi, dans le cas où :
 - Vous aurez une valeur de succès critique, le message affiché sera : `Succès critique`
-- Dans le même cas, pour un échec critique, le message affiché sera `échec critique`.
+- Dans le même cas, pour un échec critique, le message affiché sera `Échec critique`.
 
 ### Les critiques personnalisés
 
