@@ -1,8 +1,6 @@
 ---
-title: Format
+title: Format utilisé
 ---
-
-## Format
 
 - Les champs obligatoires sont indiqués entre crochets : `[champs]`.
 - Les champs facultatifs sont entre parenthèses : `(champs)`.
