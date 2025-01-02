@@ -14,7 +14,7 @@ Le nom d'utilisateur est le nom d'utilisateur, pas le nom d'affichage. Celui que
 Le premier formulaire sera toujours identique quel que soit le modèle :
 - Il vous demandera le nom du personnage (obligatoire ou facultatif, selon les paramètres du modèle)
 - Le nom de l'utilisateur, qui doit être soit son ID, soit son nom d'utilisateur. Cette donnée est obligatoire et sera pré-remplie par le bot avec le nom d'utilisateur de la personne qui a cliqué.
-- Si vous avez activé l'utilisation des fiches privées (voir [ici](../template/index.md#prochaine-étape)), vous aurez un troisième champ pour choisir si la fiche doit être privée ou non. Si la fiche est privée, mettez simplement `x` dans le champ. Laissez vide sinon !
+- Si vous avez activé l'utilisation des fiches privées (voir [ici](./model/index.md#prochaines-étapes)), vous aurez un troisième champ pour choisir si la fiche doit être privée ou non. Si la fiche est privée, mettez simplement `x` dans le champ. Laissez vide sinon !
 - Vous pouvez fournir un lien vers une image (un avatar) qui servira comme image dans l'embed de la fiche. Si laissé vide, l'image utilisé sera l'avatar du joueur.
 - Enfin, il est possible d'envoyer la fiche de personnage dans un salon différent que ceux définis dans le modèle par `private_channel` et `public_channel`.[^1] Si vous ne voulez pas envoyer la fiche dans un salon spécifique, laissez le champ vide.
 

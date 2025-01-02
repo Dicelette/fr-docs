@@ -15,8 +15,8 @@ Il est possible d'utiliser, selon les commandes :
 - Des combinaisons de dés (comme `1d6`).
 
 Les expressions sont généralement utilisées dans :
-- <CL>seuil_reussite</CL> : Seuil de réussite pour les jets de dés pour la commande [`/dbroll`](./model.mdx#dbroll).
-- <CL>expression</CL> : Pour les commandes [`/calc`](./model.mdx#calc), [`/dbroll`](./model.mdx#dbroll) et [`/dbd`](./model.mdx#dbd).
+- <CL>seuil_reussite</CL> : Seuil de réussite pour les jets de dés pour la commande [`/dbroll`](./model.mdx#dbroll-dbroll).
+- <CL>expression</CL> : Pour les commandes [`/calc`](./model.mdx#calcul-calc), [`/dbroll`](./model.mdx#dbroll-dbroll) et [`/dbd`](./model.mdx#dbd-dbd).
 
 ### Exemples d'Expressions Mathématiques
 
