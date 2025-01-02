@@ -1,5 +1,5 @@
 ---
-title: Format utilisé
+title: Syntaxe des commandes
 ---
 
 - Les champs obligatoires sont indiqués entre crochets : `[champs]`.
