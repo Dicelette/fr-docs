@@ -46,7 +46,7 @@ Les images stockés sur discord ne peuvent être utilisés car leurs liens chang
 [Voyez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
 :::
 
-:::usage["commande"]
+:::usage[commande]
 **`/edit avatar [lien] (@joueur) (*personnage)`**
 :::
 Par défaut, la commande modifiera l'image de la personne ayant utilisé la commande. Seuls les modérateurs peuvent modifier l'image d'un autre joueur.
@@ -56,7 +56,7 @@ Par défaut, la commande modifiera l'image de la personne ayant utilisé la comm
 
 Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personnages ayant les mêmes noms pour un même utilisateur. Dans le cas contraire, l'action sera annulée et une erreur s'affichera.
 
-:::usage["commande"]
+:::usage[commande]
 **`/edit rename [nouveau_nom] (@joueur) (*personnage)`**
 :::
 
@@ -66,7 +66,7 @@ Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personn
 Cela **déplacera** le personnage à un nouvel utilisateur, supprimant les données du joueur précédent. 
 Dans le cas où l'utilisateur "receveur" a un personnage du même nom, l'action sera annulée et une erreur s'affichera.
 
-:::usage["commande"]
+:::usage[commande]
 **`/edit user [@utilisateur] (@joueur) (*personnage)`**
 :::
 

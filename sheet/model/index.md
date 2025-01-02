@@ -83,7 +83,7 @@ Il est possible d'avoir, en tout, jusqu'à 22 critiques personnalisés.
 Les critiques personnalisés autorisent l'utilisation du symbole joker `$` (comme pour la comparaison avec les dés types) afin de comparer contre la statistique qui est utilisé. En outre, il est possible d'utiliser le nom d'une statistique ou encore de combiner avec d'autres dés.
 
 :::example[Call of Cthulhu]
-*Référence* : [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html)
+*Référence* : [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html)  
 Dans le cas de Call of Cthulhu, les succès sont basés sur la valeur de la statistique. Le dé type sera donc `1D100<=$`.
 Les critiques personnalisés seront :
 - "Succès Majeur" : `<=round($/2)`
