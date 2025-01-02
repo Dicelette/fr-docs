@@ -18,4 +18,4 @@ Ce bot détecte la notation des dés et envoie le résultat selon trois méthode
    ![Semi-directe](/assets/rolls/semi-direct.gif)
 
 
-Il est aussi possible d'utiliser des commandes slash pour lancer des dés, comme `/roll` ([voir ici pour plus d'information](../Usage/roll.md)).
+Il est aussi possible d'utiliser des commandes slash pour lancer des dés, comme `/roll` ([voir ici pour plus d'information](../usage/index.md)).

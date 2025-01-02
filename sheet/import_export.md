@@ -5,7 +5,7 @@ sidebar_position: 3
 
 Les commandes suivantes permettent d'importer et d'exporter des données depuis et vers un fichier CSV.
 :::tip Au sujet des dés
-Il est tout à fait possible d'importer des dés spécifiques pour la commande [`/dbd`](../../Usage/model.mdx#dbd), mais vous devez remplir les cases de la colonne `dice` sous la forme suivante :
+Il est tout à fait possible d'importer des dés spécifiques pour la commande [`/dbd`](../usage/model.mdx#dbd-dbd), mais vous devez remplir les cases de la colonne `dice` sous la forme suivante :
 ```md
 - [dé] : [valeur]
 ```
