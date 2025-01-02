@@ -1,8 +1,12 @@
 ---
-title: Journalisation des résultats
+title: Journalisation
 ---
 
 ## Journalisation des modifications et des erreurs : `/config logs`
+:::usage
+**`/config logs (#channel)`**
+:::
+
 La commande `logs` offre la possibilité de d'enregister un salon afin de : 
 - Rapporter toutes les erreurs,
 - Enregistrer toute modification apportée à un personnage.

@@ -3,6 +3,18 @@ title: Modifier et supprimer un personnage
 sidebar_position: 3
 ---
 
+Une fois que l'utilisateur est validé, sa fiche sera automatiquement publiée dans un thread ou dans le canal choisi. Toutes les fiches suivront ce format :
+
+![user embed](/assets/edit/user_embed.png)
+
+Seul le modèle et l'utilisateur seront toujours présents, à moins qu'aucun dé-type et aucun succès/échec critique n'aient été enregistrés dans le modèle.
+
+Si toutes les informations sont enregistrées, vous aurez accès à trois boutons :
+- Modifier l'avatar de l'embed,
+- Modifier les statistiques
+- Modifier les dés enregistrés (qui permet d'enregistrer plusieurs nouveaux dés, mais shh...)
+- Ajouter un nouveau dé.
+
 ## Suppression
 :::usage
 **`/supprimer_char [@joueur] (*personnage)`**
@@ -17,26 +29,12 @@ Elle demande :
 En l'absence de nom de personnage, cela supprimera toutes les données du joueur. Si vous voulez supprimer uniquement le "personnage sans nom" d'un joueur, vous pouvez le faire en choisissant "défaut" dans la liste du nom du personnage.
 
 ## Edition
-Une fois que l'utilisateur est validé, sa fiche sera automatiquement publiée dans un thread ou dans le canal choisi. Toutes les fiches suivront ce format :
-
-![user embed](/assets/edit/user_embed.png)
-
-Seul le modèle et l'utilisateur seront toujours présents, à moins qu'aucun dé-type et aucun succès/échec critique n'aient été enregistrés dans le modèle.
-
-Si toutes les informations sont enregistrées, vous aurez accès à trois boutons :
-- Modifier l'avatar de l'embed,
-- Modifier les statistiques
-- Modifier les dés enregistrés (qui permet d'enregistrer plusieurs nouveaux dés, mais shh...)
-- Ajouter un nouveau dé.
-
 ### Modifier les données d'utilisateur
 
 ![fr_edit](/assets/edit/french/user.png)
 
 Les commandes du menu déroulant permettent de modifier les données correspondantes.
 Si vous utilisez une ancienne version, vous devez utiliser les commandes listés.
-
-Pour ajouter le nouveau bouton.
 
 #### Modification de l'image
 
@@ -60,10 +58,6 @@ Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personn
 
 :::usage["commande"]
 **`/edit rename [nouveau_nom] (@joueur) (*personnage)`**
-:::
-
-:::warning
-Cette commande ne permet pas les doublons de nom : vous devez donc utiliser un nom différent pour chaque personnage !
 :::
 
 #### Déplacer à un nouvel utilisateur
