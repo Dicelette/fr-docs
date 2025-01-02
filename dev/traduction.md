@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 title: Traduction
 ---
 Le bot est entièrement disponible en français et en anglais. Les commandes slash seront automatiquement traduites dans la langue du client utilisé.

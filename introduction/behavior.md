@@ -1,10 +1,10 @@
 ---
-title: Comportement
+title: Comportement par défaut
 sidebar_position: 2
 ---
 
 :::info
-La [configuration](../admin/config/index.md) permet de modifier le comportement du bot. Ce document décrit le comportement par défaut.
+Le comportement du bot peut être modifié en passant par les menus de [configuration](../config/index.md). Le comportement par défaut est décrit ci-dessous.
 :::
 
 Le fonctionnement de ce bot repose sur l'utilisation de fils de discussion. Lors de son premier lancement, il recherchera un fil préfixé par `🎲` :
@@ -18,7 +18,7 @@ En cas de découverte de plusieurs fils, le bot utilisera le plus récent et arc
 
 Les commandes peuvent également être exécutées dans un fil existant. Dans ce cas, le bot y enverra simplement le résultat, accessible ensuite dans les canaux dont le nom commence par `🎲`.
 
-Il est également possible de créer un nouveau fil en utilisant la commande [créer une nouvelle scène](../Usage/roll.md#créer-une-nouvelle-scène).
+Il est également possible de créer un nouveau fil en utilisant la commande [créer une nouvelle scène](../usage/index.md#créer-une-nouvelle-scène).
 
 :::tip Astuce
 Le bot fonctionne également dans les forums, mais avec quelques différences :
@@ -40,7 +40,7 @@ Le bot enverra **aussi** le résultat dans le canal où la commande a été init
 
 Le bot peut être :
 
-- Utilisé avec des commandes slash (voir [commandes](../Usage/roll.md)).
+- Utilisé avec des commandes slash (voir [commandes](../usage/index.md)).
 - Mais également directement sur le message.
 
 ## Reaction

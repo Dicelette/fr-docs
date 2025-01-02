@@ -1,5 +1,6 @@
 ---
 title: CGU
+sidebar_position: 1
 ---
 
 ### Conditions Générales d'Utilisation (CGU) pour Dicelette Bot sur Discord

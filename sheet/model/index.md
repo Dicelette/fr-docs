@@ -1,6 +1,6 @@
 ---
 title: Enregistrement d'un Modèle
-sidebar_position: 2
+sidebar_position: 1
 ---
 # Enregistrement d'un Modèle
 
@@ -31,10 +31,10 @@ Il y a deux types de dés :
 - Le dé utilisé avec `dbroll` (le **dé type**).
 - Les dés enregistrés pour `dbd` (les **dés sauvegardés**).
 
-Les deux types de dés suivent la syntaxe de [dice-roller](https://dice-roller.github.io/documentation/). Vous pouvez utiliser des formules mathématiques complexes avec `{{` et `}}`.
+Les deux types de dés suivent la syntaxe de [dice-roller](https://dice-roller.github.io/documentation/), mais supportent aussi les différentes [expressions](../../usage/expression.mdx).
 
 Pour viser une statistique, cela est différent selon le type de dé :
-- Pour un dé type, il faut utiliser `$`. Ce symbole sera utilisé par la valeur de la statistique utilisée par `/dbroll`.
+- Pour un dé type, il faut utiliser le mot-clé `$`. Ce symbole sera remplacé par la valeur de la statistique utilisée par `/dbroll`.
 - Pour les dés enregistrés, il suffit d'utiliser les noms des statistiques. 
 
 :::tip[Exemple]
@@ -49,6 +49,7 @@ Il est également possible de comparer avec une formule :
 - Pour un dé type : `1d6 > {{ceil($ / 2)}}`
 - Pour un dé enregistré : `1d6 > {{ceil(Force / 2)}}`
 :::
+
 
 ## Statistiques
 
@@ -71,7 +72,7 @@ Dans les deux cas, par défaut, les critiques ne sont qu'actifs que sur la comma
 Ils ne peuvent être liés qu'à une égalité avec le dé naturel. La valeur est paramétrable, mais pas le message affiché.
 Ainsi, dans le cas où :
 - Vous aurez une valeur de succès critique, le message affiché sera : `Succès critique`
-- Dans le même cas, pour un échec critique, le message affiché sera `échec critique`.
+- Dans le même cas, pour un échec critique, le message affiché sera `Échec critique`.
 
 ### Les critiques personnalisés
 
@@ -81,7 +82,7 @@ Il est possible d'avoir, en tout, jusqu'à 22 critiques personnalisés.
 
 Les critiques personnalisés autorisent l'utilisation du symbole joker `$` (comme pour la comparaison avec les dés types) afin de comparer contre la statistique qui est utilisé. En outre, il est possible d'utiliser le nom d'une statistique ou encore de combiner avec d'autres dés.
 
-:::example [Call of Cthulhu]
+:::example[Call of Cthulhu]
 *Référence* : [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html)
 Dans le cas de Call of Cthulhu, les succès sont basés sur la valeur de la statistique. Le dé type sera donc `1D100<=$`.
 Les critiques personnalisés seront :
@@ -105,40 +106,7 @@ En outre, il est aussi possible de combiner dans le nom du dé différentes stat
 Dans le cas où le nom contient lui-même un jet de dé, ce dernier sera affiché non pas dans le résultat, mais dans le commentaire du dé, à la place de la formule.
 :::
 
-<details>
-  <summary>Modèle vide</summary>
-  ```json
-   {
-	"$schema": "https://raw.githubusercontent.com/Dicelette/discord-dicelette/main/template/schema.json",
-	"charName": false,
-	"statistics": {
-		"name": {
-			"min": 1,
-			"max": 20
-		},
-		"combinaison": {
-			"combinaison": "2d6"
-		}
-	},
-	"diceType": "1d20",
-	"critical": {
-		"failure": 1,
-		"success": 20
-	},
-	"total": 80,
-	"customCritical": {
-		"name": {
-			"sign": "=",
-			"value": "15",
-			"onNaturalDice": true,
-			"affectSkill": true
-            }
-        }
-    }
-    ```
-</details> 
-
-## Prochaine étape
+## Prochaines étapes
 
 Une fois que le modèle est prêt, utilisez `/register [#channel] [fichier] (#user_chan) (#personnage_privé)`. 
 - `#channel` est le canal où le modèle sera envoyée. Il sera ensuite utilisée pour la création de fiche.
@@ -157,7 +125,7 @@ L'embed sera épinglé pour faciliter l'accès.
 
 :::warning Attention
 Vous devez réenregistrer le modèle si vous souhaitez modifier le canal par défaut pour les feuilles privées et publiques. Mais l'utilisateur enregistré n'a pas besoin d'être réenregistré car le canal et l'identifiant du message sont sauvegardés dans la base de données.
-Si vous souhaitez déplacer toutes les feuilles vers un autre canal, vous devez utiliser la commande [`/export`](../config/import_export.md).
+Si vous souhaitez déplacer toutes les feuilles vers un autre canal, vous devez utiliser la commande [`/export`](../import_export.md).
 :::
 
 [^1]: Il est possible d'utiliser un forum, qui créera automatiquement un post pour le personnage. Le joueur (ainsi que les administrateurs) seront mentionnés dans le post. 
