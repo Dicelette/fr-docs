@@ -1,5 +1,6 @@
 ---
 title: "Import et export de données"
+sidebar_position: 3
 ---
 
 Les commandes suivantes permettent d'importer et d'exporter des données depuis et vers un fichier CSV.

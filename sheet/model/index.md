@@ -1,6 +1,6 @@
 ---
 title: Enregistrement d'un Modèle
-sidebar_position: 2
+sidebar_position: 1
 ---
 # Enregistrement d'un Modèle
 
@@ -106,40 +106,7 @@ En outre, il est aussi possible de combiner dans le nom du dé différentes stat
 Dans le cas où le nom contient lui-même un jet de dé, ce dernier sera affiché non pas dans le résultat, mais dans le commentaire du dé, à la place de la formule.
 :::
 
-<details>
-  <summary>Modèle vide</summary>
-  ```json
-   {
-	"$schema": "https://raw.githubusercontent.com/Dicelette/discord-dicelette/main/template/schema.json",
-	"charName": false,
-	"statistics": {
-		"name": {
-			"min": 1,
-			"max": 20
-		},
-		"combinaison": {
-			"combinaison": "2d6"
-		}
-	},
-	"diceType": "1d20",
-	"critical": {
-		"failure": 1,
-		"success": 20
-	},
-	"total": 80,
-	"customCritical": {
-		"name": {
-			"sign": "=",
-			"value": "15",
-			"onNaturalDice": true,
-			"affectSkill": true
-            }
-        }
-    }
-    ```
-</details> 
-
-## Prochaine étape
+## Prochaines étapes
 
 Une fois que le modèle est prêt, utilisez `/register [#channel] [fichier] (#user_chan) (#personnage_privé)`. 
 - `#channel` est le canal où le modèle sera envoyée. Il sera ensuite utilisée pour la création de fiche.
