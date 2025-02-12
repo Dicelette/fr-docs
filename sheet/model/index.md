@@ -50,6 +50,24 @@ Il est également possible de comparer avec une formule :
 - Pour un dé enregistré : `1d6 > {{ceil(Force / 2)}}`
 :::
 
+### Dés enregistrés  
+
+Vous pouvez personnaliser les dés sauvegardés avec différentes syntaxes :  
+
+- **Critique personnalisé :** Si vous utilisez des critiques personnalisés avec `$`, le **nom du dé** doit inclure la **statistique entre parenthèses**, comme dans `Instinct Animal (Force)`. Consultez la section [Critiques personnalisés](#les-critiques-personnalisés) pour plus de détails.  
+- **`{exp}` :** Cette syntaxe permet d'insérer directement une expression dans le dé, en reprenant la partie calculée de la commande.  
+- **Nom de la statistique :** Permet de référencer une statistique directement dans le dé.  
+
+:::example
+
+| Titre                     | Nom du dé               | Valeur remplacée                                              | Syntaxe       | Exemple    |     |
+|---------------------------|-------------------------|---------------------------------------------------------------|---------------|------------|-----|
+| **Statistique précise**   | Force                   | `Force=20`                                                    | `1d6 > Force` | `1d6 > 20` |     |
+| **Critique personnalisé** | Instinct Animal (Force) | <li>`Force=20`<br></li><li> Critique personnalisé : `>$`</li> | `1d6`         | `1d6>20`   |     |
+| **Expression**            | Dégâts par charge       | `3+4`                                                         | `{exp}d4`     | `7d4`      |     |
+
+:::
+
 
 ## Statistiques
 
