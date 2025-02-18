@@ -60,11 +60,11 @@ Vous pouvez personnaliser les dés sauvegardés avec différentes syntaxes :
 
 :::example
 
-| Titre                     | Nom du dé               | Valeur remplacée                                              | Syntaxe       | Exemple    |     |
-|---------------------------|-------------------------|---------------------------------------------------------------|---------------|------------|-----|
-| **Statistique précise**   | Force                   | `Force=20`                                                    | `1d6 > Force` | `1d6 > 20` |     |
-| **Critique personnalisé** | Instinct Animal (Force) | <li>`Force=20`<br></li><li> Critique personnalisé : `>$`</li> | `1d6`         | `1d6>20`   |     |
-| **Expression**            | Dégâts par charge       | `3+4`                                                         | `{exp}d4`     | `7d4`      |     |
+| Titre                     | Nom du dé               | Valeur remplacée                                         | Syntaxe       | Exemple    |     |
+|---------------------------|-------------------------|----------------------------------------------------------|---------------|------------|-----|
+| **Statistique précise**   | Force                   | `Force=20`                                               | `1d6 > Force` | `1d6 > 20` |     |
+| **Critique personnalisé** | Instinct Animal (Force) | <li>`Force=20`</li><li>Critique personnalisé : `>$`</li> | `1d6`         | `1d6>20`   |     |
+| **Expression**            | Dégâts par charge       | `3+4`                                                    | `{exp}d4`     | `7d4`      |     |
 
 :::
 
