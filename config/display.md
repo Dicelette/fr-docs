@@ -24,17 +24,17 @@ Le timestamp s'adapte automatiquement à l'heure du client.
 - `[temps]` : En seconde
 :::
 
-Par défaut, les messages de résultats des jets de dés sont supprimés après **3** minutes (180s). Cette commande permet de changer le délais (jusqu'à 60 minutes) avant suppression des messages.
+Par défaut, les messages de résultats des jets de dés sont supprimés après **3** minutes (180s). Cette commande permet de changer le délai (jusqu'à 60 minutes) avant suppression des messages.
 
 Si la valeur est mise à **0**, les messages ne seront plus supprimés.
 
-Cette configuration est désactivée si `/config désactiver_threads` est activée.
+Cette configuration est désactivée s'il n'y a aucun channel ou thread de sauvegarde.
 
 :::tip
-Cette commande permet d'avoir à la fois les logs dans un channels dédiés, tout en gardant le résultat indéfiniment dans le salon où le jet a été effectué.
+Cette commande permet d'avoir à la fois les logs dans un channel dédiés, tout en gardant le résultat indéfiniment dans le salon où le jet a été effectué.
 :::
 
-## Context et liens
+## Contexte et liens
 ### [Sauvegarde] Lien vers le contexte du dé : `contexte`
 
 :::usage
@@ -45,11 +45,16 @@ Permet d'ajouter un lien vers le contexte du dé dans la sauvegarde du dé.
 - Si l'auto-suppression est activé, le lien créé renverra au message précédent le dé.
 - Si l'auto-suppression est désactivé, le lien renverra au message du dé directement.
 
+
 :::warning
 Si le message du contexte est supprimé, le lien ne fonctionnera plus.
 :::
 
 ![Lien vers le contexte](/assets/rolls/config/context.png)
+
+:::tip
+Cette option est désactivé s'il n'y a pas de channel ou thread de sauvegarde.
+:::
 
 ### [Lancé] Lien vers la sauvegarde `lien_sauvegarde`
 

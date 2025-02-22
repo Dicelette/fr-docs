@@ -16,27 +16,23 @@ Renvoyer la commande sans l'argument `#channel` permet de supprimer l'envoi des 
 ## Sauvegarde des résultats: `result_channel`
 
 :::usage
-**`/config result_channel (#channel)`**
+**`/config result_channel [?disable_thread] (#channel)`**
 :::
 
-La commande `/config result_channel` permet de définir un canal pour recevoir les résultats des jets de dés, plutôt que d'utiliser un fil de discussion à chaque fois. L'ID du canal sera alors enregistré dans la base de données de la même manière que la commande `logs`.
+Cette commande permet de choisir où le bot enregistre les résultats des jets de dés (les logs). Par défaut, les résultats sont envoyés dans un thread dont le nom commence par `🎲`.
 
-Renvoyer la commande sans l'argument "salon" permet de supprimer le canal de résultats à l'instar de la commande `logs`.
+Il existe deux options :
+- `disable_thread` : Activez cette option pour envoyer les résultats directement dans le salon indiqué, sans créer de thread. Dans ce cas, l'auto-suppression des messages est désactivée.
+- `#channel` : Si vous mentionnez un salon, les résultats seront envoyés dans un thread de ce salon. Cette option est ignorée si `disable_thread` est activé.
 
-## Désactiver l'auto-création des threads: `désactiver_threads`
+Si aucun argument n'est utilisé, le comportement correspond à celui de `disable_thread true` : les résultats seront envoyés directement dans le salon où le jet a été effectué.
 
-:::usage
-**`/config désactiver_threads [?basculer]`**
+:::example
+- `/config result_channel #channel` ou `/config result_channel false #channel` : Les résultats seront envoyés dans un thread du salon mentionné.
+- `/config result_channel true` ou `/config result_channel true #channel` ou `/config result_channel` (lorsqu'une configuration précédente existe) : La sauvegarde des jets est désactivée.
+- `/config result_channel false` : Les résultats seront envoyés dans un thread préfixé par `🎲` (uniquement si aucun salon n'est mentionné).
 :::
-Si l'option est sur **true**, désactive la création, par défaut, des threads pour les jets de dés. Tout sera donc envoyé (sans suppression) dans le salon où la commande a été effectuée.
 
-:::warning
-Cette option prend le pas sur la commande `/config result_channel`. C'est à dire que dans le cas où elle est activée, les résultats des jets de dés ne seront pas envoyés dans le salon configuré par la commande `/config result_channel` si ce dernier est configuré.
-:::
-
-Les channels et fils préfixés par `🎲` ne recevront plus les logs non plus.
-
-L'option sur **faux** réactive le comportement normal du bot.
 
 ## Jets invisibles: `jet_invisible`
 
