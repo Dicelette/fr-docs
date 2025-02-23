@@ -38,6 +38,8 @@ Si aucun argument n'est utilisé, le comportement correspond à celui de `/confi
 - <u>Utiliser la création de thread automatique</u> : `/config result_channel false` (les résultats seront envoyés dans un thread dont le nom commence par `🎲`)
 :::
 
+Si la copie est entièrement désactivée, la [suppression automatique](./display.md#délais-avant-suppression-supprimer_après) des résultats le sera aussi.
+
 ## Jets invisibles
 
 :::usage
