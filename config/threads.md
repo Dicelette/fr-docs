@@ -1,6 +1,6 @@
 ---
 title: Salons des résultats
-description: Désactiver le renvoie des résultats dans les threads ou envoyer dans un salons spécifiques.
+description: Désactiver la copie des résultats dans les threads ou envoyer dans un salon spécifique.
 sidebar_position: 2
 ---
 
@@ -11,7 +11,7 @@ Il est possible de :
 - Copier les résultats dans un salon précis.
 
 :::info
-Si le jet est effectué dans un thread commençant par `🎲`, le résultat ne sera pas envoyé dans le salon configuré ou un thread automatique.
+Si le jet est effectué dans un fil commençant par `🎲`, le résultat ne sera pas copié dans le salon configuré ou un thread automatique.
 :::
 
 
