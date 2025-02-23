@@ -1,5 +1,6 @@
 ---
 title: Affichage des résultats
+sidebar_position: 4
 ---
 Diverses options permettent de personnaliser l'affichage des résultats des jets de dés, que ce soit dans la partie sauvegarde que dans le salon où le jet a été effectué.
 
