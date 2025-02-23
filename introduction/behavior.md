@@ -27,7 +27,7 @@ Le bot fonctionne également dans les forums, mais avec quelques différences :
 - Dans ce cas, il s'agit donc d'un message qui sera créé à la place d'un fil.
 :::
 
-Il est aussi possible, via la commande `/result_channel` de fixer un salon dans lequel sera envoyé tous les logs, plutôt que de passer par un thread ou un sujet de forum. 
+Il est aussi possible, via la commande [`/result_channel`](../config/threads.md) de configurer ce comportement, en fixant un salon ou en désactivant la création automatique de fils.
 
 ## Canaux
 
