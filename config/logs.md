@@ -25,13 +25,22 @@ Il existe deux options :
 - `disable_thread` : Activez cette option pour envoyer les résultats directement dans le salon indiqué, sans créer de thread. Dans ce cas, l'auto-suppression des messages est désactivée.
 - `#channel` : Si vous mentionnez un salon, les résultats seront envoyés dans un thread de ce salon. Cette option est ignorée si `disable_thread` est activé.
 
-Si aucun argument n'est utilisé, le comportement correspond à celui de `disable_thread true` : les résultats seront envoyés directement dans le salon où le jet a été effectué.
+Si aucun argument n'est utilisé, le comportement correspond à celui de `/config result_channel true` : les résultats seront envoyés directement dans le salon où le jet a été effectué.
 
-:::example
-- `/config result_channel #channel` ou `/config result_channel false #channel` : Les résultats seront envoyés dans un thread du salon mentionné.
-- `/config result_channel true` ou `/config result_channel true #channel` ou `/config result_channel` (lorsqu'une configuration précédente existe) : La sauvegarde des jets est désactivée.
-- `/config result_channel false` : Les résultats seront envoyés dans un thread préfixé par `🎲` (uniquement si aucun salon n'est mentionné).
-:::
+::::example
+- <u>Envoyer les résultats dans un channel spécifique</u> : 
+    - `/config result_channel #channel`  
+    - `/config result_channel false #channel`  
+
+  :::pin Les résultats ne seront pas renvoyés dans le channel configuré si le jet est lancé dans un thread dont le nom commence par `🎲`.
+  :::
+- <u>Désactiver la création automatique/le salon de résultat</u> :
+    - `/config result_channel true`
+    - `/config result_channel true #channel`  
+    - `/config result_channel` (si une configuration précédente existe)
+- <u>Utiliser la création de thread automatique</u> : `/config result_channel false` (les résultats seront envoyés dans un thread dont le nom commence par `🎲`)
+::::
+
 
 
 ## Jets invisibles: `jet_invisible`
