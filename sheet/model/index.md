@@ -50,6 +50,8 @@ Il est également possible de comparer avec une formule :
 - Pour un dé enregistré : `1d6 > {{ceil(Force / 2)}}`
 :::
 
+La présence du `$` rend la statistique obligatoire. Sinon, le dé pourra être lancé sans fiche sauvegardée.
+
 ### Dés enregistrés  
 
 Vous pouvez personnaliser les dés sauvegardés avec différentes syntaxes :  
