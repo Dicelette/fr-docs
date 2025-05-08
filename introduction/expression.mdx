@@ -14,6 +14,7 @@ Il est possible d'utiliser, selon les commandes :
 - `$` : Symbolise la valeur de la statistique utilisée.
 - Le nom d'une statistique (qui sera remplacée par sa valeur).
 - Des combinaisons de dés (comme `1d6`).
+- `{exp}` : Cette syntaxe permet d'insérer directement une expression dans le dé, en reprenant la partie calculée de la commande. Il est possible d'indiquer une valeur par défaut en utilisant la syntaxe `{exp||default}` (comme `{exp||2}`). Dans le cas contraire, la valeur par défaut sera `1`.
 
 Les expressions sont généralement utilisées dans :
 - <CL>seuil_reussite</CL> : Seuil de réussite pour les jets de dés pour la commande [`/dbroll`](../usage/model.mdx#dbroll-dbroll).
