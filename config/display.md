@@ -26,7 +26,7 @@ Le timestamp s'adapte automatiquement à l'heure du client.
 - `[temps]` : En secondes
 :::
 
-Par défaut, les messages de résultats des jets de dés sont supprimés après **3 minutes** (180s). Cette commande permet de changer le délai (jusqu'à 60 minutes) avant suppression des messages.
+Par défaut, les messages de résultats des jets de dés sont supprimés après **3** minutes (180s). Cette commande permet de changer le délai (jusqu'à 60 minutes) avant suppression des messages.
 
 Si la valeur est mise à **0**, les messages ne seront plus supprimés.
 
