@@ -1,0 +1,52 @@
+---
+title: Lancer de dés
+sidebar_position: 1
+---
+
+export function CL({ children }) {
+  return <code style={{ textDecoration: "underline", fontWeight: "bold"}}>{children.toLowerCase()}</code>;
+}
+
+Les deux commandes demandent de spécifier :
+- <CL>Personnage</CL> : Le nom du personnage
+- <CL>Commentaire</CL> : Tout commentaire sur votre action.
+- <CL>expression</CL> : D'éventuelles [expressions](../introduction/expression.mdx) mathématiques définissant des conditions ou des modifications (comme l'avantage ou le désavantage).
+
+## DBRoll (`/dbroll`)
+
+:::info
+La commande `dbroll` sert principalement à lancer des dés sur des statistiques enregistrées pour un personnage, permettant d'éviter de retenir les caractéristiques de base d'un personnage.
+
+Cependant, si le dé type utilisé **ne contient pas `$`**, il est possible d'utiliser la commande sans fiche : le jet sera alors effectué comme un "dé global", sans statistiques associées.
+:::
+
+:::usage
+**`/dbroll (*statistique) (*personnage) (commentaire) (seuil_reussite) (expression)`**
+:::
+
+La commande demande de choisir la statistique à utiliser si le dé type contient `$`.
+
+Il est aussi possible de spécifier le <CL>seuil_reussite</CL>. Ce seuil doit indiquer le signe de la comparaison, comme `>=10`. Il est possible de combiner des jets de dés, des statistiques et d'utiliser des expressions mathématiques.
+
+:::tip
+Il est possible de ne pas spécifier le signe de la comparaison, auquel cas le seuil de réussite utilisera celui par défaut, s'il existe.
+En cas d'absence total du signe, cette option sera ignorée pour erreur syntaxique.
+:::
+
+![dbroll_1](/assets/rolls/db/dbroll_autocomplete.png)
+![example](/assets/rolls/db/example.png)
+
+## DBD (`/dbd`)
+
+:::info
+La commande `dbd` permet de lancer un dé enregistré dans la fiche d'un personnage et/ou la template du serveur.
+Si un dé est enregistré dans la template, il sera considéré comme un dé global et pourra être utilisé sans personnage si ce dernier ne contient pas `$` ou le nom d'une statistique.
+:::
+
+:::usage
+**`/dbd [*dice] (*personnage) (expression) (commentaire)`**
+:::
+
+![dbd](/assets/rolls/db/dbd_example.png)
+
+Ici, la commande demande de choisir, obligatoirement, le dé à utiliser. Il n'est pas possible de choisir un seuil de réussite, bien qu'il soit possible d'en spécifier dans le dé lui-même lors de son enregistrement.

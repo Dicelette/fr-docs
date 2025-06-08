@@ -4,7 +4,7 @@ description: Désactiver la copie des résultats dans les threads ou envoyer dan
 sidebar_position: 2
 ---
 
-Par défaut, le bot copiera les résultats des dés dans un thread nommés `🎲` depuis le salon où le jet a été effectué.
+Par défaut, le bot copiera les résultats des dés dans un thread nommé `🎲` depuis le salon où le jet a été effectué.
 
 Il est possible de :
 - Désactiver la copie totalement,
@@ -13,7 +13,6 @@ Il est possible de :
 :::info
 Si le jet est effectué dans un fil commençant par `🎲`, le résultat ne sera pas copié dans le salon configuré ou un thread automatique.
 :::
-
 
 :::usage
 **`/config result_channel [?disable_thread] (#channel)`**
@@ -49,7 +48,7 @@ Si la copie est entièrement désactivée, la [suppression automatique](./displa
 Cela active l'option `caché` pour les commandes `/gm` et `/roll` et permet de cacher le résultat aux autres joueurs.
 
 Il y a deux configurations possibles :
-- Si un salon est mentionné, ce channel sera utilisée pour la sauvegarde du jet, remplaçant le channel `result_channel` (si configuré).
+- Si un salon est mentionné, ce channel sera utilisé pour la sauvegarde du jet, remplaçant le channel `result_channel` (si configuré).
 - Si aucun salon n'est utilisé, alors aucune sauvegarde du résultat ne sera faite.
 
 Dans les deux cas, le message sera envoyé comme un message [**éphémère**](https://support.discord.com/hc/fr/articles/1500000580222-Ephemeral-Messages-FAQ), signifiant qu'il n'y aura aucune trace du jet de dés dans le salon où la commande a été effectuée après un certain temps, et que personne d'autre que le lanceur ne verra le résultat.

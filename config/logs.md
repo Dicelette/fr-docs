@@ -7,9 +7,9 @@ sidebar_position: 5
 **`/config logs (#channel)`**
 :::
 
-La commande `logs` offre la possibilité de d'enregister un salon afin de : 
+La commande `logs` permet de configurer un salon pour : 
 - Rapporter toutes les erreurs,
 - Enregistrer toute modification apportée à un personnage.
 
-Renvoyer la commande sans l'argument `#channel` permet de supprimer l'envoi des logs.
+Relancer la commande sans l'argument `#channel` permet de désactiver l'envoi des logs.
 
