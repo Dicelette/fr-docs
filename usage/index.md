@@ -31,7 +31,7 @@ Le bot créera alors un nouveau fil de discussion, préfixé par `🎲`, où il 
 
 Il existe plusieurs commandes d'aide, en fonction de ce dont vous avez besoin :
 - `/aide info` : Affiche les infos générales sur le bot, notamment comment lancer un dé ou créer une scène.
-- `/aide admin` : Affiche les commandes d'administration, comme pour [logs](../config/logs.md#journalisation-des-modifications-et-des-erreurs--config-logs) ou [result_channel](../config/logs.md#sauvegarde-des-résultats-result_channel).
+- `/aide admin` : Affiche les commandes d'administration, comme pour [logs](../config/logs.md) ou [result_channel](../config/threads.md#configurer-lenvoi-des-résultats).
 - `/aide enregister` : Affiche l'aide spécifique pour enregistrer un modèle de serveur et les fiches de personnages et vous dirige vers [la documentation](../sheet/model/index.md).
 - `/aide bug` : Affiche un lien pour créer un rapport de bug.
 - `/aide suggestion` : Affiche un lien pour faire une suggestion.

@@ -35,7 +35,7 @@ Pour la description complète des notations et expressions, voir [la page dédi�
 
 Vous pouvez personnaliser les dés sauvegardés avec différentes syntaxes :
 
-- **Critique personnalisé :** Si vous utilisez des critiques personnalisées avec `$`, le **nom du dé** doit inclure la **statistique entre parenthèses**, comme dans `Instinct Animal (Force)`. Consultez la section [Critiques personnalisées](./critics.md#les-critiques-personnalisées) pour plus de détails.
+- **Critique personnalisé :** Si vous utilisez des critiques personnalisées avec `$`, le **nom du dé** doit inclure la **statistique entre parenthèses**, comme dans `Instinct Animal (Force)`. Consultez la section [Critiques personnalisées](./critics.md#critiques-personnalisées) pour plus de détails.
 - **Nom de la statistique :** Permet de référencer une statistique directement dans le dé.
 
 :::example
