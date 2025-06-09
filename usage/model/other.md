@@ -23,7 +23,7 @@ La commande `afficher` permet de consulter les statistiques et les dés d'un per
 **`/graph (@joueur) (*personnage) (ligne) (fond) (min) (max)`**
 :::
 
-La commande `/graph` est une fonctionnalité "gimmick" qui permet de générer un graphique à partir des statistiques d'un personnage.
+La commande `/graph` génère un graphique à partir des statistiques d'un personnage.
 En option, vous pouvez spécifier des couleurs avec :
 - `ligne` : Pour les lignes (par défaut, `#0e47b2`).
 - `fond` : Pour le fond (par défaut, `#0e47b2`).
@@ -39,5 +39,7 @@ Par défaut :
    - Sinon, il sera basé sur la valeur du succès critique.
    - Si aucune des deux options précédentes n'est disponible, il sera basé sur la valeur du dé (par exemple, si `1d20`, la valeur sera 20).
    - En dernier recours, il sera automatiquement calculé en fonction des statistiques de l'utilisateur.
+
 ![graph](/assets/graph.jpg)
 
+Pour la description de la syntaxe des champs et l’auto-complétion, voir [la page dédiée](../../introduction/format.md).

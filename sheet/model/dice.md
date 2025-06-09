@@ -29,6 +29,8 @@ Il est également possible de comparer contre une formule :
 
 La présence du `$` rend la statistique obligatoire. Sinon, le dé pourra être lancé sans fiche sauvegardée.
 
+Pour la description complète des notations et expressions, voir [la page dédiée](../../introduction/expression.mdx).
+
 ## Dés enregistrés
 
 Vous pouvez personnaliser les dés sauvegardés avec différentes syntaxes :

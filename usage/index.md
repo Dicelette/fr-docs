@@ -9,13 +9,11 @@ sidebar_position: 1
 **`/roll (argument) (?caché)`**
 :::
 
-Vous pouvez également utiliser la notation "semi-directe" en ajoutant un commentaire dans l'argument : `/roll (dés commentaire)`. 
+Pour comprendre les différentes notations de dés utilisables avec le bot (notation directe, indirecte, semi-directe), consultez la page [Notations des dés](./message.md).
 
-Veuillez noter que la notation "indirecte" n'est pas disponible dans ce mode.
+L’option `?caché` permet de rendre le jet invisible si l’option est activée par l’administrateur. [Plus d'informations sur les jets invisibles](../config/threads.md#jets-invisibles).
 
 ![Roll](/assets/rolls/slash-commands.gif)
-
-L'option `caché` ne fonctionne que si les [jets invisibles](../config/threads.md#jets-invisibles) sont activés. Si l'option est utilisée, le résultat sera envoyé en message éphémère, et utilisera le salon configuré (si existant) pour sauvegarder les résultats.
 
 ## Créer une nouvelle scène
 
