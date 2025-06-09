@@ -3,10 +3,6 @@ title: Autres
 sidebar_position: 3
 ---
 
-export function CL({ children }) {
-  return <code style={{ textDecoration: "underline", fontWeight: "bold"}}>{children.toLowerCase()}</code>;
-}
-
 Les deux commandes suivantes acceptent :
 - `(@joueur)` : Le nom du joueur
 - `(*personnage)` : Et/ou le nom du personnage
