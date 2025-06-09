@@ -8,10 +8,10 @@ sidebar_position: 5
 - `#channel` : Salon pour recevoir les logs.
 :::
 
-Configure un salon pour :
+Configure un salon pour :
 - Rapporter toutes les erreurs,
 - Enregistrer toute modification apportée à un personnage.
 
 Relancer la commande sans l’argument `#channel` désactive la journalisation.
 
-Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).</small>

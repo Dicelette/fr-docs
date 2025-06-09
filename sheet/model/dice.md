@@ -27,7 +27,7 @@ Il est également possible de comparer contre une formule :
 - Pour un dé enregistré : `1d6 > {{ceil(Force / 2)}}`
 :::
 
-La présence du `$` rend la statistique obligatoire. Sinon, le dé pourra être lancé sans fiche sauvegardée.
+La présence du symbole `$` rend la statistique obligatoire. Sinon, le dé pourra être lancé sans fiche sauvegardée.
 
 Pour la description complète des notations et expressions, voir [la page dédiée](../../introduction/expression.mdx).
 

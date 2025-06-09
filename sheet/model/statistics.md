@@ -6,11 +6,10 @@ sidebar_position: 1
 Chaque statistique possède :
 - un **nom**,
 - une **valeur minimale** (`min`),
-- une **valeur maximale** (`max`),
-- et éventuellement une **combinaison** (`combinaison`).
+- une **valeur maximale** (`max`)
+- et éventuellement une **combinaison** (`combinaison`) de plusieurs autres statistiques.
 
-- `min` et `max` : valeurs minimales et/ou maximales que peuvent prendre la statistique à l'enregistrement.
-- `combinaison` : combinaison de plusieurs autres statistiques. Ne peut coexister avec `min` et `max`. Les statistiques combinées ne sont pas décomptées du total de points alloués dans le champ `total`.
+`combinaison` ne peut coexister avec `min` et `max` et les statistiques combinées ne sont pas décomptées du total de points alloués dans le champ `total`.
 
 Vous pouvez exclure certaines statistiques de la sélection lors d’un jet de dés, ce qui empêche leur utilisation dans les commandes.  
 Cela est utile pour les statistiques uniquement utilisées dans des formules ou non destinées à des jets.
@@ -23,4 +22,4 @@ Cela est utile pour les statistiques uniquement utilisées dans des formules ou 
 | PV        |     |     | Constitution+Endu |       ✅        |
 | Dextérité | 1   | 12  |                   |                |
 
-Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.md).
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.md).</small>

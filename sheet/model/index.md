@@ -5,7 +5,6 @@ sidebar_position: 1
 
 Pour commencer, vous devez **générer** un nouveau modèle. Vous pouvez créer un modèle vide en utilisant `/générer` ou en utilisant le formulaire disponible [ici même](../form.mdx).
 
-
 :::usage
 **`/generate (statistiques) (dé type) (total) (personnage) (succès_critique) (échec_critique) (compétence)`**
 - `nom` : Le nom des statistiques, séparées par des virgules. Si un nom contient un espace, entourez-le de guillemets.
@@ -24,6 +23,7 @@ Les statistiques et les dés sont facultatifs :
 - Sans statistiques, vous ne pourrez pas utiliser la commande `/dbroll`.
 - Sans dés, vous ne pourrez pas utiliser `/dbd`. 
 :::
+
 ## Prochaines étapes
 
 Une fois que le modèle est prêt, enregistrez-le avec :
@@ -38,15 +38,15 @@ Une fois que le modèle est prêt, enregistrez-le avec :
 - `?tout_supprimer` : Supprime toutes les anciennes fiches de personnages si elles existent.
 :::
 
-    :::warning À propos des fiches privées
-    Si la fiche n'est pas marquée comme privée mais est publiée dans un salon auquel les utilisateurs n'ont pas normalement accès, ils pourront tout de même voir la fiche avec les commandes `/afficher` et `/graph`.
-    :::
+:::danger À propos des fiches privées
+Si la fiche n'est pas marquée comme privée mais est publiée dans un salon auquel les utilisateurs n'ont pas normalement accès, ils pourront tout de même voir la fiche avec les commandes `/afficher` et `/graph`.
+:::
 
 L'embed sera épinglé pour faciliter l'accès.
 
 ![embed](/assets/register/embed_template.png)
 
-:::warning
+:::danger
 Vous devez réenregistrer le modèle si vous souhaitez modifier le canal par défaut pour les feuilles privées et publiques.  
 Mais l'utilisateur enregistré n'a pas besoin d'être réenregistré, car le canal et l'identifiant du message sont sauvegardés dans la base de données.
 

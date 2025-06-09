@@ -7,10 +7,6 @@ export function CL({ children }) {
   return <code style={{ textDecoration: "underline", fontWeight: "bold"}}>{children.toLowerCase()}</code>;
 }
 
-:::info
-Pour la syntaxe complète des champs et l’auto-complétion des personnages, voir [Syntaxe des commandes](../../introduction/format.md).
-:::
-
 Les deux commandes demandent de spécifier :
 - <CL>Personnage</CL> : Le nom du personnage
 - <CL>Commentaire</CL> : Tout commentaire sur votre action.
@@ -26,11 +22,11 @@ Cependant, si le dé type utilisé **ne contient pas `$`**, il est possible d'ut
 
 :::usage
 **`/dbroll (*statistique) (*personnage) (commentaire) (seuil_reussite) (expression)`**
-- `(*statistique)` : Statistique à utiliser (si le dé type contient `$`)
-- `(*personnage)` : Personnage concerné
-- `(commentaire)` : Commentaire optionnel
-- `(seuil_reussite)` : Seuil de réussite (ex : `>=10`). Peut contenir une expression.
-- `(expression)` : Expression mathématique optionnelle
+- `*statistique` : Statistique à utiliser (si le dé type contient `$`)
+- `*personnage` : Personnage concerné
+- `commentaire` : Commentaire optionnel
+- `seuil_reussite` : Seuil de réussite (ex : `>=10`). Peut contenir une expression.
+- `expression` : Expression mathématique optionnelle
 :::
 
 La commande demande de choisir la statistique à utiliser si le dé type contient `$`.
@@ -54,12 +50,14 @@ Si un dé est enregistré dans la template, il sera considéré comme un dé glo
 
 :::usage
 **`/dbd [*dice] (*personnage) (expression) (commentaire)`**
-- `[*dice]` : Le nom du dé enregistré
-- `(*personnage)` : Personnage concerné (optionnel)
-- `(expression)` : Expression mathématique optionnelle
-- `(commentaire)` : Commentaire optionnel
+- `*dice` : Le nom du dé enregistré
+- `*personnage` : Personnage concerné
+- `expression` : Expression mathématique
+- `commentaire` : Commentaire sur l'action
 :::
 
 ![dbd](/assets/rolls/db/dbd_example.png)
 
 Ici, la commande demande de choisir, obligatoirement, le dé à utiliser. Il n'est pas possible de choisir un seuil de réussite, bien qu'il soit possible d'en spécifier dans le dé lui-même lors de son enregistrement.
+
+<small>Pour la syntaxe complète des champs et l’auto-complétion des personnages, voir [Syntaxe des commandes](../../introduction/format.md).</small>

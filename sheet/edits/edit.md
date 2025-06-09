@@ -21,6 +21,9 @@ Les images stockés sur discord ne peuvent être utilisés car leurs liens chang
 
 :::usage[commande]
 **`/edit avatar [lien] (@joueur) (*personnage)`**
+- `lien` : Lien de l'image à utiliser.
+- `@joueur` : Mention du joueur dont vous souhaitez modifier l'image.
+- `*personnage` : Nom du personnage à modifier. Si aucun nom n'est spécifié, l'image sera modifiée pour le personnage sans nom.
 :::
 Par défaut, la commande modifiera l'image de la personne ayant utilisé la commande. Seuls les modérateurs peuvent modifier l'image d'un autre joueur.
 
@@ -31,6 +34,9 @@ Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personn
 
 :::usage[commande]
 **`/edit rename [nouveau_nom] (@joueur) (*personnage)`**
+- `nouveau_nom` : Nouveau nom du personnage.
+- `@joueur` : Mention du joueur dont vous souhaitez modifier le nom du personnage.
+- `*personnage` : Nom du personnage à modifier. Si aucun nom n'est spécifié, le nom du personnage sans nom sera modifié.
 :::
 
 ### Déplacer à un nouvel utilisateur

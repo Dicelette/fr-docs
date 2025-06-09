@@ -13,19 +13,11 @@ La commande `calc` permet de réaliser des calculs mathématiques à partir d'un
 
 :::usage
 **`/calc [statistique] [*signe] [expression] (*transform) (*personnage) (commentaire)`**
-- `[statistique]` : Statistique à utiliser
-- `[*signe]` : Signe de l’opération (`+`, `-`, `*`, `/`, etc.)
-- `[expression]` : Expression mathématique à appliquer
-- `(*transform)` : Transformation éventuelle (ex : `ceil`, `abs`, `sqrt`, etc.)
-- `(*personnage)` : Personnage concerné (optionnel)
-- `(commentaire)` : Commentaire optionnel
-:::
-
-La commande demande :
 - <CL>statistique</CL> : La statistique à utiliser,
 - <CL>signe</CL> : Le signe de l'opération à effectuer. Les signes valides sont : `+`, `-`, `*`, `/`, `^` (puissance), `%` (modulo), `/` (division), `≠` (différent de), `=` (égal à), `⩾` (supérieur ou égal à), `⩽` (inférieur ou égal à), `>` (supérieur à), `<` (inférieur à).
 - <CL>expression</CL> : L'expression à appliquer.
 - <CL>transform</CL> : La transformation à appliquer au résultat final, incluant : `ceil`, `floor`, `round`, `abs`, `sqrt`, `square`. Il est possible de combiner deux transformations, comme `ceil(abs())`. Vous pouvez également utiliser les [fonctions supportées par mathjs](https://mathjs.org/docs/reference/functions.html).
+:::
 
 :::note
 Vous pouvez utiliser la version "non ascii" des signes, par exemple `>=` pour `⩾`, `!=` pour `≠` et `==` pour `=`.

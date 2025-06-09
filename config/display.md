@@ -3,7 +3,7 @@ title: Affichage des résultats
 sidebar_position: 4
 ---
 
-Diverses options permettent de personnaliser l’affichage des résultats des jets de dés, que ce soit pour la sauvegarde ou dans le salon où le jet a été effectué.
+Diverses options permettent de personnaliser l’affichage des résultats des jets de dés, que ce soit pour la sauvegarde ou dans le salon dans lequel le jet a été effectué.
 
 ## Affichage des timestamps
 
@@ -55,6 +55,10 @@ Si le message de contexte est supprimé, le lien ne fonctionnera plus.
 
 ![Lien vers le contexte](/assets/rolls/config/context.png)
 
+:::tip
+L'option est désactivée s'il n'y a ni channel ni thread de sauvegarde pour le résultat.
+:::
+
 ### Lien vers la sauvegarde du dé
 
 :::usage
@@ -66,4 +70,4 @@ Ajoute un lien vers la sauvegarde du dé dans le message de résultat.
 
 ![Lien vers la sauvegarde](/assets/rolls/config/backup_link.png)
 
-Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).</small>

@@ -2,17 +2,12 @@
 title: Autres
 sidebar_position: 3
 ---
-
-Les deux commandes suivantes acceptent :
-- `(@joueur)` : Le nom du joueur
-- `(*personnage)` : Et/ou le nom du personnage
-
 ## Afficher
 
 :::usage
 **`/afficher (@joueur) (*personnage)`**
-- `(@joueur)` : Nom du joueur (optionnel)
-- `(*personnage)` : Nom du personnage (optionnel)
+- `@joueur` : Nom du joueur (optionnel)
+- `*personnage` : Nom du personnage (optionnel)
 :::
 
 La commande `afficher` permet de consulter les statistiques et les dés d'un personnage enregistré dans la base de données.
@@ -23,16 +18,16 @@ La commande `afficher` permet de consulter les statistiques et les dés d'un per
 
 :::usage
 **`/graph (@joueur) (*personnage) (ligne) (fond) (min) (max)`**
-- `(@joueur)` : Nom du joueur (optionnel)
-- `(*personnage)` : Nom du personnage (optionnel)
-- `(ligne)` : Couleur des lignes (défaut : `#0e47b2`)
-- `(fond)` : Couleur du fond (défaut : `#0e47b2`)
-- `(min)` : Minimum de l’axe (optionnel)
-- `(max)` : Maximum de l’axe (optionnel)
+- `@joueur` : Nom du joueur (optionnel)
+- `*personnage` : Nom du personnage (optionnel)
+- `ligne` : Couleur des lignes (défaut : `#0e47b2`)
+- `fond` : Couleur du fond (défaut : `#0e47b2`)
+- `min` : Minimum de l’axe (optionnel)
+- `max` : Maximum de l’axe (optionnel)
 :::
 
 La commande `/graph` génère un graphique à partir des statistiques d'un personnage.  
-Vous pouvez personnaliser la couleur des lignes et du fond (hexadécimal ou RGB, ex : `#FF0000` ou `255,0,0`).
+Vous pouvez personnaliser la couleur des lignes et du fond en utilisant des valeurs hexadécimal ou RGB (ex : `#FF0000` ou `255,0,0`).
 
 Par défaut :
 - Le minimum est calculé selon le modèle de serveur (si existant).
@@ -44,4 +39,4 @@ Par défaut :
 
 ![graph](/assets/graph.jpg)
 
-Pour la description de la syntaxe des champs et l’auto-complétion, voir [la page dédiée](../../introduction/format.md).
+<small>Pour la description de la syntaxe des champs et l’auto-complétion, voir [la page dédiée](../../introduction/format.md).</small>

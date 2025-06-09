@@ -32,7 +32,7 @@ Si le jet est effectué dans un fil commençant par `🎲`, le résultat ne sera
 - **Utiliser la création de thread automatique** : `/config result_channel false`
 :::
 
-Si la copie est totalement désactivée, la [suppression automatique](./display.md#délais-avant-suppression-supprimer_après) des résultats le sera aussi.
+Si la copie est totalement désactivée, la [suppression automatique](./display.md#délais-avant-suppression) des résultats le sera aussi.
 
 ## Jets invisibles
 
@@ -49,4 +49,4 @@ Active l’option `caché` pour les commandes `/gm` et `/roll`, et permet de cac
 
 Dans tous les cas, le message sera envoyé en [**éphémère**](https://support.discord.com/hc/fr/articles/1500000580222-Ephemeral-Messages-FAQ) : seule la personne ayant lancé le dé verra le résultat.
 
-Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).</small>
