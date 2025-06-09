@@ -4,15 +4,19 @@ sidebar_position: 3
 ---
 
 :::usage
-- **`/config auto_role dé (@role)`**
-- **`/config auto_role stats (@role)`**
+**`/config auto_role dé (@role)`**
+- `@role` : Rôle à attribuer lors de l’ajout d’un dé.
+
+**`/config auto_role stats (@role)`**
+- `@role` : Rôle à attribuer lors de la validation des statistiques.
 :::
 
-Ces commandes permettent d'ajouter automatiquement des rôles lorsque :
-- Un dé est ajouté (`/config auto_role dé`)
-- Des statistiques sont validées (`/config auto_role stats`)
+Permet d’ajouter automatiquement des rôles lors de certaines actions :
+- Ajout d’un dé (`/config auto_role dé`)
+- Validation de statistiques (`/config auto_role stats`)
 
-Cela permet, notamment, d'autoriser l'utilisation de `/dbd` et `/dbroll` aux utilisateurs ayant effectivement la possibilité d'utiliser ces deux commandes.
+Cela permet notamment de restreindre l’utilisation de `/dbd` et `/dbroll` à certains rôles.
 
-Si le rôle n'est pas fourni, l'option sera désactivée.
+Si le rôle n’est pas fourni, l’auto-rôle sera désactivé.
 
+Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).

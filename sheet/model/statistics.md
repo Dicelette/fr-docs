@@ -3,8 +3,24 @@ title: Statistiques
 sidebar_position: 1
 ---
 
-Chaque statistique a un nom, une valeur minimale (`min`), une valeur maximale (`max`) et une option de combinaison (`combinaison`). 
-- `min` et `max` correspondent à la minimale et/ou maximale que peut prendre cette valeur lors de l'enregistrement.
-- `combinaison` correspond à une combinaison de plusieurs autres statistiques. L'utilisation de ce champ ne peut coexister avec `min` et `max` et les statistiques combinées ne seront pas décomptées du total de point alloué dans le champ `total`.
+Chaque statistique possède :
+- un **nom**,
+- une **valeur minimale** (`min`),
+- une **valeur maximale** (`max`),
+- et éventuellement une **combinaison** (`combinaison`).
 
-Il est possible d'exclure des statistiques dans la sélection du jet de dés, ce qui empêche de lancer le dé pour cette dernière. Cela peut être utile pour les statistiques qui ne sont pas utilisées dans le jeu, ou pour celles qui ne sont pas lancées, mais qui sont utilisées dans des formules.
+- `min` et `max` : valeurs minimales et/ou maximales que peuvent prendre la statistique à l'enregistrement.
+- `combinaison` : combinaison de plusieurs autres statistiques. Ne peut coexister avec `min` et `max`. Les statistiques combinées ne sont pas décomptées du total de points alloués dans le champ `total`.
+
+Vous pouvez exclure certaines statistiques de la sélection lors d’un jet de dés, ce qui empêche leur utilisation dans les commandes.  
+Cela est utile pour les statistiques uniquement utilisées dans des formules ou non destinées à des jets.
+
+### Exemple de configuration
+
+| Nom       | min | max | combinaison       | Exclure du jet |
+|-----------|-----|-----|-------------------|:--------------:|
+| Force     | 1   | 10  |                   |                |
+| PV        |     |     | Constitution+Endu |       ✅        |
+| Dextérité | 1   | 12  |                   |                |
+
+Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.md).

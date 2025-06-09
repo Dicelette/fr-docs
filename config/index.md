@@ -6,16 +6,18 @@ Toutes les commandes d'administration sont restreintes par défaut aux membres a
 
 La commande `/config afficher` permet de voir la configuration actuelle du serveur.
 
-Les commandes suivantes fonctionnent à la fois pour les dés lancés en texte seul et pour les dés lancés avec des slashcommands (que ce soit `/roll`, `/dbd` ou `/dbroll`).
-Sauf mention contraire, toutes les options sont, par défaut, désactivées.
+:::info
+Les commandes suivantes fonctionnent à la fois pour les dés lancés en message texte et pour les dés lancés avec des slashcommands (que ce soit `/roll`, `/dbd` ou `/dbroll`).  
+Sauf mention contraire, toutes les options sont désactivées par défaut.
+:::
 
 ## Changer la langue
 
-:::usage 
-`/config changer_langue [langue]` 
+:::usage
+**`/config changer_langue [langue]`**
+- `[langue]` : `fr` ou `en` (français ou anglais)
 :::
 
-Permet de modifier la langue du bot, en prenant le pas sur toute configuration (client compris) de langue.
+Permet de modifier la langue du bot pour tout le serveur, prioritaire sur la langue du client.
 
-Pour le moment, seuls le français et l'anglais sont disponibles.
-
+Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).

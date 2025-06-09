@@ -3,49 +3,51 @@ title: Affichage des résultats
 sidebar_position: 4
 ---
 
-Diverses options permettent de personnaliser l'affichage des résultats des jets de dés, que ce soit dans la sauvegarde ou dans le salon où le jet a été effectué.
+Diverses options permettent de personnaliser l’affichage des résultats des jets de dés, que ce soit pour la sauvegarde ou dans le salon où le jet a été effectué.
 
-## Affichage des timestamps : `timestamp`
+## Affichage des timestamps
 
 :::usage
 **`/config timestamp [?basculer]`**
+- `?basculer` : Active/désactive l’affichage du timestamp.
 :::
 
-Si l'option est activée (**true**), les timestamps seront affichés dans les messages de résultats des jets de dés.
+Si activé (**true**), un timestamp sera affiché dans les messages de résultats des jets.
 
 ![](/assets/rolls/config/timestamp.png)
 
 :::tip
-Le timestamp s'adapte automatiquement à l'heure du client.
+Le timestamp s’adapte à l’heure du client.
 :::
 
-## Délais avant suppression : `supprimer_après`
+## Délais avant suppression
 
 :::usage
 **`/config supprimer_après [temps]`**
-- `[temps]` : En secondes
+- `[temps]` : Durée en secondes (0 = jamais supprimé).
 :::
 
-Par défaut, les messages de résultats des jets de dés sont supprimés après **3** minutes (180s). Cette commande permet de changer le délai (jusqu'à 60 minutes) avant suppression des messages.
+Définit le délai avant suppression automatique des messages de résultats (de 0 à 3600s, défaut : 180 s).
 
-Si la valeur est mise à **0**, les messages ne seront plus supprimés.
-
-Cette configuration est désactivée s'il n'y a aucun channel ou thread de sauvegarde.
+Cette configuration est désactivée s’il n’y a aucun channel ou thread de sauvegarde.
 
 :::tip
-Cette commande permet d'avoir à la fois les logs dans un channel dédié, tout en gardant le résultat indéfiniment dans le salon où le jet a été effectué.
+Permet d’avoir à la fois un log dédié et de garder le résultat indéfiniment dans le salon d’origine si besoin.
 :::
 
-## Contexte et liens
-### [Sauvegarde] Lien vers le contexte du dé : `contexte`
+## Liens contextuels
+
+### Lien vers le contexte du dé
 
 :::usage
 **`/config contexte [?basculer]`**
+- `?basculer` : Active/désactive le lien vers le contexte.
 :::
 
-Permet d'ajouter un lien vers le contexte du dé dans la sauvegarde du dé.
-- Si l'auto-suppression est activée, le lien créé renverra au message précédent le dé.
-- Si l'auto-suppression est désactivée, le lien renverra directement au message du dé.
+Ajoute un lien vers le contexte du dé dans la sauvegarde du dé.
+
+- Si l’auto-suppression est activée, le lien renverra au message précédent.
+- Sinon, il renverra au message du dé.
 
 :::warning
 Si le message de contexte est supprimé, le lien ne fonctionnera plus.
@@ -53,16 +55,15 @@ Si le message de contexte est supprimé, le lien ne fonctionnera plus.
 
 ![Lien vers le contexte](/assets/rolls/config/context.png)
 
-:::tip
-Cette option est désactivée s'il n'y a aucun channel ou thread de sauvegarde.
-:::
-
-### [Lancé] Lien vers la sauvegarde : `lien_sauvegarde`
+### Lien vers la sauvegarde du dé
 
 :::usage
 **`/config lien_sauvegarde [?basculer]`**
+- `?basculer` : Active/désactive le lien vers la sauvegarde.
 :::
 
-Permet d'ajouter un lien vers la sauvegarde du dé dans le message de résultat du dé.
+Ajoute un lien vers la sauvegarde du dé dans le message de résultat.
 
 ![Lien vers la sauvegarde](/assets/rolls/config/backup_link.png)
+
+Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).

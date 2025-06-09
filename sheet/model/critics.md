@@ -4,45 +4,61 @@ sidebar_position: 3
 ---
 
 Il est possible de définir :
-- Des critiques "basiques", qui sont liées aux dés naturels et peuvent être configurées pour représenter un échec critique ou un succès critique.
-- Des critiques personnalisées, qui peuvent s'appliquer aux dés naturels ou aux résultats totaux.
+- des **critiques basiques**, liées au dé naturel (ex. 1 sur 1d20), pour représenter un succès ou échec critique ;
+- des **critiques personnalisées**, qui s'appliquent au dé naturel ou au résultat total, et qui peuvent utiliser des formules ou la valeur d'une statistique.
 
-Dans les deux cas, par défaut, les critiques ne sont actives que sur la commande `/dbroll` et permettent d'afficher un message spécial selon le résultat.
+Par défaut, les critiques ne sont actives que sur la commande `/dbroll` et permettent d'afficher un message spécial selon le résultat.
 
-## Les critiques basiques
+## Critiques basiques
 
-Les critiques basiques ne peuvent être liées qu'à une égalité avec le dé naturel. La valeur est paramétrable, mais le message affiché est fixe.
-Ainsi :
-- En cas de succès critique, le message affiché sera : `Succès critique`.
-- En cas d'échec critique, le message affiché sera : `Échec critique`.
+Les critiques basiques ne concernent que l’égalité sur le dé naturel.  
+Le message affiché est fixe :
+- Succès critique : `Succès critique`
+- Échec critique : `Échec critique`
 
-## Les critiques personnalisées
+**Exemple de configuration :**
 
-Les critiques personnalisées permettent de définir une valeur pour laquelle un message personnalisé sera affiché. Contrairement aux critiques basiques, elles peuvent être basées sur un total **ou** un dé naturel et supportent les formules. De plus, elles peuvent être utilisées sur des dés de compétences. Il est possible de définir jusqu'à 22 critiques personnalisées.
+| Type            | Dé naturel | Valeur | Message affiché      |
+|-----------------|------------|--------|----------------------|
+| Succès critique | 1d20       | 20     | Succès critique      |
+| Échec critique  | 1d20       | 1      | Échec critique       |
 
-Ils autorisent l'utilisation du symbole joker `$` (comme pour la comparaison avec les dés types) afin de comparer avec la statistique utilisée. Il est également possible d'utiliser le nom d'une statistique ou de combiner avec d'autres dés.
+## Critiques personnalisées
 
-:::example[Call of Cthulhu]
+Les critiques personnalisées permettent de définir une valeur ou une formule pour afficher un message personnalisé.  
+Elles peuvent s'appliquer sur le total ou le dé naturel, et supportent les formules mathématiques. Jusqu'à 22 critiques personnalisées sont possibles.
+
+Vous pouvez utiliser le symbole `$` (comme pour les dés types), le nom d'une statistique ou des combinaisons de dés.
+
+:::example[Appel de Cthulhu]
 *Référence* : [Call of Cthulhu RPG Wiki](https://cthulhuwiki.chaosium.com/rules/combat.html)  
-Dans le cas de Call of Cthulhu, les succès sont basés sur la valeur de la statistique. Le dé type sera donc `1D100<=$`.
+Dans l'Appel de Cthulhu, les succès sont basés sur la valeur de la statistique. Le dé type sera donc `1D100<=$`.  
 Les critiques personnalisées seront :
 - "Succès Majeur" : `<=round($/2)`
 - "Succès Extrême" : `<=round($/5)`
 :::
 
-### Dés de compétences et critiques personnalisées
+### Dés de compétence et critiques personnalisées
 
 Seuls les dés avec un comparateur seront affectés par les critiques personnalisées.
 
-Si un critique personnalisé utilise le symbole `$`, la valeur utilisée doit se trouver dans le **nom** du dé de compétence, entre parenthèses.
+Si un critique personnalisé utilise `$`, la valeur utilisée doit se trouver dans le **nom** du dé de compétence, entre parenthèses.
 
 :::example
-Pour un critique personnalisé dont la valeur est `<=$`, si le dé de compétence se nomme `Instinct Animal (Force)`, alors le `$` sera remplacé par la valeur statistique de Force, si elle existe.
-Si le nom n'est pas trouvé, alors la comparaison ne sera pas utilisée et le dé sera jeté normalement.
+Pour une formule critique `<=$`, si le dé de compétence se nomme `Instinct Animal (Force)`, alors `$` sera remplacé par la valeur de Force (si elle existe).
+Si le nom n'est pas trouvé, la comparaison ne sera pas utilisée et le dé sera jeté normalement.
 :::
 
-Il est également possible de combiner dans le nom du dé différentes statistiques, ainsi que des formules ou des jets de dés.
+Vous pouvez aussi combiner différentes statistiques, formules ou jets de dés dans le nom du dé.
 
 :::note
-Si le nom contient lui-même un jet de dé, ce dernier sera affiché non pas dans le résultat, mais dans le commentaire du dé, à la place de la formule.
+Si le nom contient lui-même un jet de dé, ce dernier sera affiché dans le commentaire du dé, et non dans le résultat.
 :::
+
+## À retenir
+
+- Les critiques personnalisées ne fonctionnent que sur les dés avec comparateur.
+- La valeur `$` est remplacée par la statistique du nom du dé (entre parenthèses).
+- Jusqu'à 22 critiques personnalisées par modèle.
+
+Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.md).

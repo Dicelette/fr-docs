@@ -13,13 +13,19 @@ La commande `calc` permet de réaliser des calculs mathématiques à partir d'un
 
 :::usage
 **`/calc [statistique] [*signe] [expression] (*transform) (*personnage) (commentaire)`**
+- `[statistique]` : Statistique à utiliser
+- `[*signe]` : Signe de l’opération (`+`, `-`, `*`, `/`, etc.)
+- `[expression]` : Expression mathématique à appliquer
+- `(*transform)` : Transformation éventuelle (ex : `ceil`, `abs`, `sqrt`, etc.)
+- `(*personnage)` : Personnage concerné (optionnel)
+- `(commentaire)` : Commentaire optionnel
 :::
 
 La commande demande :
 - <CL>statistique</CL> : La statistique à utiliser,
 - <CL>signe</CL> : Le signe de l'opération à effectuer. Les signes valides sont : `+`, `-`, `*`, `/`, `^` (puissance), `%` (modulo), `/` (division), `≠` (différent de), `=` (égal à), `⩾` (supérieur ou égal à), `⩽` (inférieur ou égal à), `>` (supérieur à), `<` (inférieur à).
 - <CL>expression</CL> : L'expression à appliquer.
-- <CL>transform</CL> : La transformation à appliquer au résultat final, incluant : `ceil` (arrondir à l'entier supérieur), `floor` (arrondir à l'entier inférieur), `round` (arrondir à l'entier le plus proche), `abs` (valeur absolue), `sqrt` (racine carrée), `square` (au carré). Il est possible de combiner deux transformations, comme `ceil(abs())`. Vous pouvez également utiliser les [fonctions supportées par mathjs](https://mathjs.org/docs/reference/functions.html).
+- <CL>transform</CL> : La transformation à appliquer au résultat final, incluant : `ceil`, `floor`, `round`, `abs`, `sqrt`, `square`. Il est possible de combiner deux transformations, comme `ceil(abs())`. Vous pouvez également utiliser les [fonctions supportées par mathjs](https://mathjs.org/docs/reference/functions.html).
 
 :::note
 Vous pouvez utiliser la version "non ascii" des signes, par exemple `>=` pour `⩾`, `!=` pour `≠` et `==` pour `=`.
@@ -32,6 +38,9 @@ Pour la description de la syntaxe des champs et l’auto-complétion, voir [la p
 ## Simple (`/math`)
 :::usage
 **`/math [expression] (*personnage) (commentaire)`**
+- `[expression]` : Expression mathématique à appliquer
+- `(*personnage)` : Personnage concerné (optionnel)
+- `(commentaire)` : Commentaire optionnel
 :::
 
 Cette commande vous permet d'effectuer un calcul simple sans utiliser de statistiques. L'expression peut inclure des opérations mathématiques, des jets de dés et des fonctions supportées par `mathjs`.

@@ -5,11 +5,13 @@ sidebar_position: 5
 
 :::usage
 **`/config logs (#channel)`**
+- `#channel` : Salon pour recevoir les logs.
 :::
 
-La commande `logs` permet de configurer un salon pour : 
+Configure un salon pour :
 - Rapporter toutes les erreurs,
 - Enregistrer toute modification apportée à un personnage.
 
-Relancer la commande sans l'argument `#channel` permet de désactiver l'envoi des logs.
+Relancer la commande sans l’argument `#channel` désactive la journalisation.
 
+Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).
