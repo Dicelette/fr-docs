@@ -26,22 +26,23 @@ Les statistiques et les dés sont facultatifs :
 ## Prochaines étapes
 
 Une fois que le modèle est prêt, utilisez `/register [#channel] [fichier] (#user_chan) (#personnage_privé)`. 
-- `#channel` est le canal où le modèle sera envoyée. Il sera ensuite utilisée pour la création de fiche.
+- `#channel` est le canal dans lequel le modèle sera envoyée. Il sera ensuite utilisée pour la création de fiche.
 - `fichier` est le fichier `JSON` créé précédemment.
-- `#user_chan` est le canal où les fiches seront publiées.[^1]
+- `#user_chan` est le canal dans lequel les fiches seront publiées.[^1]
 - `#personnage_privé` est, de manière similaire à `#user_chan`, mais les fiches qui seront publiées dans ce salon seront uniquement visibles par l'utilisateur qui a enregistré la fiche, ou par ceux qui ont accès à ce salon (ainsi que les personnes ayant la permission `GÉRER LES RÔLES`). Si ce salon n'est pas défini, la fonction de fiche privée sera désactivée.
 - `?mettre-à-jour` : Permet de mettre à jour toutes les anciennes fiches de personnages si elles existent.
 - `?tout_supprimer` : Supprime toutes les anciennes fiches de personnages si elles existent.
-:::warning À propos des fiches privées
-Si la fiche n'est pas marquée comme privée mais est publiée dans un salon auquel les utilisateurs n'ont pas normalement accès, ils pourront tout de même voir la fiche avec les commandes `/afficher` et `/graph`.
-:::
+
+    :::warning À propos des fiches privées
+    Si la fiche n'est pas marquée comme privée mais est publiée dans un salon auquel les utilisateurs n'ont pas normalement accès, ils pourront tout de même voir la fiche avec les commandes `/afficher` et `/graph`.
+    :::
 
 L'embed sera épinglé pour faciliter l'accès.
 
 ![embed](/assets/register/embed_template.png)
 
 :::warning Attention
-Vous devez réenregistrer le modèle si vous souhaitez modifier le canal par défaut pour les feuilles privées et publiques. Mais l'utilisateur enregistré n'a pas besoin d'être réenregistré car le canal et l'identifiant du message sont sauvegardés dans la base de données.
+Vous devez réenregistrer le modèle si vous souhaitez modifier le canal par défaut pour les feuilles privées et publiques. Mais l'utilisateur enregistré n'a pas besoin d'être réenregistré, car le canal et l'identifiant du message sont sauvegardés dans la base de données.
 Si vous souhaitez déplacer toutes les feuilles vers un autre canal, vous devez utiliser la commande [`/export`](../import_export.md).
 :::
 

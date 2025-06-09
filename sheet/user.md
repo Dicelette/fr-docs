@@ -13,7 +13,7 @@ Le nom d'utilisateur est le nom d'utilisateur, pas le nom d'affichage. Celui que
 
 Le premier formulaire sera toujours identique quel que soit le modèle :
 - Il vous demandera le nom du personnage (obligatoire ou facultatif, selon les paramètres du modèle)
-- Le nom de l'utilisateur, qui doit être soit son ID, soit son nom d'utilisateur. Cette donnée est obligatoire et sera pré-remplie par le bot avec le nom d'utilisateur de la personne qui a cliqué.
+- Le nom de l'utilisateur, qui doit être soit son ID, soit son nom d'utilisateur. Cette donnée est obligatoire[^2] et sera pré-remplie par le bot avec le nom d'utilisateur de la personne qui a cliqué.
 - Si vous avez activé l'utilisation des fiches privées (voir [ici](./model/index.md#prochaines-étapes)), vous aurez un troisième champ pour choisir si la fiche doit être privée ou non. Si la fiche est privée, mettez simplement `x` dans le champ. Laissez vide sinon !
 - Vous pouvez fournir un lien vers une image (un avatar) qui servira comme image dans l'embed de la fiche. Si laissé vide, l'image utilisé sera l'avatar du joueur.
 - Enfin, il est possible d'envoyer la fiche de personnage dans un salon différent que ceux définis dans le modèle par `private_channel` et `public_channel`.[^1] Si vous ne voulez pas envoyer la fiche dans un salon spécifique, laissez le champ vide.
@@ -29,7 +29,7 @@ Le deuxième formulaire dépendra du modèle : s'il y a plus de 5 caractéristiq
 
 ![fin embed](/assets/register/fin_stat.png)
 
-Une fois l'enregistrement terminé (c'est-à-dire que toutes les statistiques ont été remplies), les modérateurs ont la possibilité de valider ou d'enregistrer des dés.
+Une fois l'enregistrement terminé (c'est-à-dire que toutes les statistiques ont été remplies), vous avez la possibilité de valider ou d'enregistrer des dés.
 
 ![modal_dice](/assets/register/add_dice.png)
 
@@ -40,3 +40,4 @@ Chaque dé doit être enregistré manuellement.
 Une fois tout cela fait, il suffit de cliquer sur "Valider" et la fiche sera repostée dans le salon choisi lors de l'enregistrement (ou dans un thread nommé `📝 • [STATS]` si aucun salon n'a été choisi lors de l'enregistrement du modèle, ou que celui-ci est inaccessible).
 
 [^1]: Il est possible d'utiliser un forum, qui créera automatiquement un post pour le personnage. Le joueur (ainsi que les administrateurs) seront mentionnés dans le post. 
+[^2]: Ce champ n'est pas présent si l'[auto_enregistrement](../config/self_registration.md) est autorisé et qu'un non-modérateur a cliqué sur le bouton, car un non-modérateur ne peut pas enregistrer un personnage pour un autre utilisateur.

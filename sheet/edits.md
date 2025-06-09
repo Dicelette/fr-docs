@@ -7,7 +7,7 @@ Une fois que l'utilisateur est validé, sa fiche sera automatiquement publiée d
 
 ![user embed](/assets/edit/user_embed.png)
 
-Seul le modèle et l'utilisateur seront toujours présents, à moins qu'aucun dé-type et aucun succès/échec critique n'aient été enregistrés dans le modèle.
+Seul le modèle et l'utilisateur seront toujours présents, à moins qu'aucun dé-type et aucun succès/échec critique n'ont été enregistrés dans le modèle.
 
 Si toutes les informations sont enregistrées, vous aurez accès à trois boutons :
 - Modifier l'avatar de l'embed,
@@ -43,7 +43,7 @@ Si vous utilisez une ancienne version, vous devez utiliser les commandes listés
 :::warning
 Les images stockés sur discord ne peuvent être utilisés car leurs liens changent régulièrement. Il est donc obligatoire d'utiliser des liens externes, par exemple, en utilisant [imgur](https://imgur.com/).
 
-[Voyez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
+[Regardez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
 :::
 
 :::usage[commande]
