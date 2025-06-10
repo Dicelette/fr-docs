@@ -35,13 +35,15 @@ Et de désactiver la règle de vérification des erreurs "Nombres mis en forme e
 ## Import
 
 :::usage
-**`/import [csv]`**
+**`/import [csv] (suppression)`**
+- `csv` : Le fichier CSV à importer. Il doit être au format UTF-8-BOM.
+- `suppression` : Dans le cas où un personnage existe déjà, cette option permet de supprimer l'ancien message du personnage avant de l'importer. Si cette option est omise, les données seront écrasées sans supprimer l'ancien message.
 :::
 
 La commande `/import` permet d'importer des données depuis un fichier CSV. Vous pouvez télécharger le modèle en utilisant la commande `/csv` et le remplir avec les personnages et statistiques que vous souhaitez importer.
 
 :::important
-- Les données importées écraseront les données existantes, mais ne supprimerons pas les personnages non présents dans le fichier. De plus, si le personnage du joueur existe déjà, ses données seront écrasées dans la base de donnée mais le message du personnage ne sera pas supprimé : vous devrez le faire manuellement.
+- Les données importées écraseront les données existantes, mais ne supprimerons pas les personnages non présents dans le fichier. 
 - Le minimum, maximum ainsi que le total de points n'est pas vérifiés (afin de permettre l'import de personnages ayant acquis de l'expérience ou qui sont différents des autres, comme des monstres).
 - Les combinaisons ne doivent pas être rentrées telles quelles mais doivent être directement calculées. Par exemple, si la colonne PV est une combination de `Constitution` et `Endurance` vous devez rentrer le résultat des colonnes directement. Il n'y a pas de problème à utiliser des formules dans un CSV, car l'exportation du fichier inclura seulement le résultat !
 :::
@@ -61,14 +63,14 @@ Les colonnes suivantes sont facultatives :
 ## Exporter des données
 
 :::usage
-**`/export [csv] (fiche_privée_uniquement)`**
+**`/export (fiche_privée_uniquement)`**
+- `fiche_privée_uniquement` : 
+    - Si `false`, elle inclura **uniquement** les personnages dont la fiche est **publique**.
+    - Si `true`, elle inclura **uniquement** les personnages dont la fiche est **privée**.
+    - Si elle est omise, elle inclura **tous** les personnages, quel que soit le statut de la fiche.
 :::
 
 Cette commande permet d'exporter la liste des personnages et des statistiques dans un fichier CSV. 
-En fonction de l'option `private`, la liste fournie sera différente : 
-- Si `false`, elle inclura **uniquement** les personnages dont la fiche est **publique**.
-- Si `true`, elle inclura **uniquement** les personnages dont la fiche est **privée**.
-- Si elle est omise, elle inclura **tous** les personnages, quel que soit le statut de la fiche.
 
 Le fichier CSV exporté utilise le point virgule comme séparateur.
 
