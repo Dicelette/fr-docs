@@ -20,7 +20,7 @@ Consultez les exemples de modèle dans les fichiers `template` [ici](https://git
 
 :::info Remarque
 Les statistiques et les dés sont facultatifs :
-- Sans statistiques, vous ne pourrez pas utiliser la commande `/dbroll`.
+- `/dbroll` ne sera disponible que si vous **ne** spécifiez pas de dé type avec `$`. Dans le cas contraire, vous devrez enregistrer des statistiques pour pouvoir l'utiliser.
 - Sans dés, vous ne pourrez pas utiliser `/dbd`. 
 :::
 
