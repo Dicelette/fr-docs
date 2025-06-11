@@ -14,4 +14,4 @@ Configure un salon pour :
 
 Relancer la commande sans l’argument `#channel` désactive la journalisation.
 
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).</small>
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

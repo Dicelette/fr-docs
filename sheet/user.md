@@ -52,7 +52,7 @@ La fiche sera alors envoyée dans le salon choisi (ou dans un thread nommé `�
 
 ## Rappels importants
 
-- [Syntaxe des champs de formulaire et auto-complétion](../introduction/format.md)
+- [Syntaxe des champs de formulaire et auto-complétion](../introduction/format.mdx)
 - Si l'[auto-enregistrement](../config/self_registration.md) est autorisé et qu'un non-modérateur clique sur le bouton, il ne pourra enregistrer qu'un personnage pour lui-même.
 
 [^1]: Il est possible d'utiliser un forum, qui créera automatiquement un post pour le personnage. Le joueur (ainsi que les administrateurs) seront mentionnés dans le post. 

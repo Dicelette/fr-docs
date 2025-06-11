@@ -49,4 +49,4 @@ Active l’option `caché` pour les commandes `/gm` et `/roll`, et permet de cac
 
 Dans tous les cas, le message sera envoyé en [**éphémère**](https://support.discord.com/hc/fr/articles/1500000580222-Ephemeral-Messages-FAQ) : seule la personne ayant lancé le dé verra le résultat.
 
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).</small>
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

@@ -61,4 +61,4 @@ Si le nom contient lui-même un jet de dé, ce dernier sera affiché dans le com
 - La valeur `$` est remplacée par la statistique du nom du dé (entre parenthèses).
 - Jusqu'à 22 critiques personnalisées par modèle.
 
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.md).</small>
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).</small>

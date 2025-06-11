@@ -20,4 +20,4 @@ Sauf mention contraire, toutes les options sont désactivées par défaut.
 
 Permet de modifier la langue du bot pour tout le serveur, prioritaire sur la langue du client.
 
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).</small>
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

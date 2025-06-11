@@ -22,4 +22,4 @@ Cela est utile pour les statistiques uniquement utilisées dans des formules ou 
 | PV        |     |     | Constitution+Endu |       ✅        |
 | Dextérité | 1   | 12  |                   |                |
 
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.md).</small>
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).</small>

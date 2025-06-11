@@ -60,6 +60,6 @@ Pour déplacer toutes les feuilles vers un autre canal, utilisez la commande [`/
 4. Remplissez les informations du personnage et cliquez sur "Valider".
 5. Modifiez les droits d'accès aux commandes si nécessaire.
 
-Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.md).
+Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).
 
 [^1]: Il est possible d'utiliser un forum, qui créera automatiquement un post pour le personnage. Le joueur (ainsi que les administrateurs) seront mentionnés dans le post.
