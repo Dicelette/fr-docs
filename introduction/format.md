@@ -17,26 +17,29 @@ title: Syntaxe
   - **Syntaxe avancée :** `{exp||default}` permet de définir une valeur par défaut si l’expression n’est pas renseignée.  
     Exemple : `{exp||2}` (valeur par défaut = 2)  
   - **Où ?** Souvent utilisé dans des templates ou des formules réutilisables, pour injecter une valeur dynamique au moment du jet.  
-  :::Exemple :  
+  :::example
     - `1d6 > {exp}` : la valeur de `exp` sera remplacée au moment du lancer.  
-    - `1d6 > {exp||10}` : si `exp` n’est pas renseignée, la comparaison se fait à 10.
+    - `1d6 > {exp||10}` : si `exp` n’est pas renseignée, la comparaison se fait à 10.  
   :::
+
 - **`{{...}}`**  
   **Usage :** Délimite une expression mathématique complexe évaluée par MathJS.  
   - **Où ?** Dans toutes les commandes supportant les formules (`/calc`, `/dbroll`, `/dbd`, etc.)  
-  - **Exemple :**  
+  :::example  
     - `1d6 + {{ceil($ / 2)}}` : Ajoute la moitié arrondie de la stat au résultat du dé.  
     - `1d6 > {{ceil($ / 2)}}` : Le seuil de réussite est la moitié de la stat, arrondie.
+  :::
 
 - **`[commentaire]`**  
   **Usage :** Ajoute un commentaire à une formule ou un résultat de dé.  
   - **Où ?** Après une formule de dé ou entre plusieurs formules partagées.  
-  - **Exemple :**  
+  :::example  
     - `1d20;&-2[Perte de PV]` : Applique -2 et annote le résultat.
+  :::
 
 - **`&`, `;&+x;`, etc.**  
   **Usage :** Permet de réutiliser le résultat d’un même dé dans plusieurs formules (jets uniques partagés).  
-  - **Exemple :**  
+    :::example
     ```
     /roll 1d20;&+5;&*2
     ```
@@ -44,7 +47,7 @@ title: Syntaxe
     - 1d20 → résultat  
     - Résultat + 5  
     - Résultat × 2
-
+    :::
 - **`()` (parenthèses dans les noms de dé)**  
   **Usage :** Spécifie la statistique à utiliser pour les critiques personnalisés, ex : `Instinct Animal (Force)`.
 
