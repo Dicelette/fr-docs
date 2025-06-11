@@ -17,4 +17,4 @@ Cela permet notamment de restreindre l’utilisation de `/dbd` et `/dbroll` à c
 
 Si le rôle n’est pas fourni, l’auto-rôle sera désactivé.
 
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).</small>
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

@@ -18,4 +18,4 @@ Les modérateurs pourront toujours enregistrer des personnages pour les autres.
 Limitez l’accès au modèle à certains rôles pour restreindre l’auto-enregistrement aux joueurs validés.
 :::
 
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).</small>
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

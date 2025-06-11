@@ -70,4 +70,4 @@ Ajoute un lien vers la sauvegarde du dé dans le message de résultat.
 
 ![Lien vers la sauvegarde](/assets/rolls/config/backup_link.png)
 
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.md).</small>
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

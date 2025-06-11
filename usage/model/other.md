@@ -39,4 +39,4 @@ Par défaut :
 
 ![graph](/assets/graph.jpg)
 
-<small>Pour la description de la syntaxe des champs et l’auto-complétion, voir [la page dédiée](../../introduction/format.md).</small>
+<small>Pour la description de la syntaxe des champs et l’auto-complétion, voir [la page dédiée](../../introduction/format.mdx).</small>

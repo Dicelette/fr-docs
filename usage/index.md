@@ -36,4 +36,4 @@ Il existe plusieurs commandes d'aide, en fonction de ce dont vous avez besoin :
 - `/aide bug` : Affiche un lien pour créer un rapport de bug.
 - `/aide suggestion` : Affiche un lien pour faire une suggestion.
 
-<small>Pour la description complète des champs de commandes : [voir la syntaxe](../introduction/format.md).</small>
+<small>Pour la description complète des champs de commandes : [voir la syntaxe](../introduction/format.mdx).</small>
