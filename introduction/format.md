@@ -1,7 +1,66 @@
 ---
-title: Syntaxe des commandes
+title: Syntaxe 
 ---
 
+## Symboles et expressions
+
+- **`$`**  
+  **Usage :** Symbolise la valeur de la statistique utilisée dans la formule du dé.  
+  - **Où ?** Utilisé dans les dés types (`/dbroll`, `/calc`, formules critiques, etc.)  
+  - **Exemple :**  
+    - `1d6 > $` : Compare le résultat du dé à la valeur de la statistique sélectionnée.  
+    - `1d6 + $` : Ajoute la statistique au résultat du dé.  
+    - `1d100 <=$` : Pour les systèmes type Appel de Cthulhu, compare au seuil de la stat.
+
+- **`{exp}`**  
+  **Usage :** Permet d’insérer une expression dynamique dans une formule de dé, reprise d’une partie calculée de la commande.  
+  - **Syntaxe avancée :** `{exp||default}` permet de définir une valeur par défaut si l’expression n’est pas renseignée.  
+    Exemple : `{exp||2}` (valeur par défaut = 2)  
+  - **Où ?** Souvent utilisé dans des templates ou des formules réutilisables, pour injecter une valeur dynamique au moment du jet.  
+  :::Exemple :  
+    - `1d6 > {exp}` : la valeur de `exp` sera remplacée au moment du lancer.  
+    - `1d6 > {exp||10}` : si `exp` n’est pas renseignée, la comparaison se fait à 10.
+  :::
+- **`{{...}}`**  
+  **Usage :** Délimite une expression mathématique complexe évaluée par MathJS.  
+  - **Où ?** Dans toutes les commandes supportant les formules (`/calc`, `/dbroll`, `/dbd`, etc.)  
+  - **Exemple :**  
+    - `1d6 + {{ceil($ / 2)}}` : Ajoute la moitié arrondie de la stat au résultat du dé.  
+    - `1d6 > {{ceil($ / 2)}}` : Le seuil de réussite est la moitié de la stat, arrondie.
+
+- **`[commentaire]`**  
+  **Usage :** Ajoute un commentaire à une formule ou un résultat de dé.  
+  - **Où ?** Après une formule de dé ou entre plusieurs formules partagées.  
+  - **Exemple :**  
+    - `1d20;&-2[Perte de PV]` : Applique -2 et annote le résultat.
+
+- **`&`, `;&+x;`, etc.**  
+  **Usage :** Permet de réutiliser le résultat d’un même dé dans plusieurs formules (jets uniques partagés).  
+  - **Exemple :**  
+    ```
+    /roll 1d20;&+5;&*2
+    ```
+    Affichera :  
+    - 1d20 → résultat  
+    - Résultat + 5  
+    - Résultat × 2
+
+- **`()` (parenthèses dans les noms de dé)**  
+  **Usage :** Spécifie la statistique à utiliser pour les critiques personnalisés, ex : `Instinct Animal (Force)`.
+
+:::example[Exemples globaux]
+- **Dé type :**  
+  - `1d6 > $` ou `1d6 + $`  
+  - `1d6 + {{ceil($/2)}}`
+- **Dé enregistré :**  
+  - `1d6 > Force` ou `1d6 + Force`  
+  - `1d6 + {{ceil(Force / 2)}}`
+- **Critique personnalisé :**  
+  - Nom : `Instinct Animal (Force)`  
+  - Formule : `>$` (>$ sera remplacé par la stat Force)
+:::
+
+## Syntaxe des commandes
 - Les champs obligatoires sont indiqués entre crochets : `[champs]`.
 - Les champs facultatifs sont entre parenthèses : `(champs)`.
 - Les champs auto-complétés seront marqués d'un `*` : `(*champs)`.
@@ -9,7 +68,7 @@ title: Syntaxe des commandes
 - De manière similaire, les commandes demandant un salon sont précédé par `#` comme `#champs`.
 - Les champs vrai/faux (`true` ou `false`) sont préfixés par `?` (`?champs`).
 
-## Commandes auto-complétées
+### Commandes auto-complétées
 
 Dans plusieurs commandes, il est possible de combiner à la fois un nom d'utilisateur et un personnage.
 
