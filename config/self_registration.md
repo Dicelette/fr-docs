@@ -6,12 +6,12 @@ sidebar_position: 6
 ## Activer l’auto-enregistrement
 
 :::usage
-**`/config auto_enregistrement [?basculer]`**
+**`/config auto_enregistrement [?basculer] (?moderation_validation)`**
 - `?basculer` : Active/désactive l’option.
+- `?moderation_validation` : Seuls les modérateurs peuvent valider la fiche après l’auto-enregistrement par le joueur.
 :::
 
 Permet aux joueurs ayant accès au modèle d’enregistrer leur **propre** personnage.
-
 Les modérateurs pourront toujours enregistrer des personnages pour les autres.
 
 :::tip
