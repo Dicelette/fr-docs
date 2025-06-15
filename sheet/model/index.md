@@ -3,18 +3,7 @@ title: Modèle
 sidebar_position: 1
 ---
 
-Pour commencer, vous devez **générer** un nouveau modèle. Vous pouvez créer un modèle vide en utilisant `/générer` ou en utilisant le formulaire disponible [ici même](../form.mdx).
-
-:::usage
-**`/generate (statistiques) (dé type) (total) (personnage) (succès_critique) (échec_critique) (compétence)`**
-- `nom` : Le nom des statistiques, séparées par des virgules. Si un nom contient un espace, entourez-le de guillemets.
-- `dé` : Le type de dés à lancer, qui peut inclure une formule.
-- `total` : Le nombre total de points que les joueurs peuvent répartir.
-- `personnage` : Rendre obligatoire l'inscription d'un nom de personnage.
-- `succès_critique` : La valeur considérée comme un succès critique.
-- `échec_critique` : La valeur considérée comme un échec critique.
-- `compétence` : Ajouter des champs pour des dés de compétences ou d'attaque.
-:::
+Pour commencer, vous devez **générer** un nouveau modèle. Vous pouvez créer un modèle vide en utilisant le formulaire disponible [ici même](../form.mdx).
 
 Consultez les exemples de modèle dans les fichiers `template` [ici](https://github.com/Dicelette/discord-dicelette/tree/main/template).
 
