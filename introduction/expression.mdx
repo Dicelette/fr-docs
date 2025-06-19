@@ -6,23 +6,23 @@ sidebar_position: 4
 import { CL} from "@site/src/components/utils.tsx";
 
 
-Le bot utilise la bibliothèque de [dice roller](https://dice-roller.github.io/documentation/)[^1] pour les jets de dés, et supporte la syntaxe de ce dernier. 
-Il existe cependant quelques différences car Dicelette veut être plus flexible et indiquer les résultats des jets de dés de manière plus lisible.
+Le bot utilise la bibliothèque de [dice roller](https://dice-roller.github.io/documentation/)[^1] pour les jets de dés, et supporte la syntaxe de ce dernier.
+Il existe cependant quelques différences, car Dicelette veut être plus flexible et indiquer les résultats des jets de dés de manière plus lisible.
 
 ## Différence avec Dice Roller
 ### Syntaxe étendue pour les commentaires
 
-Dicelette étend la syntaxe de Dice Roller en s'inspirant de celle de [Dice Parser](https://invent.kde.org/rolisteam/rolisteam-diceparser/-/blob/master/HelpMe.md#comment) : 
+Dicelette étend la syntaxe de Dice Roller en s'inspirant de celle de [Dice Parser](https://invent.kde.org/rolisteam/rolisteam-diceparser/-/blob/master/HelpMe.md#comment) :
 - L'utilisation de `# commentaire` en plus de la syntaxe de base pour les commentaires.
 - La possibilité d'utiliser `[commentaire]` pour commenter un jet de dés partagé, ce qui permet de donner un contexte à chaque ligne de résultat.
 
 ### Les comparateurs
 
-Par défaut, en présence d'un signe de comparaison (`>`, `<`, `=`, etc.), le bot considérera le total et la valeur comparée (tout en faisant un jet et/ou calcul si nécessaire) et indiquera si le jet est un échec ou un succès : 
+Par défaut, en présence d'un signe de comparaison (`>`, `<`, `=`, etc.), le bot considérera le total et la valeur comparée (tout en faisant un jet et/ou calcul si nécessaire) et indiquera si le jet est un échec ou un succès :
 :::roll[ **Succès** — `1d20` ⟶ `[20]` = `[20] > 10` ]
 :::
 
-Cependant, certains systèmes nécessitent de **compter** le nombre de jet au dessus (ou en dessous) d'une valeur, plutôt que de comparer le résultat total. 
+Cependant, certains systèmes nécessitent de **compter** le nombre de jets au-dessus (ou en-dessous) d'une valeur, plutôt que de comparer le résultat total.
 Afin de pouvoir maintenir la compatibilité entre Dicelette et Dice Roller, le jet doit se trouver entre accolades `{}`, tel que : `{3d12>20}`.
 :::roll[ `{3d12>20} ⟶ {[11, 9, 7]} =  [0] `]
 :::
@@ -39,7 +39,29 @@ Dans ces cas particuliers, le bot n'affichera pas le texte de succès, échec, o
 - Si vous souhaitez utiliser les targets failures, il faut conserver la syntaxe de Dice Roller.
 :::
 
+### Succès et échecs critiques
 
+Il est possible de définir des seuils de réussite et d'échec critiques pour les jets de dés, en utilisant la syntaxe suivante :
+- <CL>Échec critique</CL> : `{cf:[signe](valeur)}`
+- <CL>Succès critique</CL> : `{cs:[signe](valeur)}`
+
+Cette expression peut être placée n'importe où dans le jet de dés, sauf après le commentaire, et doit être obligatoirement **collé** au dé (sans espace entre le dé et l'expression).
+
+Où :
+- `signe` est le signe de comparaison (`>`, `<`, `=`, etc.).
+- `valeur` est une valeur, un dé, une expression mathématique, ou une statistique (à l'instar des [critiques personnalisés](./../sheet/model/critics.md#critiques-personnalisées)).
+- `*` (optionnel) permet de comparer uniquement sur le **dé naturel** (le premier jet de dés), et non sur le total.
+
+:::roll[ **Échec critique** — `1d20>=20{cf:>10}` ⟶ `[20]` = ` 20 > 10 ` ]
+:::
+:::roll[ **Succès critique** — `{cs:<2}1d20<=1` ⟶ `[1]` = ` 1 < 2 ` ]
+:::
+:::tip
+La formule complète d'analyse est la suivante : `{c[f|s]:[>=<!]+(texte)}`
+:::
+
+:::warning[ Cette méthode n'est pas compatible avec les exceptions mentionnées dans la section précédente. ]
+:::
 ## Expressions Mathématiques avec MathJS
 
 Le bot utilise la bibliothèque [mathjs](https://mathjs.org/) pour évaluer les expressions mathématiques. Vous pouvez utiliser des expressions mathématiques complexes lorsqu'elles sont entre `{{` et `}}`.
@@ -73,9 +95,9 @@ Vous devez obligatoirement ne pas avoir d'espace avant et après la séparation 
 ```
 Affichera comme résultat :
 ```
-  ※ `1d20` ⟶ `[10]` = ` 10 `  
-  ◈ `[1d20]+5` ⟶ `[10]+5` = ` 15 `  
-  ◈ `[1d20]×2` ⟶ `[10]×2` = ` 20 `  
+  ※ `1d20` ⟶ `[10]` = ` 10 `
+  ◈ `[1d20]+5` ⟶ `[10]+5` = ` 15 `
+  ◈ `[1d20]×2` ⟶ `[10]×2` = ` 20 `
 ```
 :::
 
@@ -83,9 +105,9 @@ Affichera comme résultat :
 Il est possible d'utiliser des dés dans les formules, mais seul le premier dé sera sauvegardé et réutilisé.
 :::roll[ `1d20;&+1d4;&*2`]
 ```
-  ※ `1d20` ⟶ `[7]` = ` 7 `  
-  ◈ `[1d20]+1d4` ⟶ `7+[1]` = ` 8 `  
-  ◈ `[1d20]×2` ⟶ `[7]×2` = ` 14 `  
+  ※ `1d20` ⟶ `[7]` = ` 7 `
+  ◈ `[1d20]+1d4` ⟶ `7+[1]` = ` 8 `
+  ◈ `[1d20]×2` ⟶ `[7]×2` = ` 14 `
 ```
 :::
 ::::
@@ -93,14 +115,14 @@ Il est possible d'utiliser des dés dans les formules, mais seul le premier dé 
 Pour commenter entre chaque jet, il faut utiliser la syntaxe `[commentaire]`. Un commentaire global devra utiliser la syntaxe `# commentaire` à la fin des dés.
 
 :::roll[ `1d20;&-2[perte pv]` ]
-  ※ `1d20` ⟶ `[2]` = ` 2 `  
-  ◈ <u>perte pv</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `  
+  ※ `1d20` ⟶ `[2]` = ` 2 `
+  ◈ <u>perte pv</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `
 :::
 
 Enfin, il est possible de cacher le premier dé avec la syntaxe `(dé)` :
-:::roll[ `(1d20);&>100;&+2` ]  
-  **Échec** — `[1d20]>100` ⟶ `[12]>100` = ` 12<100 `  
-  ◈ `[1d20]+2` ⟶ `[12]+2` = ` 14 `  
+:::roll[ `(1d20);&>100;&+2` ]
+  **Échec** — `[1d20]>100` ⟶ `[12]>100` = ` 12<100 `
+  ◈ `[1d20]+2` ⟶ `[12]+2` = ` 14 `
 :::
 
 :::danger[Il n'est pas possible d'utiliser les dés en masse dans cette syntaxe.]
@@ -111,10 +133,10 @@ Enfin, il est possible de cacher le premier dé avec la syntaxe `(dé)` :
 Le bot prend également en charge la notation `x#(dés)` inspiré par [rollem](https://rollem.rocks/docs/v1-syntax/bulk-rolling) pour les lancers "en masse" (bulk roll).
 
 :::roll[ `4#2d10` ]
-  `2d10` ⟶ `[2, 7]` = ` [9] `  
-  `2d10` ⟶ `[2, 8]` = ` [10] `  
-  `2d10` ⟶ `[4, 3]` = ` [7] `  
-  `2d10` ⟶ `[8, 9]` = ` [17] `  
+  `2d10` ⟶ `[2, 7]` = ` [9] `
+  `2d10` ⟶ `[2, 8]` = ` [10] `
+  `2d10` ⟶ `[4, 3]` = ` [7] `
+  `2d10` ⟶ `[8, 9]` = ` [17] `
 :::
 
 [^1]: Dice Roller lui-même utilise [random-js](https://www.npmjs.com/package/random-js) pour la génération aléatoire, et non pas `math.random` qui est du pseudo-aléatoire. Il n'est donc pas possible de tricher sur les résultats des dés (à moins d'être un cryptomancien ou de voir l'avenir … Ou les deux.).
