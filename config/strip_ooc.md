@@ -1,4 +1,3 @@
-
 ---
 title: Suppression des messages HRP
 description: Configuration de la suppression automatique des messages HRP dans des salons spécifiques.

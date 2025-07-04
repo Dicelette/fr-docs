@@ -2,7 +2,7 @@
 title: Configuration générale
 sidebar_position: 1
 ---
-Toutes les commandes d'administration sont restreintes par défaut aux membres ayant la permission `Gérer les rôles`.
+Toutes les commandes d'administration sont restreintes par défaut aux membres ayant la permission <mark>Gérer les rôles</mark>.
 
 La commande `/config afficher` permet de voir la configuration actuelle du serveur.
 

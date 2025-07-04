@@ -4,17 +4,17 @@ sidebar_position: 3
 ---
 
 :::usage
-**`/config auto_role dé (@role)`**  
-**`/config auto_role stats (@role)`**
-- `@role` : Rôle à attribuer lors de la validation des statistiques/ ajout d’un dé.
+**<mark>`/config auto_role dé`</mark> (@role)**  
+**<mark>`/config auto_role stats`</mark> (@role)**
+- `@role` : Rôle à attribuer lors de la validation des statistiques/ ajout d'un dé.
 :::
 
-Permet d’ajouter automatiquement des rôles lors de certaines actions :
-- Ajout d’un dé (`/config auto_role dé`)
-- Validation de statistiques (`/config auto_role stats`)
+Permet d'ajouter automatiquement des rôles lors de certaines actions :
+- Ajout d'un dé (<mark>`/config auto_role dé`</mark>)
+- Validation de statistiques (<mark>`/config auto_role stats`</mark>)
 
-Cela permet notamment de restreindre l’utilisation de `/dbd` et `/dbroll` à certains rôles.
+Cela permet notamment de restreindre l'utilisation de <mark>`/dbd`</mark> et <mark>`/dbroll`</mark> à certains rôles.
 
-Si le rôle n’est pas fourni, l’auto-rôle sera désactivé.
+Si le rôle n'est pas fourni, l'auto-rôle sera désactivé.
 
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>
+<small>Pour plus d'informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

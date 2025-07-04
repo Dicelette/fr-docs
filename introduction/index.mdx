@@ -7,39 +7,87 @@ Bienvenue ! 🎲 Voici un compagnon pour vos aventures sur Discord : un bot poly
 
 ## Fonctionnalités principales
 
-### Lancer de Dés
+### 🎲 Système de dés avancé
 
-Avec ce bot, vous pouvez effectuer des lancers de dés en toute simplicité : que ce soit pour déterminer le résultat d'une action cruciale ou pour pimenter vos conversations, le processus est facilité. Utilisez simplement la commande adéquate et le résultat sera affiché dans un fil de discussion plutôt que de polluer le canal dans lequel vous êtes.
+- **Lancers de dés flexibles** : Support complet des [expressions complexes](./expression.mdx) pour supporter tous les types de jets.
+- **Dés personnalisés** : Créez et utilisez des dés spécifiques à vos personnages et campagnes.
+- **Gestion automatique des résultats** : Les résultats peuvent être organisés dans des [fils de discussion dédiés](../config/threads.md) pour éviter l'encombrement, ou renvoyer dans un salon spécifique.
 
-### Gestion de Fiches de Personnage
+### 📊 Gestion complète des personnages
 
-Plus besoin de jongler avec des fiches de personnage complexes ! Ce bot permet de configurer un modèle de statistiques pour enregistrer les informations essentielles de vos personnages. Ainsi, vous pouvez effectuer des lancers de dés directement en utilisant ces données, sans vous soucier de les mémoriser.
+- **Modèles de serveur** : Configurez un [modèle unique](../sheet/model/index.md) adapté à votre système.
+- **Fiches de personnage** : [Enregistrement simple](../sheet/user.md) avec une interface intuitive.
+- **Statistiques dynamiques** : Modifiez et mettez à jour vos personnages.
+- **Multi-personnages** : Gérez plusieurs personnages par utilisateur.
+- **Fiches privées** : Contrôlez la visibilité des informations des personnages.
 
-## Mécanique de Fonctionnement
+### 🔧 Configuration flexible du serveur
 
-### Lancer de Dés
+- **Paramètres personnalisables** : Adaptez le bot à vos besoins avec de nombreuses [options de configuration](../config/index.md).
+- **[Auto-rôles](../config/auto_role.md)** : Attribution automatique de rôles pour une gestion simplifiée des permissions.
+- **[Journalisation](../config/logs.md)** : Suivi des modifications et gestion des erreurs
+- **[Auto-enregistrement](../config/self_registration.md)** : Permettez aux joueurs d'enregistrer leurs propres personnages
+- **[Suppression des messages HRP](../config/strip_ooc.md)** : Nettoyage automatique des messages hors roleplay
+- **[Options d'affichage](../config/display.md)** : Personnalisez l'affichage des résultats (timestamps, délais de suppression, lien d'ancrage...)
+- **Support multilingue** : Interface disponible en français et anglais
 
-Pour effectuer les lancers de dés, ce bot utilise l'API [@diceRoller](https://dice-roller.github.io/documentation/).
+### 🎭 Fonctionnalités pour maîtres de jeu[^2]
 
-### Gestion des Statistiques
+- **Jets pour les joueurs** : Effectuez des jets au nom de vos joueurs.
+- **Jet invisible** : Faites des jets cachés aux joueurs pour maintenir le suspense.
 
-Plutôt que de sauvegarder l'intégralité de la feuille de personnage, ce bot enregistre uniquement le message et son identifiant. Ainsi, vous conservez un contrôle total sur vos données, puisque le contenu du message n'est pas sauvegardé en dehors du serveur.
+### 🛠️ Outils pratiques
 
-## Données
+- **Import/Export** : [Sauvegardez et transférez](../sheet/import_export.md) vos données facilement
+- **Système d'aide intégré** : Accès rapide à la documentation et aux guides
+- **Nettoyage automatique** : Gestion intelligente des données obsolètes
+- **Interface utilisateur intuitive** : Formulaires et menus interactifs pour simplifier l'utilisation
 
-Ce bot utilise une base de données[^1] pour stocker les informations essentielles, telles que l'identifiant du message, l'identifiant du canal, le nom de la statistique et les noms des personnages des utilisateurs. Cette base de données sera nettoyée dans divers cas, notamment lors de la suppression des messages ou des canaux enregistrés, de l'expulsion du bot du serveur, ou encore lors de l'utilisation des fonctionnalités `/register` ou `/logs`.
+## Comment ça fonctionne
 
-:::note Remarque
-Les données d'un utilisateur ne sont pas supprimées lorsqu'il quitte un serveur. Dans le cas où vous souhaitez que vos données le soient, n'hésitez pas à me contacter. 
+### Architecture technique
 
-Il vous suffit de fournir votre identifiant Discord ou l'ID de votre serveur (accompagné d'une preuve de propriété) via Discord (`@mara__li`) ou par e-mail (`lisandra_dev@yahoo.com`).
-::: 
+Le bot utilise l'API [@diceRoller](https://dice-roller.github.io/documentation/) pour tous les calculs de dés, garantissant des résultats fiables et une grande variété d'expressions supportées.
 
-:::warning
-Dans de très rares cas, il est possible que les données ne soient pas supprimées (notamment lors de la suppression d'une très ancienne fiche). Dans ce cas, vous pouvez utiliser la commande `/supprimer_char` pour supprimer un personnage ou les données entières d'un joueur.
-Cette commande supprimera le message de la fiche s'il existe toujours.
+### Approche respectueuse des données
+
+Contrairement à d'autres solutions, ce bot privilégie votre contrôle sur vos données :
+- **Stockage minimal** : Seuls les identifiants des messages et informations essentielles sont sauvegardés
+- **Contrôle total** : Vos fiches de personnage restent dans vos messages Discord
+- **Nettoyage automatique** : Les données obsolètes sont supprimées automatiquement
+
+Cette approche vous garantit une sécurité maximale et un contrôle total sur vos informations de jeu.
+
+## Gestion des données
+
+### Ce qui est stocké
+
+Le bot utilise une base de données SQLite3[^1] pour conserver uniquement :
+- Les identifiants des messages contenant vos fiches
+- Les liens entre utilisateurs et leurs personnages
+- Les paramètres de configuration du serveur
+- Les modèles de statistiques personnalisés
+
+### Nettoyage automatique
+
+Les données sont automatiquement supprimées dans plusieurs cas :
+- Suppression des messages ou canaux enregistrés
+- Expulsion du bot du serveur
+- Utilisation des fonctionnalités de nettoyage intégrées
+
+### Respect de la vie privée
+
+:::note Contact pour suppression
+Si vous souhaitez supprimer vos données après avoir quitté un serveur, contactez-nous via Discord (`@mara__li`) ou par e-mail (`lisandra_dev@yahoo.com`) avec votre identifiant Discord ou l'ID du serveur.
 :::
 
-🚀 [Invitez le bot](https://discord.com/api/oauth2/authorize?client_id=1182819335878754385&permissions=395137215504&scope=bot+applications.commands)
+:::warning Nettoyage manuel
+En cas de problème avec la suppression automatique, utilisez les commandes de suppression manuelle disponibles dans le bot pour nettoyer vos données.
+:::
 
-[^1]: C'est une base SQLITE3, utilisant [Enmap](https://enmap.evie.dev/).
+---
+
+🚀 **Prêt à commencer ?** [Invitez le bot sur votre serveur](https://discord.com/api/oauth2/authorize?client_id=1182819335878754385&permissions=395137215504&scope=bot+applications.commands)
+
+[^1]: Base de données locale utilisant [Enmap](https://enmap.evie.dev/) pour une gestion optimisée.
+[^2]: Par défaut, les joueurs disposant de la permission <mark>Gérer les rôles</mark> sont considérés comme des "maîtres de jeu".
