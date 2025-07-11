@@ -113,9 +113,10 @@ Il est possible d'utiliser des dés dans les formules, mais seul le premier dé 
 :::
 ::::
 
-Pour commenter entre chaque jet, il faut utiliser la syntaxe `[commentaire]`. Un commentaire global devra utiliser la syntaxe `# commentaire` à la fin des dés.
+Pour commenter entre chaque jet, il faut utiliser la syntaxe `[commentaire]`. Un commentaire global devra utiliser la syntaxe `#commentaire` à la fin des dés.[^2]
 
-:::roll[ `1d20;&-2[perte pv]` ]
+:::roll[ `1d20;&-2 [perte pv] #commentaire` ]
+*commentaire*
   ※ `1d20` ⟶ `[2]` = ` 2 `
   ◈ <u>perte pv</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `
 :::
@@ -141,3 +142,4 @@ Le bot prend également en charge la notation `x#(dés)` inspiré par [rollem](h
 :::
 
 [^1]: Dice Roller lui-même utilise [random-js](https://www.npmjs.com/package/random-js) pour la génération aléatoire, et non pas `math.random` qui est du pseudo-aléatoire. Il n'est donc pas possible de tricher sur les résultats des dés (à moins d'être un cryptomancien ou de voir l'avenir … Ou les deux.).
+[^2]: Les dés partagés et les commentaires sont très sensibles aux espaces. Ainsi, les commentaires de dés entre crochet doivent être précédés d'un espace, tout comme les commentaires globaux. Le `#` des commentaires globaux doit être collé au texte du commentaire, sans espace.
