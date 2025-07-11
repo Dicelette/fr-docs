@@ -96,9 +96,9 @@ Vous devez obligatoirement ne pas avoir d'espace avant et après la séparation 
 ```
 Affichera comme résultat :
 ```
-  ※ `1d20` ⟶ `[10]` = ` 10 `
-  ◈ `[1d20]+5` ⟶ `[10]+5` = ` 15 `
-  ◈ `[1d20]×2` ⟶ `[10]×2` = ` 20 `
+  ※ `1d20` ⟶ `[10]` = ` 10 `  
+  ◈ `[1d20]+5` ⟶ `[10]+5` = ` 15 `  
+  ◈ `[1d20]×2` ⟶ `[10]×2` = ` 20 `  
 ```
 :::
 
@@ -106,25 +106,25 @@ Affichera comme résultat :
 Il est possible d'utiliser des dés dans les formules, mais seul le premier dé sera sauvegardé et réutilisé.
 :::roll[ `1d20;&+1d4;&*2`]
 ```
-  ※ `1d20` ⟶ `[7]` = ` 7 `
-  ◈ `[1d20]+1d4` ⟶ `7+[1]` = ` 8 `
-  ◈ `[1d20]×2` ⟶ `[7]×2` = ` 14 `
+  ※ `1d20` ⟶ `[7]` = ` 7 `  
+  ◈ `[1d20]+1d4` ⟶ `7+[1]` = ` 8 `  
+  ◈ `[1d20]×2` ⟶ `[7]×2` = ` 14 `  
 ```
 :::
 ::::
 
 Pour commenter entre chaque jet, il faut utiliser la syntaxe `[commentaire]`. Un commentaire global devra utiliser la syntaxe `#commentaire` à la fin des dés.[^2]
 
-:::roll[ `1d20;&-2 [perte pv] #commentaire` ]
-*commentaire*
-  ※ `1d20` ⟶ `[2]` = ` 2 `
-  ◈ <u>perte pv</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `
+:::roll[ `1d20;&-2 [perte pv] #commentaire` ]  
+*commentaire*  
+  ※ `1d20` ⟶ `[2]` = ` 2 `  
+  ◈ <u>perte pv</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `  
 :::
 
 Enfin, il est possible de cacher le premier dé avec la syntaxe `(dé)` :
-:::roll[ `(1d20);&>100;&+2` ]
-  **Échec** — `[1d20]>100` ⟶ `[12]>100` = ` 12<100 `
-  ◈ `[1d20]+2` ⟶ `[12]+2` = ` 14 `
+:::roll[ `(1d20);&>100;&+2` ]  
+  **Échec** — `[1d20]>100` ⟶ `[12]>100` = ` 12<100 `  
+  ◈ `[1d20]+2` ⟶ `[12]+2` = ` 14 `  
 :::
 
 :::danger[Il n'est pas possible d'utiliser les dés en masse dans cette syntaxe.]
@@ -132,13 +132,13 @@ Enfin, il est possible de cacher le premier dé avec la syntaxe `(dé)` :
 
 ## Lancers en Masse (Bulk Rolls)
 
-Le bot prend également en charge la notation `x#(dés)` inspiré par [rollem](https://rollem.rocks/docs/v1-syntax/bulk-rolling) pour les lancers "en masse" (bulk roll).
+Le bot prend également en charge la notation `x#(dés)` inspirée par [rollem](https://rollem.rocks/docs/v1-syntax/bulk-rolling) pour les lancers "en masse" (bulk roll).
 
 :::roll[ `4#2d10` ]
-  `2d10` ⟶ `[2, 7]` = ` [9] `
-  `2d10` ⟶ `[2, 8]` = ` [10] `
-  `2d10` ⟶ `[4, 3]` = ` [7] `
-  `2d10` ⟶ `[8, 9]` = ` [17] `
+  `2d10` ⟶ `[2, 7]` = ` [9] `  
+  `2d10` ⟶ `[2, 8]` = ` [10] `  
+  `2d10` ⟶ `[4, 3]` = ` [7] `  
+  `2d10` ⟶ `[8, 9]` = ` [17] `  
 :::
 
 [^1]: Dice Roller lui-même utilise [random-js](https://www.npmjs.com/package/random-js) pour la génération aléatoire, et non pas `math.random` qui est du pseudo-aléatoire. Il n'est donc pas possible de tricher sur les résultats des dés (à moins d'être un cryptomancien ou de voir l'avenir … Ou les deux.).
