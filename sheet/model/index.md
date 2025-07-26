@@ -18,12 +18,13 @@ Les statistiques et les dés sont facultatifs :
 Une fois que le modèle est prêt, enregistrez-le selon cette [commande](./ref.md#enregistrement-du-modèle)
 
 ## TLDR
-1. Créez le modèle avec le [formulaire](../form.mdx) ou la commande <mark>`/generate`</mark>.
-2. Enregistrez le modèle avec <mark>`/template enregistrer`</mark>.
+1. Créez le modèle avec le [formulaire](../form.mdx).
+2. Enregistrez le modèle avec [<mark>`/template enregistrer`</mark>](./ref.md#enregistrement-du-modèle).
 3. Créez une fiche joueur en cliquant sur le bouton "Enregistrer un personnage".
 4. Remplissez les informations du personnage et cliquez sur "Valider".
 5. Modifiez les droits d'accès aux commandes si nécessaire.
 
-Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).
+---
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).</small>
 
 [^1]: Il est possible d'utiliser un forum, qui créera automatiquement un post pour le personnage. Le joueur (ainsi que les administrateurs) seront mentionnés dans le post.

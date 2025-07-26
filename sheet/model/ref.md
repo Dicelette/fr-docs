@@ -1,12 +1,13 @@
 ---
-title: "Références des commandes"
+title: "Commandes"
 description: "Références des commandes pour la création et l'édition du modèle de fiche de personnage."
+sidebar_position: 1
 ---
 
 ## Enregistrement du modèle
 
 :::usage
-**<mark>`/modèle enregistrer`</mark> `[#channel] [fichier] (#channel_public) (#channel_privé) (?maj_personnages) (?supprimer_personnages)`**
+**`/modèle enregistrer [#channel] [fichier] (#channel_public) (#channel_privé) (?maj_personnages) (?supprimer_personnages)`**
 - `#channel` : Canal dans lequel le modèle sera envoyé (utilisé pour la création de fiche).
 - `[fichier]` : Fichier JSON créé précédemment.
 - `#channel_public` : Canal où seront publiées les fiches.
@@ -46,3 +47,6 @@ Cette commande vous permet de télécharger un nouveau fichier JSON, qui remplac
 :::
 
 ![modifier](/assets/register/modif_template_fr.png)
+
+---
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).</small>
