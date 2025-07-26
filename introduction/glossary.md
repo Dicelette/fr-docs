@@ -22,7 +22,7 @@ Ce glossaire recense les termes principaux utilisés dans la documentation du bo
   Espace de discussion Discord dans lequel le bot envoie des messages, résultats ou fiches.
 
 - **Commande Slash**  
-  Commande Discord commençant par `/`, utilisée pour interagir avec le bot (ex : `/roll`, `/register`, etc.).
+  Commande Discord commençant par `/`, utilisée pour interagir avec le bot (ex : `/roll`, `/math`, etc.).
 
 - **Critique (Succès/Échec critique)**  
   Résultat particulier d’un lancer de dé considéré comme exceptionnel, selon une valeur seuil (ex : 1 naturel pour un échec, 20 pour un succès).
