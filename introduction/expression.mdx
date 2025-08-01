@@ -39,6 +39,16 @@ Dans ces cas particuliers, le bot n'affichera pas le texte de succès, échec, o
 - Si vous souhaitez utiliser les targets failures, il faut conserver la syntaxe de Dice Roller.
 :::
 
+#### Comparaison d'opposition
+
+On peut comparer un jet de dés à une opposition en utilisant la syntaxe suivante : `dé[comparaison de base][opposition]`.
+
+⚠️ Une opposition ne peut pas être utilisée seule : elle agit comme une validation secondaire, et nécessite donc une comparaison de base pour fonctionner.
+
+:::roll[1d20>10>5]
+**Succès** — `1d20` ⟶ `[14]` = `[14] > 5` (__opposition__)  & `> 10` (__base__)
+:::
+
 ### Succès et échecs critiques
 
 Il est possible de définir des seuils de réussite et d'échec critiques pour les jets de dés, en utilisant la syntaxe suivante :

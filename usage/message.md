@@ -19,3 +19,11 @@ Ce bot détecte la notation des dés et envoie le résultat selon trois méthode
 
 
 Il est aussi possible d'utiliser des commandes slash pour lancer des dés, comme `/roll` ([voir ici pour plus d'information](../usage/index.md)).
+
+:::tip
+Il est possible, dans la notation textuelle, de mentionner :
+- Une statistique, via `$statistique` (ex. `$force`).
+- Un personnage, via `@personnage` (ex. `@Bob`).
+- Une opposition, en "superposant" les signes : `1d100>20>10` (le dernier élément sera considéré comme l'opposition).
+À condition que le joueur ait une fiche enregistrée.
+:::
