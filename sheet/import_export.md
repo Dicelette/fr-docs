@@ -6,7 +6,7 @@ sidebar_position: 3
 Les commandes suivantes permettent d'importer et d'exporter des données depuis et vers un fichier CSV.
 
 :::tip Au sujet des dés
-Il est tout à fait possible d'importer des dés spécifiques pour la commande [`/dbd`](../usage/model/dice.mdx#dbd-dbd), mais vous devez remplir les cases de la colonne `dice` sous la forme suivante :
+Il est tout à fait possible d'importer des dés spécifiques pour la commande [`/macro`](../usage/model/dice.mdx#macro-macro), mais vous devez remplir les cases de la colonne `dice` sous la forme suivante :
 ```md
 - [dé] : [valeur]
 ```
@@ -57,7 +57,7 @@ Les colonnes suivantes sont nécessaires pour l'import :
 Les colonnes suivantes sont facultatives :
 - `avatar` : Le lien vers l'avatar du personnage. Si vous n'utilisez pas d'avatar, vous pouvez laisser cette colonne vide. L'avatar utilisé dans l'affichage sera celui du joueur.
 - `channel`: Permet de définir un channel (prend également en charge les fils et les forums[^1]), où sera envoyée la fiche, plutôt que d'utiliser les channels par défaut définis lors de l'enregistrement du modèle.
-- `dice` : Les dés spécifiques pour la commande `/dbd`. Si vous n'utilisez pas cette commande, vous pouvez laisser cette colonne vide, voire la supprimer. 
+- `dice` : Les dés spécifiques pour la commande `/macro`. Si vous n'utilisez pas cette commande, vous pouvez laisser cette colonne vide, voire la supprimer. 
 
 
 ## Exporter des données

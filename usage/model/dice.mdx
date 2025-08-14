@@ -43,23 +43,23 @@ En cas d'absence totale du signe, cette option sera ignorée pour erreur syntaxi
 ![dbroll_1](/assets/rolls/db/dbroll_autocomplete.png)
 ![example](/assets/rolls/db/example.png)
 
-## DBD (`/dbd`)
+## macro (`/macro`)
 
 :::info
-La commande `dbd` permet de lancer un dé enregistré dans la fiche d'un personnage et/ou la template du serveur.
+La commande `macro` permet de lancer un dé enregistré dans la fiche d'un personnage et/ou la template du serveur.
 Si un dé est enregistré dans la template, il sera considéré comme un dé global et pourra être utilisé sans personnage si ce dernier ne contient pas `$` ou le nom d'une statistique.
 :::
 
 :::usage
-**`/dbd [*dice] (*personnage) (expression) (commentaire)`**
-- `*dice` : Le nom du dé enregistré
-- `*personnage` : Personnage concerné
-- `expression` : Expression mathématique
-- `commentaire` : Commentaire sur l'action
-- `opposition` : Seuil de réussite "secondaire", uniquement évalué s'il y a un seuil de réussite principal, enregistré dans le dé.
+**`/macro [*dice] (*personnage) (expression) (commentaire)`**
+- <CL>*dice</CL> : Le nom de la macro (dé sauvegardé)
+- <CL>*personnage</CL> : Personnage concerné
+- <CL>expression</CL> : Expression mathématique
+- <CL>commentaire</CL> : Commentaire sur l'action
+- <CL>opposition</CL> : Seuil de réussite "secondaire", uniquement évalué s'il y a un seuil de réussite principal, enregistré dans le dé.
 :::
 
-![dbd](/assets/rolls/db/dbd_example.png)
+![macro](/assets/rolls/db/macro_example.png)
 
 Ici, la commande demande de choisir, obligatoirement, le dé à utiliser. Il n'est pas possible de choisir un seuil de réussite, bien qu'il soit possible d'en spécifier dans le dé lui-même lors de son enregistrement. Dans ce cas, il est possible d'utiliser l'<CL>opposition</CL> pour indiquer un seuil de réussite secondaire, qui sera évalué uniquement si le seuil principal est atteint.
 

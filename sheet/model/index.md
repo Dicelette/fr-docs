@@ -10,7 +10,7 @@ Consultez les exemples de modèle dans les fichiers `template` [ici](https://git
 :::info Remarque
 Les statistiques et les dés sont facultatifs :
 - <mark>`/dbroll`</mark> ne sera disponible que si vous **ne** spécifiez pas de dé type avec `$`. Dans le cas contraire, vous devrez enregistrer des statistiques pour pouvoir l'utiliser.
-- Sans dés, vous ne pourrez pas utiliser <mark>`/dbd`</mark>. 
+- Sans dés, vous ne pourrez pas utiliser <mark>`/macro`</mark>. 
 :::
 
 ## Prochaines étapes

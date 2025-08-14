@@ -29,7 +29,7 @@ import { CL} from "@site/src/components/utils.tsx";
 
 - **<mark>`{{...}}`</mark>** :
   - <CL>Usage :</CL> Délimite une expression mathématique complexe évaluée par <mark>MathJS</mark>.
-  - <CL>Où ?</CL> Dans toutes les commandes supportant les formules (`/calc`, `/dbroll`, `/dbd`, etc.)
+  - <CL>Où ?</CL> Dans toutes les commandes supportant les formules (`/calc`, `/dbroll`, `/macro`, etc.)
     :::example  
       - `1d6 + {{ceil($ / 2)}}` : Ajoute la moitié arrondie de la stat au résultat du dé.  
       - `1d6 > {{ceil($ / 2)}}` : Le seuil de réussite est la moitié de la stat, arrondie.
@@ -73,7 +73,7 @@ import { CL} from "@site/src/components/utils.tsx";
 - **Dé type :**  
   - `1d6 > $` ou `1d6 + $`  
   - `1d6 + {{ceil($/2)}}`
-- **Dé enregistré :**  
+- **Macro :**
   - `1d6 > Force` ou `1d6 + Force`  
   - `1d6 + {{ceil(Force / 2)}}`
 - **Critique personnalisé :**  

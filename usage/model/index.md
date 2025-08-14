@@ -4,7 +4,7 @@ sidebar_position: 3
 ---
 
 :::danger
-Jusqu'à ce que le modèle soit enregistré, les commandes utilisant la base de données (`/dbroll`, `/dbd`, etc.) sont désactivées.
+Jusqu'à ce que le modèle soit enregistré, les commandes utilisant la base de données (`/dbroll`, `/macro`, etc.) sont désactivées.
 Lorsque le modèle est enregistré, les commandes seront activées pour tous les utilisateurs.
 
 Vous pouvez restreindre l'utilisation des commandes à certains utilisateurs ou rôles en suivant les étapes ci-dessous :

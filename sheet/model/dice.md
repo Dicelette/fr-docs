@@ -6,7 +6,7 @@ sidebar_position: 2
 Il existe deux types de dés :
 
 - Le dé utilisé avec `dbroll` (le **dé type**).
-- Les dés enregistrés pour `dbd` (les **dés sauvegardés**).
+- Les dés enregistrés pour `macro` (les **dés sauvegardés**).
 
 Les deux types de dés suivent la syntaxe de [dice-roller](https://dice-roller.github.io/documentation/), mais prennent également en charge [des expressions et notations](../../introduction/expression.mdx).
 
@@ -16,15 +16,15 @@ Pour viser une statistique, la méthode diffère selon le type de dé :
 
 :::tip[Exemple]
 - Pour un dé type : `1d6>$` ou `1d6+$`
-- Pour un dé enregistré : `1d6 > Force` ou `1d6 + Force`
+- Pour une macro (dé enregistré) : `1d6 > Force` ou `1d6 + Force`
 
 Pour un dé basé sur une formule :
 - Pour un dé type : `1d6 + {{ceil($ / 2)}}`
-- Pour un dé enregistré : `1d6 + {{ceil(Force / 2)}}`
+- Pour une macro : `1d6 + {{ceil(Force / 2)}}`
 
 Il est également possible de comparer contre une formule :
 - Pour un dé type : `1d6 > {{ceil($ / 2)}}`
-- Pour un dé enregistré : `1d6 > {{ceil(Force / 2)}}`
+- Pour une macro : `1d6 > {{ceil(Force / 2)}}`
 :::
 
 La présence du symbole `$` rend la statistique obligatoire. Sinon, le dé pourra être lancé sans fiche sauvegardée.

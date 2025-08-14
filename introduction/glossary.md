@@ -32,13 +32,11 @@ Ce glossaire recense les termes principaux utilisés dans la documentation du bo
 ## D
 
 - **Dé (Dice)**  
-  Élément central utilisé pour déterminer des résultats aléatoires. Peut-être lancé avec `/roll`, `/dbroll`, `/dbd`, etc.
+  Élément central utilisé pour déterminer des résultats aléatoires. Peut-être lancé avec `/roll`, `/dbroll`, `/macro`, etc.
 
 - **Dé type**  
   “Formule” de dé principale utilisée avec `/dbroll`, généralement personnalisée via le symbole `$` pour inclure la statistique du personnage.
 
-- **Dé enregistré**  
-  Dé sauvegardé dans une fiche ou un modèle, accessible via la commande `/dbd`.
 
 ---
 
@@ -79,6 +77,9 @@ Ce glossaire recense les termes principaux utilisés dans la documentation du bo
 
 - **MJ (Maître de Jeu)**  
   Personne gérant la partie et disposant de droits avancés sur le bot.
+
+- **Macro**  
+  Dé sauvegardé dans une fiche ou un modèle, accessible via la commande `/macro`.
 
 ---
 

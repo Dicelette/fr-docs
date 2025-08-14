@@ -13,7 +13,7 @@ Permet d'ajouter automatiquement des rôles lors de certaines actions :
 - Ajout d'un dé (<mark>`/config auto_role dé`</mark>)
 - Validation de statistiques (<mark>`/config auto_role stats`</mark>)
 
-Cela permet notamment de restreindre l'utilisation de <mark>`/dbd`</mark> et <mark>`/dbroll`</mark> à certains rôles.
+Cela permet notamment de restreindre l'utilisation de <mark>`/macro`</mark> et <mark>`/dbroll`</mark> à certains rôles.
 
 Si le rôle n'est pas fourni, l'auto-rôle sera désactivé.
 
