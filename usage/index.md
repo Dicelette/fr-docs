@@ -27,6 +27,34 @@ Le bot créera alors un nouveau fil de discussion, préfixé par `🎲`, où il 
 
 ![Scene](/assets/rolls/scene.gif)
 
+## Baromètre de chances
+
+Le bot va automatiquement compter les jets réussis et ratés dans le serveur par utilisateur. <mark>Cela ne fonctionne que pour les dés lancés avec le bot avec une comparaison</mark>, avec l'indication `Échec` ou `Réussite` dans le message. Les critiques sont aussi comptés.
+
+Cette commande permet d'obtenir :
+- Un leaderboard des joueurs les plus (ou moins !) chanceux du serveur,
+- Les mesures d'un joueur en particulier.
+- Des statistiques globales du serveur.
+
+:::usage
+**`/barometre_chance (@utilisateur)`**
+- `@utilisateur` : Optionnel, permet d'obtenir les statistiques d'un utilisateur en particulier.
+:::
+
+:::usage
+**`/barometre_chance classement [type]`**
+- `type` : Obligatoire, permet de choisir le type de dés à afficher. Choix entre `Succès`, `Échecs`, `Succès critique` et `Échec critique`.
+:::
+
+:::usage
+**`/barometre_chance moyenne`**
+Affiche les statistiques globales du serveur.
+:::
+
+:::warning
+De manière évidente, le baromètre de chance ne fonctionne que pour les dés lancés avec le bot, et ne fonctionne pas avec les critiques personnalisés qui ne correspondent pas aux textes standards `Échec`, `Réussite`, etc.
+:::
+
 ## Aide
 
 Il existe plusieurs commandes d'aide, en fonction de ce dont vous avez besoin :
