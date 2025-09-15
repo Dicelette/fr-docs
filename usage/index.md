@@ -37,17 +37,18 @@ Cette commande permet d'obtenir :
 - Des statistiques globales du serveur.
 
 :::usage
-**`/barometre_chance (@utilisateur)`**
+**`/barometre_chance bilan (@utilisateur)`**
 - `@utilisateur` : Optionnel, permet d'obtenir les statistiques d'un utilisateur en particulier.
 :::
 
 :::usage
-**`/barometre_chance classement [type]`**
-- `type` : Obligatoire, permet de choisir le type de dés à afficher. Choix entre `Succès`, `Échecs`, `Succès critique` et `Échec critique`.
+**`/barometre_chance classement (type)`**
+- `type` : Permet de choisir le type de dés à afficher. Choix entre `Succès`, `Échecs`, `Succès critique`, `Échec critique` et `Total`.
+Sans type choisi, affiche les statistiques du serveur, ainsi que le classement pour chaque type.
 :::
 
 :::usage
-**`/barometre_chance moyenne`**
+**`/barometre_chance serveur`**
 Affiche les statistiques globales du serveur.
 :::
 
