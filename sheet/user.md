@@ -7,19 +7,16 @@ Maintenant que le modèle est créé, vous pouvez enregistrer des utilisateurs. 
 
 Une fois ce bouton activé, vous aurez une série de formulaires à remplir.
 
-:::info
-Le nom d'utilisateur est le nom d'utilisateur Discord (pas le nom d'affichage). C'est celui que vous avez peut-être dû changer lorsque Discord a supprimé les numéros après les pseudonymes...
-:::
 
 ## Formulaire principal
 
 Le premier formulaire est toujours identique, quel que soit le modèle :
 
-- **Nom du personnage** (*obligatoire ou facultatif selon le modèle*)  
-- **Nom d'utilisateur** (*obligatoire si modération[^2]*) : ID Discord ou nom d'utilisateur. Pré-rempli avec le nom de la personne qui clique.  
-- **Fiche privée** (*optionnel*) : Si l'option est activée (voir [fiche privée](./model/index.md#prochaines-étapes)), permet de choisir si la fiche doit être privée (`x` si oui, vide sinon).  
+- **Joueur** (*obligatoire si modération[^2]*) : Sélection de l'utilisateur Discord à qui le personnage sera rattaché, par défaut le modérateur qui a cliqué sur le bouton.
+- **Nom du personnage** (*obligatoire ou facultatif selon le modèle*)
 - **Avatar** (*optionnel*) : Lien vers l'image à utiliser pour la fiche. Si vide, l'avatar du joueur sera utilisé.
-- **Salon d'affichage** (*optionnel*) : Permet d'envoyer la fiche dans un salon différent de ceux définis par le modèle (`private_channel` ou `public_channel`). Laisser vide pour utiliser les salons par défaut.
+- **Salon où poster la fiche** (*optionnel*) : Permet d'envoyer la fiche dans un salon différent de ceux définis par le modèle (`private_channel` ou `public_channel`). Laisser vide pour utiliser les salons par défaut.
+- **Fiche privée** (*optionnel*) : Si l'option est activée (voir [fiche privée](./model/index.md#prochaines-étapes)), permet de choisir si la fiche doit être privée (`x` si oui, vide sinon).  
 
 :::warning
 La fiche ne peut être masquée **que** si l'option des fiches privées est activée : même si la fiche est envoyée dans un salon inaccessible aux autres, ils pourront l'afficher si cette option n'est pas activée.

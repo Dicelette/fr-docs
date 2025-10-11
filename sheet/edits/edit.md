@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 ## Modifier les données d'utilisateur
 
-![fr_edit](/assets/edit/french/user.png)
+![fr_edit](/assets/edit/user.png)
 
 Les commandes du menu déroulant permettent de modifier les données correspondantes.
 Si vous utilisez une ancienne version, vous devez utiliser les commandes listées.
@@ -14,7 +14,7 @@ Si vous utilisez une ancienne version, vous devez utiliser les commandes listée
 ![edit image](/assets/edit/image.png)
 
 :::warning
-Les images stockés sur discord ne peuvent être utilisés car leurs liens changent régulièrement. Il est donc obligatoire d'utiliser des liens externes, par exemple, en utilisant [imgur](https://imgur.com/).
+Les images stockés sur discord ne peuvent être utilisés, car leurs liens changent régulièrement. Il est donc obligatoire d'utiliser des liens externes, par exemple, en utilisant [imgur](https://imgur.com/).
 
 [Regardez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
 :::
@@ -28,7 +28,7 @@ Les images stockés sur discord ne peuvent être utilisés car leurs liens chang
 Par défaut, la commande modifiera l'image de la personne ayant utilisé la commande. Seuls les modérateurs peuvent modifier l'image d'un autre joueur.
 
 ### Renommer un personnage
-![rename](/assets/edit/french/rename.png)
+![rename](/assets/edit/rename.png)
 
 Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personnages ayant les mêmes noms pour un même utilisateur. Dans le cas contraire, l'action sera annulée et une erreur s'affichera.
 
@@ -40,7 +40,7 @@ Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personn
 :::
 
 ### Déplacer à un nouvel utilisateur
-![move](/assets/edit/french/move.png)
+![move](/assets/edit/move.png)
 
 Cela **déplacera** le personnage à un nouvel utilisateur, supprimant les données du joueur précédent. 
 Dans le cas où l'utilisateur "receveur" a un personnage du même nom, l'action sera annulée et une erreur s'affichera.
