@@ -4,14 +4,14 @@ sidebar_position: 1
 ---
 ## Modifier les données d'utilisateur
 
-![fr_edit](/assets/edit/user.png)
+![fr_edit](../../assets/edit/user.png)
 
 Les commandes du menu déroulant permettent de modifier les données correspondantes.
 Si vous utilisez une ancienne version, vous devez utiliser les commandes listées.
 
 ### Modification de l'image
 
-![edit image](/assets/edit/image.png)
+![edit image](../../assets/edit/image.png)
 
 :::warning
 Les images stockés sur discord ne peuvent être utilisés, car leurs liens changent régulièrement. Il est donc obligatoire d'utiliser des liens externes, par exemple, en utilisant [imgur](https://imgur.com/).
@@ -28,7 +28,7 @@ Les images stockés sur discord ne peuvent être utilisés, car leurs liens chan
 Par défaut, la commande modifiera l'image de la personne ayant utilisé la commande. Seuls les modérateurs peuvent modifier l'image d'un autre joueur.
 
 ### Renommer un personnage
-![rename](/assets/edit/rename.png)
+![rename](../../assets/edit/rename.png)
 
 Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personnages ayant les mêmes noms pour un même utilisateur. Dans le cas contraire, l'action sera annulée et une erreur s'affichera.
 
@@ -40,7 +40,7 @@ Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personn
 :::
 
 ### Déplacer à un nouvel utilisateur
-![move](/assets/edit/move.png)
+![move](../../assets/edit/move.png)
 
 Cela **déplacera** le personnage à un nouvel utilisateur, supprimant les données du joueur précédent. 
 Dans le cas où l'utilisateur "receveur" a un personnage du même nom, l'action sera annulée et une erreur s'affichera.
@@ -51,7 +51,7 @@ Dans le cas où l'utilisateur "receveur" a un personnage du même nom, l'action 
 
 ## Modification des statistiques
 
-![edit stats](/assets/edit/stats.png)
+![edit stats](../../assets/edit/stats.png)
 
 Le modal sera pré-rempli par une liste comme suit :
 ```md
@@ -90,4 +90,4 @@ Tout comme lors de l'enregistrement, les dés seront évalués pour vérifier le
 
 Comme pour les statistiques, il est essentiel de respecter la liste et sa syntaxe. Vous pouvez supprimer des champs en remplaçant la valeur par "X" ou "0".
 
-![edit dice](/assets/edit/dice.png)
+![edit dice](../../assets/edit/dice.png)

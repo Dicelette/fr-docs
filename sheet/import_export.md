@@ -23,10 +23,11 @@ Par exemple :
 - Tout comme la liste des dés, si vous utilisez l'ID du joueur, il faudra ajouter `'` devant (comme `'123456789012345678`) pour éviter que Excel ne le transforme en nombre.
 
 Il est vivement conseiller de désactiver les conversions automatiques d'Excel: 
-![Excel](/assets/csv/EXCEL_FR_disable.png)
+![Excel](../assets/csv/disable.png)
 
 Et de désactiver la règle de vérification des erreurs "Nombres mis en forme en tant que texte ou précédés d'une apostrophe" dans les options de vérification des erreurs (Formules > Règle de vérification des erreurs) :
-![](/assets/csv/FR_disable_nb.png)
+
+![](../assets/csv/disable_nb.png)
 
 :::
 

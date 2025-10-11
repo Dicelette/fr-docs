@@ -16,7 +16,7 @@ sidebar_position: 1
 - `?supprimer_personnages` : Supprime toutes les anciennes fiches de personnages si elles existent.
 :::
 
-![enregistrement](/assets/register/cmd_add_fr.png)
+![enregistrement](../../assets/register/cmd_add.png)
 
 :::danger À propos des fiches privées
 Si la fiche n'est pas marquée comme privée, mais est publiée dans un salon auquel les utilisateurs n'ont pas normalement accès, ils pourront tout de même voir la fiche avec les commandes <mark>`/afficher`</mark> et <mark>`/graph`</mark>.
@@ -24,7 +24,7 @@ Si la fiche n'est pas marquée comme privée, mais est publiée dans un salon au
 
 L'embed sera épinglé pour faciliter l'accès.
 
-![embed](/assets/register/embed_template.png)
+![embed](../../assets/register/embed_template.png)
 
 :::danger
 Vous devez réenregistrer le modèle si vous souhaitez modifier le canal par défaut pour les feuilles privées et publiques.  
@@ -46,7 +46,7 @@ Cette commande vous permet de télécharger un nouveau fichier JSON, qui remplac
 - `?supprimer_personnages` : Supprime toutes les fiches de personnages existantes.
 :::
 
-![modifier](/assets/register/modif_template_fr.png)
+![modifier](../../assets/register/modif_template.png)
 
 ---
 <small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).</small>

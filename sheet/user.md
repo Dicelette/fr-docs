@@ -22,7 +22,7 @@ Le premier formulaire est toujours identique, quel que soit le modèle :
 La fiche ne peut être masquée **que** si l'option des fiches privées est activée : même si la fiche est envoyée dans un salon inaccessible aux autres, ils pourront l'afficher si cette option n'est pas activée.
 :::
 
-![Page_1](/assets/register/register_user_P1.png)
+![Page_1](../assets/register/register_user_P1.png)
 
 ## Formulaire des statistiques
 
@@ -30,17 +30,17 @@ Le ou les formulaires suivants dépendent du modèle :
 - Si plus de cinq caractéristiques sont présentes, plusieurs pages seront affichées.
 - À chaque étape, saisissez simplement la valeur de la statistique demandée (contrôles min/max et nombre).
 
-![fin embed](/assets/register/fin_stat.png)
+![fin embed](../assets/register/fin_stat.png)
 
 ## Dés enregistrés
 
 Une fois l'enregistrement terminé (toutes les statistiques remplies), il est possible d'ajouter des dés spécifiques pour ce personnage.
 
-![modal_dice](/assets/register/add_dice.png)
+![modal dice](../assets/register/add_dice.png)
 
 Chaque dé doit être enregistré manuellement.
 
-![fin](/assets/register/fin_embed.png)
+![fin](../assets/register/fin_embed.png)
 
 ## Validation
 
