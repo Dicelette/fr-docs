@@ -27,7 +27,7 @@ Le bot créera alors un nouveau fil de discussion, préfixé par `🎲`, où il 
 
 ![Scene](/assets/rolls/scene.gif)
 
-## Baromètre de chances
+## Karma
 
 Le bot va automatiquement compter les jets réussis et ratés dans le serveur par utilisateur. <mark>Cela ne fonctionne que pour les dés lancés avec le bot avec une comparaison</mark>, avec l'indication `Échec` ou `Réussite` dans le message. Les critiques sont aussi comptés.
 
@@ -37,23 +37,23 @@ Cette commande permet d'obtenir :
 - Des statistiques globales du serveur.
 
 :::usage
-**`/barometre_chance bilan (@utilisateur)`**
+**`/karma bilan (@utilisateur)`**
 - `@utilisateur` : Optionnel, permet d'obtenir les statistiques d'un utilisateur en particulier.
 :::
 
 :::usage
-**`/barometre_chance classement (type)`**
+**`/karma classement (type)`**
 - `type` : Permet de choisir le type de dés à afficher. Choix entre `Succès`, `Échecs`, `Succès critique`, `Échec critique` et `Total`.
 Sans type choisi, affiche les statistiques du serveur, ainsi que le classement pour chaque type.
 :::
 
 :::usage
-**`/barometre_chance serveur`**
+**`/karma serveur`**
 Affiche les statistiques globales du serveur.
 :::
 
 :::warning
-De manière évidente, le baromètre de chance ne fonctionne que pour les dés lancés avec le bot, et ne fonctionne pas avec les critiques personnalisés qui ne correspondent pas aux textes standards `Échec`, `Réussite`, etc.
+De manière évidente, le karma ne fonctionne que pour les dés lancés avec le bot, et ne fonctionne pas avec les critiques personnalisés qui ne correspondent pas aux textes standards `Échec`, `Réussite`, etc.
 :::
 
 ## Aide
