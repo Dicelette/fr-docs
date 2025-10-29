@@ -14,3 +14,9 @@ Si toutes les informations sont enregistrées, vous aurez accès à trois bouton
 - Modifier les statistiques
 - Modifier les dés enregistrés (qui permet d'enregistrer plusieurs nouveaux dés, mais shh...)
 - Ajouter un nouveau dé.
+
+:::important
+Dans le cas où l'[auto-enregistrement](../../config/self_registration.md) est activé **avec** la validation par un modérateur, toutes les modifications proposées sur une fiche doivent être approuvées par un modérateur avant d'être appliquées. Un message contenant les modifications proposées sera envoyé dans le même salon que la fiche ; si un modérateur approuve le message, les modifications sont appliquées, sinon elles sont rejetées (et l'utilisateur en sera informé).  
+
+Le paramètre d'auto-enregistrement **seul** n'empêche pas l'édition des fiches. Pour empêcher entièrement les utilisateurs de modifier leurs fiches, placez-les dans un salon accessible uniquement aux modérateurs.
+:::

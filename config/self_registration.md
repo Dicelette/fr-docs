@@ -19,4 +19,8 @@ Les modérateurs pourront toujours enregistrer des personnages pour les autres, 
 Limitez l’accès au modèle à certains rôles pour restreindre l’auto-enregistrement aux joueurs validés.
 :::
 
+:::note
+Lorsque l’option `moderation_validation` est activée, les modifications de la fiche devront être validées par un modérateur. Si vous ne souhaitez pas permettre aux utilisateurs de modifier leur fiche après l’enregistrement, vous devez restreindre l’accès à la fiche elle-même.
+:::
+
 <small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

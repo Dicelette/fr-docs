@@ -9,7 +9,7 @@ Il est possible de définir :
 
 Par défaut, les critiques ne sont actives que sur la commande `/dbroll` et permettent d'afficher un message spécial selon le résultat.
 
-## Critiques basiques
+## Basiques
 
 Les critiques basiques ne concernent que l’égalité sur le dé naturel.  
 Le message affiché est fixe :
@@ -23,7 +23,7 @@ Le message affiché est fixe :
 | Succès critique | 1d20       | 20     | Succès critique      |
 | Échec critique  | 1d20       | 1      | Échec critique       |
 
-## Critiques personnalisées
+## Personnalisées
 
 Les critiques personnalisées permettent de définir une valeur ou une formule pour afficher un message personnalisé.  
 Elles peuvent s'appliquer sur le total ou le dé naturel, et supportent les formules mathématiques. Jusqu'à 22 critiques personnalisées sont possibles.
@@ -36,6 +36,10 @@ Dans l'Appel de Cthulhu, les succès sont basés sur la valeur de la statistique
 Les critiques personnalisées seront :
 - "Succès Majeur" : `<=round($/2)`
 - "Succès Extrême" : `<=round($/5)`
+:::
+
+:::tip
+Comme les critiques personnalisées s'appliquent aussi sur les jets "normaux" (via `/roll` ou [autres notations](../../usage/message.md)), les critiques personnalisées qui contiennent `$` seront ignorées s'aucune statistique n'est trouvée.
 :::
 
 ### Dés de compétence et critiques personnalisées
