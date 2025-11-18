@@ -15,6 +15,10 @@ Pour comprendre toutes les notations de dés utilisables avec le bot (notation d
 
 ![Roll](/assets/rolls/slash-commands.gif)
 
+:::tip
+La commande globale (utilisable en DM et dans tous serveurs l'autorisant) de la commande est `/r`.
+:::
+
 ## Créer une nouvelle scène
 
 :::usage
@@ -54,6 +58,19 @@ Affiche les statistiques globales du serveur.
 
 :::warning
 De manière évidente, le karma ne fonctionne que pour les dés lancés avec le bot, et ne fonctionne pas avec les critiques personnalisés qui ne correspondent pas aux textes standards `Échec`, `Réussite`, etc.
+:::
+
+## Choisir
+:::usage
+**`/choisir [liste] (combien)`**
+- `liste` : Liste des options séparées par des points-virgules, virgule ou espace.
+- `combien` : Nombre d'options à sélectionner (par défaut 1).
+:::
+
+Cette commande permet de choisir aléatoirement une ou plusieurs options parmi une liste fournie.
+
+:::tip
+La commande globale (utilisable en DM et dans tous serveurs l'autorisant) de la commande est `/select`.
 :::
 
 ## Aide
