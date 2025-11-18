@@ -9,7 +9,7 @@ Oui, et il le sera toujours. **Aucune** commande ne sera jamais mise derrière u
 
 ## Où sont stockées les données ?
 
-Sur mon Raspberry Pi personnelle, hébergé chez moi en France. J'utilise une base de données SQLite3 légère pour stocker uniquement les informations essentielles (IDs de messages, liens entre utilisateurs et personnages, configurations de serveur, etc.). Aucune donnée sensible n'est stockée.
+Sur mon Raspberry Pi personnel, hébergé chez moi en France. J'utilise une base de données SQLite3 légère pour stocker uniquement les informations essentielles (IDs de messages, liens entre utilisateurs et personnages, configurations de serveur, etc.). Aucune donnée sensible n'est stockée.
 
 Une partie des données sont stockées en cache et donc effacées régulièrement pour optimiser les performances.
 
