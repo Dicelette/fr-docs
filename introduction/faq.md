@@ -25,6 +25,6 @@ Depuis la version 2.13.0, Dicelette utilise un "[CSPRNG](https://fr.wikipedia.or
 
 :::note
 Le bot utilise en interne l'API de [@diceRoller](https://dice-roller.github.io/documentation/) pour la gestion du moteur d'aléatoire, qui lui-même utilise [random-js](https://www.npmjs.com/package/random-js).
-L'engine sélectionné par défaut est `crypto`, qui utilise le CSPRNG de Node.js.
-Vous trouverez [ici](https://github.com/Dicelette/core/blob/c12610ea645ee7c1cda219a821b4a8aff5f95de0/src/dice.ts#L160) le code source où l'engine est initialisé.
+Le moteur sélectionné par défaut est `crypto`, qui utilise le CSPRNG de Node.js.
+Vous trouverez [ici](https://github.com/Dicelette/core/blob/c12610ea645ee7c1cda219a821b4a8aff5f95de0/src/dice.ts#L160) le code source où le moteur est initialisé.
 :::
