@@ -35,7 +35,7 @@ Le format du serveur a la priorité sur le format de l'utilisateur.
 Discord ne permet pas de rajouter des espaces finaux (ou au début) dans les options. Si vous souhaitez ajouter un espace à la fin ou au début d'une des variables, utilisez `\s` pour représenter un espace.
 :::
 
-## Variables
+### Variables
 
 Pour simplifier la création du format, vous pouvez utiliser les variables suivantes dans les champs de format :
 - `{{dice}}` : Résultat du dé (exemple : `[29]>=10`)
@@ -52,17 +52,17 @@ De même, `info` peut être personnalisé avec :
 - `{{info:short}}` : Utilise une version abrégée du texte d'information (exemple : `ÉC` au lieu de `Échec critique`)
 - `{{info:long}}` : Utilise la version complète du texte d'information (même chose que `{{info}}`)
 
-### Résultats (`{{results}}`)
+#### Résultats (`{{results}}`)
 La variable `{{results}}` est en réalité une liste qui est join par la variable `jointure_résultats`. Cette variable **ne peut** être composée que de :
 - `{{dice}}`
 - `{{info}}`
 
-### Final
+#### Final
 La variable `final` ne peut contenir que les variables `{{results}}`, `{{link}}` et `{{name}}`.
 
 ![Schéma des variables](../assets/variable_diagram.png)
 
-## Défaut
+### Défaut
 
 Par défaut, le format est défini comme suit :
 - Final : `[[{{name}}{{results}}]](<{{link}}>)`,
@@ -73,3 +73,24 @@ Par défaut, le format est défini comme suit :
 - Statistiques : `__{{name}}__: ` ,
 
 Ce qui donne : ``[[__Force__ :  Échec critique - `[29] ⩾ 10`]](<https://discord.com/channels/guildId/channelId/messageId>)``
+
+## Affichage
+
+:::usage
+**`/config créer_lien afficher`**
+:::
+
+Permet d'afficher la liste des formats de lien actuels pour le serveur, ainsi qu'un exemple basé sur le format suivant :
+```
+__**Personnage**__ (<@000000000000000000>)  (\`>= 11\`):
+[__Nom__]
+  **Échec critique** — \`1d100\` ⟶ \`[29]\` = \`[29] ⩾ 10\`
+```
+
+
+## Reset
+:::usage
+**`/config créer_lien reset`**
+:::
+
+Réinitialise le format de lien aux valeurs par défaut.
