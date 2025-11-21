@@ -22,18 +22,22 @@ Le format du serveur a la priorité sur le format de l'utilisateur.
 ## Format
 
 :::usage
-**`/config créer_lien format [final] [results] [dé] [info] [nom] [jointure_résultats]`**
+**`/config créer_lien format [final] (results) (dé) (info) (nom) (dé_original) (personnage) (jointure_résultats)`**
 - `dé` : Le résultat du dé en lui-même, généralement `[RES](SIGN)(COMPARAISON)`, par exemple `[29]>=10`.
 - `info` : Le texte d'information qui est le texte de critiques (dont customisés), d'échec ou de réussite.
 - `nom` : Le nom de la statistique ou de la macro, si une est trouvée.
 - `jointure_résultats` : Le texte à utiliser pour joindre plusieurs résultats ensemble.
 - `results` : Une liste qui contient la combinaison de `dé` et `info`, joint par la variable `jointure_résultats`.
 - `final` : Le format final qui combine les autres variables pour créer le lien.
+- `dé_original` : Le dé original lancé, par exemple `1d100`.
+- `personnage` : Le nom du personnage ayant lancé le dé.
 :::
 
 :::warning
 Discord ne permet pas de rajouter des espaces finaux (ou au début) dans les options. Si vous souhaitez ajouter un espace à la fin ou au début d'une des variables, utilisez `\s` pour représenter un espace.
 :::
+
+Lorsque les variables sont laissées vides, les valeurs par défaut sont utilisées.
 
 ### Variables
 
@@ -43,22 +47,23 @@ Pour simplifier la création du format, vous pouvez utiliser les variables suiva
 - `{{name}}` : Nom de la statistique (exemple : `Force`) ou de la macro
 - `{{results}}` : Liste pouvant combiner plusieurs `{{dice}}` et `{{info}}`
 - `{{link}}` : Lien vers le message contenant le résultat du dé.
+- `{{original_dice}}` : Le dé original lancé (exemple : `1d100`)
+- `{{character}}` : Le nom du personnage ayant lancé le dé
 
-Il existe certaines personnalisations possibles pour `name` et `info` : 
-- `{{name:short}}` : Utilise les initiales de la macro/statistique, si le nom est composée de plusieurs mots (exemple : `CA` pour `Classe d'Armure`)
-- `{{name:long}}` : Utilise le nom complet de la macro/statistique (même chose que `{{name}}`)
+Il existe certaines personnalisations possibles pour `name`, `info` et `character` en ajoutant `:short` ou `:long` après le nom de la variable :
+- `:short` : permet d'obtenir les initiales de la variable uniquement si cette dernière fait au moins deux mots. Par exemple, pour `{{name}}`, si le nom est `Test de Force`, `{{name:short}}` donnera `TDF`.
+- `:long` donne le même résultat que l'absence de cette option, et donne la variable complète.
 
-De même, `info` peut être personnalisé avec :
-- `{{info:short}}` : Utilise une version abrégée du texte d'information (exemple : `ÉC` au lieu de `Échec critique`)
-- `{{info:long}}` : Utilise la version complète du texte d'information (même chose que `{{info}}`)
+Ces variables ne sont utilisables que dans les champs de format correspondants, et non dans le champ `final`.
 
 #### Résultats (`{{results}}`)
 La variable `{{results}}` est en réalité une liste qui est join par la variable `jointure_résultats`. Cette variable **ne peut** être composée que de :
 - `{{dice}}`
 - `{{info}}`
+- `{{original_dice}}`
 
 #### Final
-La variable `final` ne peut contenir que les variables `{{results}}`, `{{link}}` et `{{name}}`.
+La variable `final` ne peut contenir que les variables `{{results}}`, `{{link}}`, `{{name}}` et `{{character}}`.
 
 ![Schéma des variables](../assets/variable_diagram.png)
 
