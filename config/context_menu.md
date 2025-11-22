@@ -50,9 +50,17 @@ Pour simplifier la création du format, vous pouvez utiliser les variables suiva
 - `{{original_dice}}` : Le dé original lancé (exemple : `1d100`)
 - `{{character}}` : Le nom du personnage ayant lancé le dé
 
-Il existe certaines personnalisations possibles pour `name`, `info` et `character` en ajoutant `:short` ou `:long` après le nom de la variable :
-- `:short` : permet d'obtenir les initiales de la variable uniquement si cette dernière fait au moins deux mots. Par exemple, pour `{{name}}`, si le nom est `Test de Force`, `{{name:short}}` donnera `TDF`.
-- `:long` donne le même résultat que l'absence de cette option, et donne la variable complète.
+Il est aussi possible d'associer des fonctions spécifiques à ces variables, en ajoutant :
+- `:upper` : met en majuscule tous les caractères.
+- `:lower` : met en minuscule tous les caractères.
+- `:title` : met en majuscule la première lettre de chaque mot.
+- `:capitalize` : met en majuscule la première lettre uniquement.
+- `:standardize` : Supprime les accents en remplaçant par les caractères standards (`é -> e`, `ü -> u`, etc.)
+- `:trunc=N` : Tronque à N caractères. Par exemple, `{{name:trunc=5}}` donnera les `5` premiers caractères du nom.
+- `:short` : Ne garde que les initiales si le mot en contient plusieurs (exemple : `Jean-Luc Picard` devient `JLP`).
+- `:long` : Conserve le mot complet sans modification (exactement comme si aucune option n'était appliquée).
+
+Ces options sont appliquées dans l'ordre avec lequel elles sont écrites. Par exemple, `{{name:short:upper}}` donnera les initiales en majuscules.
 
 Ces variables ne sont utilisables que dans les champs de format correspondants, et non dans le champ `final`.
 
@@ -71,11 +79,13 @@ La variable `final` ne peut contenir que les variables `{{results}}`, `{{link}}`
 
 Par défaut, le format est défini comme suit :
 - Final : `[[{{name}}{{results}}]](<{{link}}>)`,
-- Results : ``{{info}} `{{dice}}` ``,
-- Jointure_résultats :`; `,
+- Résultats : ``{{info}} `{{dice}}` ``,
+- Jointure résultats :`; `,
 - Dé : `{{dice}}`,
 - Info : `{{info}} - `,
-- Statistiques : `__{{name}}__: ` ,
+- Nom : `__{{name}}__: `,
+- Dé original : `{{original_dice}}`,
+- Personnage : `{{character}}`
 
 Ce qui donne : ``[[__Force__ :  Échec critique - `[29] ⩾ 10`]](<https://discord.com/channels/guildId/channelId/messageId>)``
 
@@ -98,4 +108,4 @@ __**Personnage**__ (<@000000000000000000>)  (\`>= 11\`):
 **`/config créer_lien reset`**
 :::
 
-Réinitialise le format de lien aux valeurs par défaut.
+Supprime le format personnalisé actuel et rétablit les valeurs par défaut.
