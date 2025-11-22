@@ -21,12 +21,12 @@ Cependant, si le dé type utilisé **ne contient pas `$`**, il est possible d'ut
 
 :::usage
 **`/dbroll (*statistique) (*personnage) (commentaire) (seuil_reussite) (expression)`**
-- `*statistique` : Statistique à utiliser (si le dé type contient `$`)
-- `*personnage` : Personnage concerné
-- `commentaire` : Commentaire optionnel
-- `seuil_reussite` : Seuil de réussite (ex : `>=10`).
-- `expression` : Expression mathématique optionnelle
-- `opposition` : Seuil de réussite "secondaire".
+- <CL>*statistique</CL> : Statistique à utiliser (si le dé type contient `$`)
+- <CL>*personnage</CL> : Personnage concerné
+- <CL>commentaire</CL> : Commentaire optionnel
+- <CL>seuil_reussite</CL> : Seuil de réussite (ex : `>=10`).
+- <CL>expression</CL> : Expression mathématique optionnelle
+- <CL>seuil_reussite</CL> : Seuil de réussite (ex : `>=10`).
 :::
 
 La commande demande de choisir la statistique à utiliser si le dé type contient `$`.
@@ -51,12 +51,14 @@ Si un dé est enregistré dans la template, il sera considéré comme un dé glo
 :::
 
 :::usage
-**`/macro [*dice] (*personnage) (expression) (commentaire)`**
+**`/macro [*dice] (*personnage) (expression) (seuil_reussite) (commentaire)`**
 - <CL>*dice</CL> : Le nom de la macro (dé sauvegardé)
 - <CL>*personnage</CL> : Personnage concerné
 - <CL>expression</CL> : Expression mathématique
 - <CL>commentaire</CL> : Commentaire sur l'action
 - <CL>opposition</CL> : Seuil de réussite "secondaire", uniquement évalué s'il y a un seuil de réussite principal, enregistré dans le dé.
+- <CL>seuil_reussite</CL> : Seuil de réussite (ex : `>=10`).
+
 :::
 
 ![macro](../../assets/rolls/db/macro_example.png)
@@ -72,11 +74,13 @@ Les snippets peuvent contenir des commentaires, des expressions mathématiques, 
 :::
 
 :::usage
-**`/snippets [*dice] (expression) (opposition) (commentaire)`**
+**`/snippets [*dice] (expression) (opposition) (seuil_reussite) (commentaire)`**
 - <CL>*dice</CL> : Le nom du snippet (dé sauvegardé)
 - <CL>expression</CL> : Expression mathématique
 - <CL>opposition</CL> : Seuil de réussite "secondaire", uniquement évalué s'il y a un seuil de réussite principal, enregistré dans le dé.
 - <CL>commentaire</CL> : Commentaire sur l'action, qui sera fusionné avec le commentaire s'il y en a déjà un dans le snippet.
+- <CL>seuil_reussite</CL> : Seuil de réussite (ex : `>=10`).
+
 :::
 
 Pour créer un snippet, [voir cette section](../../config/snippets.md).
