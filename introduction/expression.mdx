@@ -6,7 +6,7 @@ sidebar_position: 5
 import { CL} from "@site/src/components/utils.tsx";
 
 
-Le bot utilise la bibliothèque de [dice roller](https://dice-roller.github.io/documentation/)[^1] pour les jets de dés, et supporte la syntaxe de ce dernier.
+Le bot utilise la bibliothèque de [dice roller](https://dice-roller.github.io/documentation/) pour les jets de dés, et supporte la syntaxe de ce dernier.
 Il existe cependant quelques différences, car Dicelette veut être plus flexible et indiquer les résultats des jets de dés de manière plus lisible.
 
 ## Différence avec Dice Roller
@@ -123,7 +123,7 @@ Il est possible d'utiliser des dés dans les formules, mais seul le premier dé 
 :::
 ::::
 
-Pour commenter entre chaque jet, il faut utiliser la syntaxe `[commentaire]`. Un commentaire global devra utiliser la syntaxe `#commentaire` à la fin des dés.[^2]
+Pour commenter entre chaque jet, il faut utiliser la syntaxe `[commentaire]`. Un commentaire global devra utiliser la syntaxe `#commentaire` à la fin des dés.[^1]
 
 :::roll[ `1d20;&-2 [perte pv] #commentaire` ]  
 *commentaire*  
@@ -137,8 +137,12 @@ Enfin, il est possible de cacher le premier dé avec la syntaxe `(dé)` :
   ◈ `[1d20]+2` ⟶ `[12]+2` = ` 14 `  
 :::
 
-:::danger[Il n'est pas possible d'utiliser les dés en masse dans cette syntaxe.]
+:::danger[Limitations]
+- Il n'est pas possible de combiner les jets uniques partagés avec des lancers en masse (bulk rolls).
+- Le premier dé ne peut avoir de comparaison. Si nécessaire, il est possible de cacher le premier dé pour pouvoir utiliser une comparaison dans les formules suivantes.
+- Les jets d'opposition ne sont pas pris en charge.
 :::
+
 
 ## Lancers en Masse (Bulk Rolls)
 
@@ -151,5 +155,4 @@ Le bot prend également en charge la notation `x#(dés)` inspirée par [rollem](
   `2d10` ⟶ `[8, 9]` = ` [17] `  
 :::
 
-[^1]: Dice Roller lui-même utilise [random-js](https://www.npmjs.com/package/random-js) pour la génération aléatoire, et non pas `math.random` qui est du pseudo-aléatoire. Il n'est donc pas possible de tricher sur les résultats des dés (à moins d'être un cryptomancien ou de voir l'avenir … Ou les deux.).
-[^2]: Les dés partagés et les commentaires sont très sensibles aux espaces. Ainsi, les commentaires de dés entre crochet doivent être précédés d'un espace, tout comme les commentaires globaux. Le `#` des commentaires globaux doit être collé au texte du commentaire, sans espace.
+[^1]: Les dés partagés et les commentaires sont très sensibles aux espaces. Ainsi, les commentaires de dés entre crochet doivent être précédés d'un espace, tout comme les commentaires globaux. Le `#` des commentaires globaux doit être collé au texte du commentaire, sans espace.

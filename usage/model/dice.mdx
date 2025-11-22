@@ -63,4 +63,24 @@ Si un dé est enregistré dans la template, il sera considéré comme un dé glo
 
 Ici, la commande demande de choisir, obligatoirement, le dé à utiliser. Il n'est pas possible de choisir un seuil de réussite, bien qu'il soit possible d'en spécifier dans le dé lui-même lors de son enregistrement. Dans ce cas, il est possible d'utiliser l'<CL>opposition</CL> pour indiquer un seuil de réussite secondaire, qui sera évalué uniquement si le seuil principal est atteint.
 
+## Snippets (`/snippets`)
+
+:::info
+Permet de lancer des dés enregistrés par utilisateur sur le serveur. Contrairement aux macros, les snippets ne sont pas sauvegardés dans une fiche de personnages et ne sont pas liés aux statistiques ou au modèle.
+
+Les snippets peuvent contenir des commentaires, des expressions mathématiques, des seuils de réussite et des seuils d'opposition, ainsi que des noms de personnages (via `@nom`).
+:::
+
+:::usage
+**`/snippets [*dice] (expression) (opposition) (commentaire)`**
+- <CL>*dice</CL> : Le nom du snippet (dé sauvegardé)
+- <CL>expression</CL> : Expression mathématique
+- <CL>opposition</CL> : Seuil de réussite "secondaire", uniquement évalué s'il y a un seuil de réussite principal, enregistré dans le dé.
+- <CL>commentaire</CL> : Commentaire sur l'action, qui sera fusionné avec le commentaire s'il y en a déjà un dans le snippet.
+:::
+
+Pour créer un snippet, [voir cette section](../../config/snippets.md).
+
+![snippets](../../assets/snippets/example.png)
+
 <small>Pour la syntaxe complète des champs et l’auto-complétion des personnages, voir [Syntaxe des commandes](../../introduction/format.mdx).</small>
