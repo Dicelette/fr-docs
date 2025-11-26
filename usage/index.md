@@ -56,6 +56,15 @@ Sans type choisi, affiche les statistiques du serveur, ainsi que le classement p
 Affiche les statistiques globales du serveur.
 :::
 
+:::usage
+**`/karma reset (@user) (everyone)`**
+Permet de réinitialiser le classement.
+
+Les options sont réservées aux administrateurs du serveur.
+- `@user` : Optionnel, permet de réinitialiser les statistiques d'un utilisateur en particulier.
+- `everyone` : Optionnel, réinitialise les statistiques de tous les utilisateurs du serveur
+:::
+
 :::warning
 De manière évidente, le karma ne fonctionne que pour les dés lancés avec le bot, et ne fonctionne pas avec les critiques personnalisés qui ne correspondent pas aux textes standards `Échec`, `Réussite`, etc.
 :::
