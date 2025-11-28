@@ -40,3 +40,26 @@ Permet de supprimer un snippet existant à partir de la liste.
 Affiche la liste des snippets existants pour l'utilisateur.
 
 ![list_snippet](../assets/snippets/list.png)
+
+## Exporter les snippets (`/user_config snippets export`)
+
+:::usage
+**`/user_config snippets export`**
+:::
+
+Permet d'exporter tous les snippets de l'utilisateur au format JSON, afin de les sauvegarder ou de les partager ailleurs.
+
+![export_snippet](../assets/snippets/export.png)
+
+## Importer des snippets (`/user_config snippets import`)
+
+:::usage
+**`/user_config snippets import [fichier]`**
+- `fichier` : Données JSON des snippets à importer
+:::
+
+Permet d'importer des snippets à partir d'un fichier JSON. Si un snippet avec le même nom existe déjà, il sera écrasé par le nouveau.
+Les snippets seront vérifiés durant l'import et seuls ceux valides seront ajoutés.
+
+![import_snippet](../assets/snippets/import_cmd.png)
+![import_snippet_2](../assets/snippets/import.png)
