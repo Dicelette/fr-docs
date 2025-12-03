@@ -1,6 +1,8 @@
 ---
 title: Commandes de base
 sidebar_position: 1
+aliases:
+  - commande de base
 ---
 
 ## Lancer de dés

@@ -29,21 +29,21 @@ Le bot fonctionne également dans les forums, mais avec quelques différences :
 
 Il est aussi possible, via la commande [`/result_channel`](../config/threads.md) de configurer ce comportement, en fixant un salon ou en désactivant la création automatique de fils.
 
-## Canaux
+# Canaux
 
 Le bot enverra **aussi** le résultat dans le canal où la commande a été initialement envoyée. Ce message :
 
 - Sera supprimé après 3 minutes (configurable avec `/config supprimer_après`).
 - Contiendra un lien vers le message dans le log.
 
-## Utilisation
+# Utilisation
 
 Le bot peut être :
 
 - Utilisé avec des commandes slash (voir [commandes](../usage/index.md)).
 - Mais également directement sur le message.
 
-## Reaction
+# Reaction
 
 Il existe deux fonctions sur les réactions :
 - `📩` : Permet de recevoir le message du jet en DM. Dans le cas où la sauvegarde des résultats est activé, le message envoyé sera cette sauvegarde, utile notamment dans le cas où vous avez activé le lien vers le contexte !
