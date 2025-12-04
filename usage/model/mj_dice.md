@@ -10,7 +10,7 @@ Les trois commandes suivantes permettent aux maîtres de jeu de lancer des dés 
 :::usage
 - **`/mj dbroll (@Joueur) (*statistique) (... autres options) (*personnage) (?caché)`**
 - **`/mj macro (@Joueur) [*nom du dé] (... autres options) (*personnage) (?caché)`**
-- **`/mj calc (@joueur) [statistique] [signe] [expression]  (... autres options) (*personnage) (?caché)`***
+- **`/mj calc (@joueur) [*statistique] [*signe] [expression]  (... autres options) (*personnage) (?caché)`***
 - **`/mj roll [dé] (@joueur) (?caché)`**
 :::
 
