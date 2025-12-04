@@ -9,68 +9,71 @@ import { CL} from "@site/src/components/utils.tsx";
 
 - **<mark>`$`</mark>** :
 	  - <CL>Usage</CL> : Symbolise la valeur de la statistique utilisée dans la formule du dé.
-	  - <CL>Où ?</CL> Utilisé dans les dés types (`/dbroll`, `/calc`, formules critiques, etc.)  
-	    :::example  
-	      - `1d6 > $` : Compare le résultat du dé à la valeur de la statistique sélectionnée.  
-	      - `1d6 + $` : Ajoute la statistique au résultat du dé.  
-	      - `1d100 <=$` : Pour les systèmes type Appel de Cthulhu, compare au seuil de la stat.
-	    :::
+	  - <CL>Où ?</CL> Utilisé dans les dés types (`/dbroll`, `/calc`, formules critiques, etc.)
+
+      :::example
+      - `1d6 > $` : Compare le résultat du dé à la valeur de la statistique sélectionnée.
+      - `1d6 + $` : Ajoute la statistique au résultat du dé.
+      - `1d100 <=$` : Pour les systèmes type Appel de Cthulhu, compare au seuil de la stat.
+      :::
 
 - **<mark>`{exp}`</mark>** :
 	  - <CL>Usage :</CL> Permet d'insérer une expression dynamique dans une formule de dé, reprise d'une partie calculée de la commande.
 	  - <CL>Syntaxe avancée :</CL> `{exp||default}` permet de définir une valeur par défaut si l'expression n'est pas renseignée.
-	    :::example `{exp||2}` (valeur par défaut = 2)
-	    :::
+
+        :::example `{exp||2}` (valeur par défaut = 2)
+        :::
 	  - <CL>Où ?</CL> Souvent utilisé dans des templates ou des formules réutilisables, pour injecter une valeur dynamique au moment du jet.  
-	    :::example
-	      - `1d6 > {exp}` : la valeur de `exp` sera remplacée au moment du lancer.  
-	      - `1d6 > {exp||10}` : si `exp` n'est pas renseignée, la comparaison se fait à 10.
-	    :::
+
+    :::example
+      - `1d6 > {exp}` : la valeur de `exp` sera remplacée au moment du lancer.
+      - `1d6 > {exp||10}` : si `exp` n'est pas renseignée, la comparaison se fait à 10.
+    :::
 
 - **<mark>`{{...}}`</mark>** :
 	  - <CL>Usage :</CL> Délimite une expression mathématique complexe évaluée par <mark>MathJS</mark>.
 	  - <CL>Où ?</CL> Dans toutes les commandes supportant les formules (`/calc`, `/dbroll`, `/macro`, etc.)
-	    :::example  
-	      - `1d6 + {{ceil($ / 2)}}` : Ajoute la moitié arrondie de la stat au résultat du dé.  
-	      - `1d6 > {{ceil($ / 2)}}` : Le seuil de réussite est la moitié de la stat, arrondie.
-	    :::
+    :::example
+      - `1d6 + {{ceil($ / 2)}}` : Ajoute la moitié arrondie de la stat au résultat du dé.
+      - `1d6 > {{ceil($ / 2)}}` : Le seuil de réussite est la moitié de la stat, arrondie.
+    :::
 
 - **<mark>`[commentaire]`</mark>** :
 	  - <CL>Usage :</CL> Ajoute un commentaire à un dé.
 	  - <CL>Où ?</CL> Dans des [dés partagés](./expression.mdx#jets-uniques-partagés-réutilisation-de-résultats). 
-	    :::example `1d20;&-2[Perte de PV]` : Applique -2 au résultat du jet de dé et annote la seconde ligne de résultat.
-	    :::
+    :::example `1d20;&-2[Perte de PV]` : Applique -2 au résultat du jet de dé et annote la seconde ligne de résultat.
+    :::
 
 - **<mark>`#commentaire`</mark>** :
 	  - <CL>Usage :</CL> Commentaire global pour un jet de dés. Le `#` symbole peut être omit lors de l'utilisation sur des messages directs.
 	  - <CL>Où ?</CL> À la fin du dé, pour annoter l'action. Permet aussi de créer un commentaire global dans les dés partagés. 
 	    *Inutilisés pour les dés par slash command.*
-	    :::example
-	    - `1d20+5 # Mon jet de dés`
-	    - `1d20;&+5;&*2 # Mon jet de dés partagé`
-	    :::
+    :::example
+    - `1d20+5 # Mon jet de dés`
+    - `1d20;&+5;&*2 # Mon jet de dés partagé`
+    :::
 
 - **<mark>`&`</mark>**, **<mark>`;&+x;`</mark>**, **etc.**  :
 	  - <CL>Usage :</CL> Permet de réutiliser le résultat d'un même dé dans plusieurs formules (jets uniques partagés).
-	    :::example
-	    ```
-	    /roll 1d20;&+5;&*2
-	    ```
-	    Affichera :
-	    ```
-	    ※ 1d20 ⟶ [14] =  14 
-	    ◈ [1d20]+5 ⟶ [14]+5 =  19 
-	    ◈ [1d20]×2 ⟶ [14]×2 =  28 
-	    ```
-	    :::
+    :::example
+    ```
+    /roll 1d20;&+5;&*2
+    ```
+    Affichera :
+    ```
+    ※ 1d20 ⟶ [14] =  14
+    ◈ [1d20]+5 ⟶ [14]+5 =  19
+    ◈ [1d20]×2 ⟶ [14]×2 =  28
+    ```
+    :::
 - **<mark>`()`</mark> (parenthèses dans les noms de dé)** :
 	  - <CL>Usage :</CL> Spécifie la statistique à utiliser pour les critiques personnalisés
-	    :::example[ `Instinct Animal (Force)` ]
-	    :::
+    :::example[ `Instinct Animal (Force)` ]
+    :::
 - **<mark>@nom</mark>** :
 	- Usage : Permet d'utiliser un autre personnage dans les jets de dés (dans `/roll`, [les messages](../usage/message.md) et `/mj roll`)
 	- Permet aussi de mentionner une personne pour lancer un dé à sa place (uniquement pour la modération) dans les dés [en direct](../usage/message.md).
-  :::example[`1d100 @Perso`]
+  :::example[ `1d100 @Perso` ]
   :::
 
 ---
