@@ -59,6 +59,7 @@ Il est aussi possible d'associer des fonctions spécifiques à ces variables, en
 - `:trunc=N` : Tronque à N caractères. Par exemple, `{{name:trunc=5}}` donnera les `5` premiers caractères du nom.
 - `:short` : Ne garde que les initiales si le mot en contient plusieurs (exemple : `Jean-Luc Picard` devient `JLP`).
 - `:long` : Conserve le mot complet sans modification (exactement comme si aucune option n'était appliquée).
+- `:standardize_short` : Ne supprimera les accents que pour les initiales (exemple : `Émile Zola` devient `EZ` au lieu de `ÉZ`).
 
 Ces options sont appliquées dans l'ordre avec lequel elles sont écrites. Par exemple, `{{name:short:upper}}` donnera les initiales en majuscules.
 
