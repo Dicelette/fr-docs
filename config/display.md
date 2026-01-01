@@ -70,4 +70,37 @@ Ajoute un lien vers la sauvegarde du dé dans le message de résultat.
 
 ![Lien vers la sauvegarde](/assets/rolls/config/backup_link.png)
 
+## Ordre de tri
+
+:::usage
+**`/config ordre_tri (?ordre)`**
+- `?ordre` : Ordre choisi pour l'affichage des résultats. À choisir entre :
+  - <u>Croissant</u>
+  - <u>Décroissant</u>
+  - <u>Aucun</u> (*Désactivé*)
+:::
+
+Par défaut, les sorties des dés (tel que `4d6`) ne sont pas trié. Il est possible de les afficher trié lors du lancé avec [la syntaxe prévue à cet effet (`s`, `sa`, `sd` en fin de dé)](https://dice-roller.github.io/documentation/guide/notation/modifiers.html#sorting).
+Cette option de configuration permet de trier par défaut les sorties sans avoir à manuellement mettre la notation.
+
+:::tip
+Si le symbole de tri est ajouté au dé, alors il aura priorité sur la configuration.
+:::
+
+## Désactiver la comparaison
+
+:::usage
+**/config désactiver_comparaison (?basculer)**
+- `?basculer` : Sur `True` désactivera les messages de succès ou d'échec.
+:::
+
+Cela permet de simplifier la syntaxe d'entrée pour obtenir directement le nombre de succès ou échec (*target failure/success*) au lieu du message d'information, en évitant d'avoir à placer les dés entre accolade. 
+
+
+:::warning["Cette syntaxe désactive la comparaison aux jets d'opposition"]
+:::
+
+
+[Veuillez vous référez à cette page pour plus d'information sur les comparaisons](../introduction/expression.mdx#les-comparateurs)
+
 <small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

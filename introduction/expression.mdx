@@ -37,6 +37,7 @@ Dans ces cas particuliers, le bot n'affichera pas le texte de succès, échec, o
 :::tldr
 - Si vous souhaitez compter le nombre de dés qui passe une comparaison, il faut mettre le dé et le comparateur entre accolades `{}`.
 - Si vous souhaitez utiliser les targets failures, il faut conserver la syntaxe de Dice Roller.
+- Il est possible de configurer par défaut ce comportement via la [configuration](../config/display.md#désactiver-la-comparaison). 
 :::
 
 #### Comparaison d'opposition
@@ -72,6 +73,15 @@ La formule complète d'analyse est la suivante : `{c[f|s]:[>=<!]+(texte)}`
 
 :::warning[ Cette méthode n'est pas compatible avec les exceptions mentionnées dans la section précédente. ]
 :::
+
+#### Dé explosif
+
+Il est possible de combiner les "target count" avec les dés explosifs avec en **dupliquant** le signe de comparaison, tel que `{3d6!>>4}`.
+:::roll[ `3d6!>>4` ⟶ `[6!, 5, 3, 1]` = ` [2] `]
+:::
+
+Cela permet en outre d'éviter que les dés explosifs explosent sur le nombre après le signe de comparaison et de toujours exploser sur le maximum du dé.
+
 ## Expressions Mathématiques avec MathJS
 
 Le bot utilise la bibliothèque [mathjs](https://mathjs.org/) pour évaluer les expressions mathématiques. Vous pouvez utiliser des expressions mathématiques complexes lorsqu'elles sont entre `{{` et `}}`.
