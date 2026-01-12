@@ -92,5 +92,6 @@ Il existe plusieurs commandes d'aide, en fonction de ce dont vous avez besoin :
 - `/aide enregister` : Affiche l'aide spécifique pour enregistrer un modèle de serveur et les fiches de personnages et vous dirige vers [la documentation](../sheet/model/index.md).
 - `/aide bug` : Affiche un lien pour créer un rapport de bug.
 - `/aide suggestion` : Affiche un lien pour faire une suggestion.
+- `/info` : Affiche les statistiques générales du bot (nombre de serveur, version, uptime…) ainsi que des liens utiles.
 
 <small>Pour la description complète des champs de commandes : [voir la syntaxe](../introduction/format.mdx).</small>
