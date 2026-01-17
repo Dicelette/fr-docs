@@ -17,10 +17,6 @@ Pour comprendre toutes les notations de dés utilisables avec le bot (notation d
 
 ![Roll](/assets/rolls/slash-commands.gif)
 
-:::tip
-La commande globale (utilisable en DM et dans tous serveurs l'autorisant) de la commande est `/r`.
-:::
-
 ## Créer une nouvelle scène
 
 :::usage
@@ -80,9 +76,6 @@ De manière évidente, le karma ne fonctionne que pour les dés lancés avec le 
 
 Cette commande permet de choisir aléatoirement une ou plusieurs options parmi une liste fournie.
 
-:::tip
-La commande globale (utilisable en DM et dans tous serveurs l'autorisant) de la commande est `/select`.
-:::
 
 ## Aide
 
