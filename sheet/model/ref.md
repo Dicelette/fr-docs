@@ -3,23 +3,23 @@ title: "Commandes"
 description: "Références des commandes pour la création et l'édition du modèle de fiche de personnage."
 sidebar_position: 1
 ---
-
 ## Enregistrement du modèle
 
 :::usage
 **`/modèle enregistrer [#channel] [fichier] (#channel_public) (#channel_privé) (?maj_personnages) (?supprimer_personnages)`**
+
 - `#channel` : Canal dans lequel le modèle sera envoyé (utilisé pour la création de fiche).
 - `[fichier]` : Fichier JSON créé précédemment.
 - `#channel_public` : Canal où seront publiées les fiches.
 - `#channel_privé` : Canal pour les fiches privées (voir encadré ci-dessous).
 - `?maj_personnages` : Met à jour toutes les anciennes fiches de personnages si elles existent.
 - `?supprimer_personnages` : Supprime toutes les anciennes fiches de personnages si elles existent.
-:::
+  :::
 
 ![enregistrement](../../assets/register/cmd_add.png)
 
 :::danger À propos des fiches privées
-Si la fiche n'est pas marquée comme privée, mais est publiée dans un salon auquel les utilisateurs n'ont pas normalement accès, ils pourront tout de même voir la fiche avec les commandes <mark>`/afficher`</mark> et <mark>`/graph`</mark>.
+Si la fiche n'est pas marquée comme privée, mais est publiée dans un salon auquel les utilisateurs n'ont pas normalement accès, ils pourront tout de même voir la fiche avec les commandes `<mark>/afficher``</mark>` et `<mark>/graph``</mark>`.
 :::
 
 L'embed sera épinglé pour faciliter l'accès.
@@ -27,10 +27,10 @@ L'embed sera épinglé pour faciliter l'accès.
 ![embed](../../assets/register/embed_template.png)
 
 :::danger
-Vous devez réenregistrer le modèle si vous souhaitez modifier le canal par défaut pour les feuilles privées et publiques.  
+Vous devez réenregistrer le modèle si vous souhaitez modifier le canal par défaut pour les feuilles privées et publiques.
 Mais l'utilisateur enregistré n'a pas besoin d'être réenregistré, car le canal et l'identifiant du message sont sauvegardés dans la base de données.
 
-Pour déplacer toutes les feuilles vers un autre canal, utilisez la commande [<mark>`/export`</mark>](../import_export.md).
+Pour déplacer toutes les feuilles vers un autre canal, utilisez la commande [`<mark>/export``</mark>`](../import_export.md).
 :::
 
 ## Modification
@@ -41,12 +41,29 @@ Cette commande vous permet de télécharger un nouveau fichier JSON, qui remplac
 
 :::usage
 **`/template modifier [fichier] (?maj_personnages) (?supprimer_personnages)`**
+
 - `[fichier]` : Fichier JSON
 - `?maj_personnages` : Met à jour toutes les anciennes fiches de personnages.
 - `?supprimer_personnages` : Supprime toutes les fiches de personnages existantes.
-:::
+  :::
 
 ![modifier](../../assets/register/modif_template.png)
 
+## Suppression
+
+Permet de supprimer le modèle et les données associées sans passer par la suppression du message.
+
+
+:::usage
+**`/template supprimer (?supprimer_personnage)`**
+
+- `?supprimer_personnages` : Supprime toutes les fiches de personnages existantes.
+:::
+
+:::note
+La commande supprimera le message contenant le modèle si possible (message accessible par le bot, non supprimé…).
+:::
+
 ---
-<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).</small>
+
+`<small>`Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).`</small>`

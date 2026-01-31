@@ -53,12 +53,16 @@ Permet d'exporter tous les snippets de l'utilisateur au format JSON, afin de les
 
 ## Importer des snippets (`/user_config snippets import`)
 
+Import des snippets à partir d'un fichier JSON, permettant aux utilisateurs de transférer ou partager facilement des données entre différents serveurs ou compte.
+
 :::usage
-**`/user_config snippets import [fichier]`**
+**`/user_config snippets import [fichier] (?écraser)`**
 - `fichier` : Données JSON des snippets à importer
+- `?écraser` : Permet d'écraser les données plutôt que de les fusionner avec les anciennes.
 :::
 
-Permet d'importer des snippets à partir d'un fichier JSON. Si un snippet avec le même nom existe déjà, il sera écrasé par le nouveau.
+Par défaut, les données seront fusionnées mais si deux snippets ont le même nom, le nouveau écrasera l'ancien.
+
 Les snippets seront vérifiés durant l'import et seuls ceux valides seront ajoutés.
 
 ![import_snippet](../assets/snippets/import_cmd.png)
