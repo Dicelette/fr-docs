@@ -22,4 +22,9 @@ Cela est utile pour les statistiques uniquement utilisées dans des formules ou 
 | PV        |     |     | Constitution+Endu |       ✅        |
 | Dextérité | 1   | 12  |                   |                |
 
+Chaque statistiques doit être unique. Elle peut comporter tout type de caractère, sauf commencer par un `-`.
+
+:::info
+Dans le cas où la statistique contient un espace et qu'il est souhaité de l'utiliser comme raccourci dans [la notation directe](../../usage/message.md), les espaces doivent être remplacé par un n'importe quel caractère (`.`, `_`…)
+:::
 <small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../../introduction/format.mdx).</small>
