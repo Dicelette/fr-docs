@@ -7,7 +7,7 @@ Les ==attributs== permettent à chaque utilisateur de définir et gérer des att
 Dans les cas où une fiche de personnage possède des statistiques, les attributs seront fusionnés à ces données mais la valeur des statistiques écrasera toujours la valeur d'un attributs si les noms sont identiques.
 :::
 
-## Usage
+# Usage
 
 Contrairement aux [snippets](snippets.md), les attributs ne sont pas utilisables tels quels mais agissent comme des raccourcis (de la même manière que les statistiques) sous forme de clé. Ainsi, cela permet d'utiliser directement le **nom** de l'attributs dans le dé, préfixé par le symbole `$`.
 
@@ -31,3 +31,51 @@ Tout comme les snippets, chaque clé doit être unique. Il est conseillé d'util
 Les attributs sont enregistrés de manière globale par serveur, et sont donc communs à chaque personnage enregistré pour un même joueur !
 :::
 
+# Création d'un attribut (`/user_config attributs créer`)
+
+:::usage
+**`/user_config attribut créer [nom] [valeur]`**
+- `nom` : Nom de l'attribut
+- `valeur` : Nombre à enregistrer
+:::
+
+Comme pour les snippets, si l'attribut existe déjà, alors il sera mis à jour vers la nouvelle valeur.
+
+# Suppression (`/user_config attributs supprimer`)
+
+:::usage
+**`/user_config attributs supprimer [*nom]`**
+- `*nom` : Nom du snippet à supprimer
+:::
+
+Permet de supprimer un attribut existant à partir de la liste
+
+# Lister les attributs (`/user_config attributs lister`)
+
+:::usage
+**`/user_config snippets lister`**
+:::
+
+Affiche la liste des attributs existants pour l'utilisateur.
+
+# Exporter les attributs (`/user_config attributs export`)
+
+:::usage
+**`/user_config snippets export`**
+:::
+
+Permet d'exporter tous les attributs de l'utilisateur au format JSON, afin de les sauvegarder ou de les partager ailleurs.
+
+# Importer des attributs (`/user_config attributs import`)
+
+Import des attributs à partir d'un fichier JSON, permettant aux utilisateurs de transférer ou partager facilement des données entre différents serveurs ou compte.
+
+:::usage
+**`/user_config snippets import [fichier] (?écraser)`**
+- `fichier` : Données JSON des attributs à importer
+- `?écraser` : Permet d'écraser les données plutôt que de les fusionner avec les anciennes.
+:::
+
+Par défaut, les données seront fusionnées mais si deux attributs ont le même nom, le nouveau écrasera l'ancien.
+
+Les attributs seront vérifiés durant l'import et seuls ceux valides seront ajoutés.
