@@ -3,7 +3,7 @@ title: Syntaxe
 sidebar_position: 4
 ---
 
-import { CL} from "@site/src/components/utils.tsx";
+import {CL} from "@site/src/components/utils.tsx";
 
 ## Symboles et expressions
 
@@ -74,6 +74,13 @@ import { CL} from "@site/src/components/utils.tsx";
 	- Usage : Permet d'utiliser un autre personnage dans les jets de dés (dans `/roll`, [les messages](../usage/message.md) et `/mj roll`)
 	- Permet aussi de mentionner une personne pour lancer un dé à sa place (uniquement pour la modération) dans les dés [en direct](../usage/message.md).
   :::example[ `1d100 @Perso` ]
+  :::
+
+- **<mark>`$stat`</mark>** :
+    - <CL>Usage :</CL> Permet d'utiliser la valeur d'une statistique
+    - <CL>Où :</CL> Dans les jets de dés (dans `/roll`, [les messages](../usage/message.md) et `/mj roll`) ainsi que les expressions.
+    - Pour utiliser la valeur d'une statistique comme nombre de dés, il faut utiliser `($stat)dX` (ex. `($force)d20`).
+  :::example[ `1d20 + $force` ]
   :::
 
 ---

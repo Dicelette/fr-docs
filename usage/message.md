@@ -22,8 +22,10 @@ Il est aussi possible d'utiliser des commandes slash pour lancer des dés, comme
 
 :::tip
 Il est possible, dans la notation textuelle, de mentionner :
-- Une statistique, via `$statistique` (ex. `$force`).
+- Une statistique, via `$statistique` (ex. `$force`).[^1]
 - Un personnage, via `@personnage` (ex. `@Bob`).
 - Une opposition, en "superposant" les signes : `1d100>20>10` (le dernier élément sera considéré comme l'opposition).
 À condition que le joueur ait une fiche enregistrée.
 :::
+
+[^1]: Pour utiliser la valeur d'une statistique comme nombre de dés, il faut utiliser `($stat)dX` (ex. `($force)d20`).
