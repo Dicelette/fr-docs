@@ -4,7 +4,11 @@ sidebar_position: 2
 ---
 Les ==snippets== sont des dés réutilisables qui ne sont liés ni à un personnage ni à un modèle spécifique. Ils peuvent être créés et utilisés par les utilisateurs pour simplifier les jets de dés fréquents, sans nécessiter de configuration de modèle.
 
-# Création d'un snippet
+:::important
+Les statistiques et attributs ne sont pas pris en charge dans les snippets, car ils ne sont pas liés à un personnage.
+:::
+
+# Création de snippets
 
 :::usage
 **`/user_config snippets créer [nom] [dé]`**
@@ -12,11 +16,7 @@ Les ==snippets== sont des dés réutilisables qui ne sont liés ni à un personn
 - `dé` : Dé à lancer (ex : `1d20+5`)
 :::
 
-:::important
-Les statistiques et attributs ne sont pas pris en charge dans les snippets, car ils ne sont pas liés à un personnage.
-:::
-
-Si le snippet existe déjà, le dé sera mis à jour avec la nouvelle valeur.
+Si le snippet existe déjà, le dé sera mis à jour vers la nouvelle valeur.
 
 ![create_snippet](../../assets/snippets/create.png)
 
