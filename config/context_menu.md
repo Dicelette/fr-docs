@@ -66,12 +66,14 @@ Ces options sont appliquées dans l'ordre avec lequel elles sont écrites. Par e
 Ces variables ne sont utilisables que dans les champs de format correspondants, et non dans le champ `final`.
 
 #### Résultats (`{{results}}`)
+
 La variable `{{results}}` est en réalité une liste qui est join par la variable `jointure_résultats`. Cette variable **ne peut** être composée que de :
 - `{{dice}}`
 - `{{info}}`
 - `{{original_dice}}`
 
 #### Final
+
 La variable `final` ne peut contenir que les variables `{{results}}`, `{{link}}`, `{{name}}` et `{{character}}`.
 
 ![Schéma des variables](../assets/variable_diagram.png)
@@ -103,8 +105,8 @@ __**Personnage**__ (<@000000000000000000>)  (\`>= 11\`):
   **Échec critique** — \`1d100\` ⟶ \`[29]\` = \`[29] ⩾ 10\`
 ```
 
-
 ## Reset
+
 :::usage
 **`/config créer_lien reset`**
 :::

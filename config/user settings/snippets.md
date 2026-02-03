@@ -1,38 +1,38 @@
 ---
 title: Snippets
-sidebar_position: 7
+sidebar_position: 2
 ---
+Les ==snippets== sont des dés réutilisables qui ne sont liés ni à un personnage ni à un modèle spécifique. Ils peuvent être créés et utilisés par les utilisateurs pour simplifier les jets de dés fréquents, sans nécessiter de configuration de modèle.
 
-Les `snippets` sont des dés réutilisables qui ne sont pas liés à un personnage ou à un modèle spécifique. Ils peuvent être créés et utilisés par les utilisateurs pour simplifier les jets de dés fréquents, sans pour autant avoir besoin de configurer un modèle.
-
-## Création de snippets (`/user_config snippets créer`)
+# Création d'un snippet
 
 :::usage
 **`/user_config snippets créer [nom] [dé]`**
 - `nom` : Nom du snippet
-- `dé` : Dé qui sera lancé (ex : `1d20+5`)
+- `dé` : Dé à lancer (ex : `1d20+5`)
 :::
 
 :::important
-Les statistiques ne sont pas prises en charge dans les snippets, car ils ne sont pas liés à un personnage.
+Les statistiques et attributs ne sont pas pris en charge dans les snippets, car ils ne sont pas liés à un personnage.
 :::
 
-Si le snippet existe déjà, alors le dé sera mis à jour avec la nouvelle valeur.
+Si le snippet existe déjà, le dé sera mis à jour avec la nouvelle valeur.
 
 ![create_snippet](../../assets/snippets/create.png)
 
-## Suppression (`/user_config snippets supprimer`)
+# Suppression
 
 :::usage
 **`/user_config snippets supprimer [*nom]`**
 - `*nom` : Nom du snippet à supprimer
 :::
 
-Permet de supprimer un snippet existant à partir de la liste.
+Permet de supprimer un snippet existant de la liste.
 
 ![delete_snippet](../../assets/snippets/delete.png)
 
-## Liste des snippets (`/user_config snippets lister`)
+# Liste des snippets
+
 :::usage
 **`/user_config snippets lister`**
 :::
@@ -41,29 +41,29 @@ Affiche la liste des snippets existants pour l'utilisateur.
 
 ![list_snippet](../../assets/snippets/list.png)
 
-## Exporter les snippets (`/user_config snippets export`)
+# Exporter les snippets
 
 :::usage
 **`/user_config snippets export`**
 :::
 
-Permet d'exporter tous les snippets de l'utilisateur au format JSON, afin de les sauvegarder ou de les partager ailleurs.
+Permet d’exporter tous les snippets de l’utilisateur au format JSON, pour les sauvegarder ou les partager.
 
 ![export_snippet](../../assets/snippets/export.png)
 
-## Importer des snippets (`/user_config snippets import`)
+# Importer des snippets
 
-Import des snippets à partir d'un fichier JSON, permettant aux utilisateurs de transférer ou partager facilement des données entre différents serveurs ou compte.
+Importe des snippets depuis un fichier JSON. Cela permet de transférer ou partager facilement des données entre différents serveurs ou comptes.
 
 :::usage
 **`/user_config snippets import [fichier] (?écraser)`**
 - `fichier` : Données JSON des snippets à importer
-- `?écraser` : Permet d'écraser les données plutôt que de les fusionner avec les anciennes.
+- `?écraser` : Remplace les données existantes au lieu de les fusionner.
 :::
 
-Par défaut, les données seront fusionnées mais si deux snippets ont le même nom, le nouveau écrasera l'ancien.
+Par défaut, les données sont fusionnées. Si deux snippets ont le même nom, le snippet importé remplacera l’existant.
 
-Les snippets seront vérifiés durant l'import et seuls ceux valides seront ajoutés.
+Lors de l’import, les snippets sont validés et seuls ceux conformes seront ajoutés.
 
 ![import_snippet](../../assets/snippets/import_cmd.png)
 ![import_snippet_2](../../assets/snippets/import.png)
