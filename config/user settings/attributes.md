@@ -8,6 +8,10 @@ Les ==attributs== permettent à chaque utilisateur de définir et gérer des att
 Si une fiche a des statistiques, les attributs s’y ajoutent, mais les statistiques remplacent les attributs portant le même nom.
 :::
 
+:::danger
+Pour être utilisé dans un snippet, un attribut doit d’abord être enregistré.
+:::
+
 # Usage
 
 Contrairement aux [snippets](snippets.md), les attributs ne sont pas utilisables directement. Ils fonctionnent comme des raccourcis (au même titre que les statistiques) sous forme de clés. Concrètement, cela permet d’utiliser le **nom** d’un attribut dans un jet de dés, préfixé par le symbole `$`.
@@ -32,6 +36,8 @@ Comme pour les snippets, chaque clé doit être unique. Il est recommandé d’u
 Les attributs sont stockés globalement au niveau du serveur et sont donc partagés entre tous les personnages d’un même joueur.
 :::
 
+![usage roll](../../assets/attributes/usage.png)
+
 # Création d'un attribut
 
 :::usage
@@ -42,6 +48,7 @@ Les attributs sont stockés globalement au niveau du serveur et sont donc partag
 
 Comme pour les snippets, si l’attribut existe déjà, sa valeur sera simplement mise à jour.
 
+![](../../assets/attributes/create.png)
 
 # Suppression
 
@@ -51,7 +58,7 @@ Comme pour les snippets, si l’attribut existe déjà, sa valeur sera simplemen
 :::
 
 Permet de supprimer un attribut existant depuis la liste des attributs.
-
+![](../../assets/attributes/delete.png)
 # Lister les attributs
 
 :::usage
@@ -60,6 +67,7 @@ Permet de supprimer un attribut existant depuis la liste des attributs.
 
 Affiche la liste des attributs existants pour l’utilisateur.
 
+![](../../assets/attributes/list.png)
 # Exporter les attributs
 
 :::usage
@@ -68,6 +76,7 @@ Affiche la liste des attributs existants pour l’utilisateur.
 
 Permet d’exporter l’ensemble des attributs de l’utilisateur au format JSON, afin de les sauvegarder ou de les partager.
 
+![](../../assets/attributes/export.png)
 # Importer des attributs
 
 Importe des attributs à partir d’un fichier JSON. Cela permet de transférer ou partager facilement des données entre différents serveurs ou comptes.
@@ -81,3 +90,6 @@ Importe des attributs à partir d’un fichier JSON. Cela permet de transférer 
 Par défaut, les données sont fusionnées. Si deux attributs portent le même nom, l’attribut importé remplacera l’existant.
 
 Lors de l’import, les attributs sont validés et seuls ceux conformes seront ajoutés.
+
+![](../../assets/attributes/import_1.png)
+![](../../assets/attributes/import_2.png)

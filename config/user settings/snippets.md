@@ -5,7 +5,11 @@ sidebar_position: 2
 Les ==snippets== sont des dés réutilisables qui ne sont liés ni à un personnage ni à un modèle spécifique. Ils peuvent être créés et utilisés par les utilisateurs pour simplifier les jets de dés fréquents, sans nécessiter de configuration de modèle.
 
 :::important
-Les statistiques et attributs ne sont pas pris en charge dans les snippets, car ils ne sont pas liés à un personnage.
+Les statistiques ne sont pas prises en charge dans les snippets car ils ne sont pas liés à un personnage. Cependant, les [attributs](attributes.md) le sont.
+:::
+
+:::danger
+Les [attributs](./attributes.md) peuvent être utilisés dans un snippet, à condition que celui-ci soit préalablement enregistré.
 :::
 
 # Création de snippets
