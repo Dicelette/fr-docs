@@ -29,7 +29,8 @@ Cette syntaxe est utilisable :
 :::tip
 Comme pour les snippets, chaque clé doit être unique. Il est recommandé d’utiliser :
 - des noms courts ;
-- sans espaces (si un espace est malgré tout utilisé, la valeur reste accessible en remplaçant les espaces par des `-`, `_` ou `.`).
+- sans espaces (si un espace est malgré tout utilisé, la valeur reste accessible en remplaçant les espaces par des `_` ou `.`).
+- Sans `-` (tiret) car ils peuvent être confondu avec la négation (`$myStat-10`)
 :::
 
 :::warning
@@ -59,30 +60,33 @@ Comme pour les snippets, si l’attribut existe déjà, sa valeur sera simplemen
 
 Permet de supprimer un attribut existant depuis la liste des attributs.
 ![](../../assets/attributes/delete.png)
+
 # Lister les attributs
 
 :::usage
-**`/user_config snippets lister`**
+**`/user_config attributs lister`**
 :::
 
 Affiche la liste des attributs existants pour l’utilisateur.
 
 ![](../../assets/attributes/list.png)
+
 # Exporter les attributs
 
 :::usage
-**`/user_config snippets export`**
+**`/user_config attributs export`**
 :::
 
 Permet d’exporter l’ensemble des attributs de l’utilisateur au format JSON, afin de les sauvegarder ou de les partager.
 
 ![](../../assets/attributes/export.png)
+
 # Importer des attributs
 
 Importe des attributs à partir d’un fichier JSON. Cela permet de transférer ou partager facilement des données entre différents serveurs ou comptes.
 
 :::usage
-**`/user_config snippets import [fichier] (?écraser)`**
+**`/user_config attributs import [fichier] (?écraser)`**
 - `fichier` : Données JSON des attributs à importer
 - `?écraser` : Permet d'écraser les données plutôt que de les fusionner avec les anciennes.
 :::
