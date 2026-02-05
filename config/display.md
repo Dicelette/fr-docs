@@ -101,6 +101,6 @@ Cela permet de simplifier la syntaxe d'entrée pour obtenir directement le nombr
 :::
 
 
-[Veuillez vous référez à cette page pour plus d'information sur les comparaisons](../introduction/expression.mdx#les-comparateurs)
+[Veuillez-vous référer à cette page pour plus d'information sur les comparaisons](../introduction/expression.mdx#les-comparateurs)
 
 <small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

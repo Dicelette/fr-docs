@@ -14,7 +14,7 @@ Si vous utilisez une ancienne version, vous devez utiliser les commandes listée
 ![edit image](../../assets/edit/image.png)
 
 :::warning
-Les images stockés sur discord ne peuvent être utilisés, car leurs liens changent régulièrement. Il est donc obligatoire d'utiliser des liens externes, par exemple, en utilisant [imgur](https://imgur.com/).
+Les images stockés sur discord ne peuvent être utilisés, car leurs liens changent régulièrement. Il est donc obligatoire d'utiliser des liens externes, par exemple, en utilisant [Imgur](https://imgur.com/).
 
 [Regardez ici pour plus d'information](https://kulturegeek.fr/news-298973/discord-passe-liens-temporaires-lhebergement-fichiers).
 :::

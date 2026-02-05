@@ -31,7 +31,7 @@ Il est aussi possible, via la commande [`/result_channel`](../config/threads.md)
 
 # Canaux
 
-Le bot enverra **aussi** le résultat dans le canal où la commande a été initialement envoyée. Ce message :
+Le bot enverra **aussi** le résultat dans le channel dans lequel la commande a été initialement envoyée. Ce message :
 
 - Sera supprimé après 3 minutes (configurable avec `/config supprimer_après`).
 - Contiendra un lien vers le message dans le log.

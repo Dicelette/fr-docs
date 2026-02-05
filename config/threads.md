@@ -4,7 +4,7 @@ description: Désactiver la copie des résultats dans les threads ou envoyer dan
 sidebar_position: 2
 ---
 
-Par défaut, le bot copiera les résultats des dés dans un thread nommé `🎲` depuis le salon où le jet a été effectué.
+Par défaut, le bot copiera les résultats des dés dans un thread nommé `🎲` depuis le salon dans lequel le jet a été effectué.
 
 Il est possible de :
 - Désactiver la copie totalement,
