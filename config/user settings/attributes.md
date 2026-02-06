@@ -8,8 +8,8 @@ Les <mark>attributs</mark> permettent à chaque utilisateur de définir et gére
 Si une fiche a des statistiques, les attributs s’y ajoutent, mais les statistiques remplacent les attributs portant le même nom.
 :::
 
-:::danger
-Pour être utilisé dans un snippet, un attribut doit d’abord être enregistré.
+:::tip
+Les attributs ne permettent pas d'activer et d'utiliser les commandes `/dbroll`, `/macro`, `/calc` ou encore `/display` sans modèle configuré.
 :::
 
 # Usage
@@ -38,6 +38,12 @@ Les attributs sont stockés globalement au niveau du serveur et sont donc partag
 :::
 
 ![usage roll](../../assets/attributes/usage.png)
+
+![](../../assets/attributes/usage_2.png)
+
+:::danger
+Pour être utilisé dans un snippet ou une macro, un attribut doit d’abord être enregistré.
+:::
 
 # Création d'un attribut
 
