@@ -26,6 +26,8 @@ Les informations collectées sont utilisées pour fournir et améliorer les fonc
 
 Nous ne partageons pas vos informations personnelles avec des tiers. Les interactions avec le bot peuvent être enregistrées par Discord conformément à leur propre politique de confidentialité.
 
+Certaines erreurs du Bot sont envoyées vers [Sentry](https://sentry.io) afin de détecter et réparer le plus rapidement possible les erreurs. **Aucune information personnelle** n'est contenues dans ses rapports de bugs envoyé a Sentry; uniquement la journalisation Javascript (chemin vers la fonction en erreur et code d'erreur) est incluse.
+
 #### 4. Sécurité des Informations
 
 Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations contre l'accès non autorisé. Toutefois, aucune méthode de transmission sur Internet n'est entièrement sécurisée.
