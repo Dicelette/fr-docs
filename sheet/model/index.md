@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Pour commencer, vous devez **générer** un nouveau modèle. Vous pouvez créer un modèle vide en utilisant le formulaire disponible [ici même](../form.mdx).
 
-Consultez les exemples de modèle dans les fichiers `template` [ici](https://github.com/Dicelette/discord-dicelette/tree/main/template).
+Consultez les exemples de modèle dans les fichiers `template` [ici](https://github.com/Dicelette/discord-dicelette/tree/f9c9706b1652be7b206005950ed8c3fce708bc15/template).
 
 :::info Remarque
 Les statistiques et les dés sont facultatifs :
