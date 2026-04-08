@@ -103,3 +103,27 @@ Lors de l’import, les attributs sont validés et seuls ceux conformes seront a
 
 ![](../../assets/attributes/import_1.png)
 ![](../../assets/attributes/import_2.png)
+
+# Remplacer les valeurs inconnues
+
+Permet de remplacer les attributs inconnus d’un jet de dés par une valeur par défaut. 
+
+:::usage
+**`/user_config attributs replacer_inconnu (valeur)`**
+- `valeur` : Valeur à utiliser pour remplacer les attributs inconnus
+:::
+
+Pour désactiver le remplacement automatique, il suffit de relancer la commande en omettant la valeur.
+
+Il est possible d'utiliser des dés ou d'autres attributs, tant qu'ils sont reconnus lors des futurs jets.
+
+:::info
+Il n'y a pas de vérification de valeur lors de l'enregistrement.
+:::
+
+:::warning[Cette option ne fonctionne pas avec:]
+- `/dbroll` : lorsque le jet est lié à une **fiche de personnage** (notamment dans les **expressions**).
+- `/macro` : lorsque la macro est liée à une statistique.
+- `/calc`
+:::
+
