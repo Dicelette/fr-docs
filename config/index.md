@@ -11,6 +11,8 @@ La commande `/config afficher` permet de voir la configuration actuelle du serve
 - **`/config afficher modèle`** : Affiche la configuration du modèle (liens, noms des statistiques et celles exclues, noms de dés globaux), si elle existe.
 :::
 
+> [!info]
+> Vous pouvez configurer le bot directement à l'aide du [Dashboard](https://dashboard.dicelette.com/).
 
 ## Changer la langue
 
