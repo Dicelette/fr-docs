@@ -2,9 +2,10 @@
 title: Édition
 sidebar_position: 1
 ---
-## Modifier les données d'utilisateur
+## Modifier les données d'une fiche
 
 ![fr_edit](../../assets/edit/user.png)
+![fr_edit_select](../../assets/edit/user_select.png)
 
 Les commandes du menu déroulant permettent de modifier les données correspondantes.
 Si vous utilisez une ancienne version, vous devez utiliser les commandes listées.
@@ -46,15 +47,27 @@ Tout comme la commande listée plus haut, elle ne permet pas d'avoir des personn
 - `*personnage` : Nom du personnage à modifier. Si aucun nom n'est spécifié, le nom du personnage sans nom sera modifié.
 :::
 
-### Déplacer à un nouvel utilisateur
+### Transférer à un nouvel utilisateur
 ![move](../../assets/edit/move.png)
 
-Cela **déplacera** le personnage à un nouvel utilisateur, supprimant les données du joueur précédent. 
+Cela **transférera** le personnage à un nouvel utilisateur, supprimant les données du joueur précédent. 
 Dans le cas où l'utilisateur "receveur" a un personnage du même nom, l'action sera annulée et une erreur s'affichera.
 
 :::usage[commande]
 **`/edit user [@utilisateur] (@joueur) (*personnage)`**
 :::
+
+### Déplacer la fiche
+
+![move_sheet](../../assets/edit/move_to.png)
+
+:::info
+Seuls les modérateurs peuvent déplacer une fiche d'un channel à un autre.
+:::
+
+Pour déplacer une fiche d'un channel à un autre, il suffit de sélectionner le channel de destination dans le menu déroulant.
+
+Après le déplacement, l'ancien message sera supprimé.
 
 ## Modification des statistiques
 
