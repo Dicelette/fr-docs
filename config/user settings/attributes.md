@@ -4,8 +4,16 @@ sidebar_position: 3
 ---
 Les <mark>attributs</mark> permettent à chaque utilisateur de définir et gérer des attributs numériques spécifiques à un serveur, sans la nécessité de configurer un modèle ou en accompagnement du modèle.
 
+Les attributs supportent également la combinaison **uniquement** entre eux, mais pas avec les statistiques. Cela permet de créer des attributs plus complexes basés sur les attributs de base, sans avoir à créer un modèle pour cela.
+
+:::example
+- `force` = `12`
+- `Agilité` = `10`
+- `force+agilité` = `12+10` = `22`
+:::
+
 :::warning
-Si une fiche a des statistiques, les attributs s’y ajoutent, mais les statistiques remplacent les attributs portant le même nom.
+Si une fiche a des statistiques, les attributs s’y ajoutent, **mais** les statistiques remplacent les attributs portant le même nom.
 :::
 
 :::tip
