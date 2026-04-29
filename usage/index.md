@@ -8,8 +8,11 @@ aliases:
 ## Lancer de dés
 
 :::usage
-**`/roll (dice) (?caché)`**
-- `dice` : Expression à lancer (ex : `1d20+3`, ou voir [Notations des dés](./../introduction/expression.mdx))
+**`/roll [dé] (succès_critique) (échec_critique) (commentaire) (?caché)`**
+- `dé` : Expression à lancer (ex : `1d20+3`, ou voir [Notations des dés](./../introduction/expression.mdx))
+- `succès_critique` : Écrase la valeur de succès critique. Nécessite d'être écrit avec son signe (`>=, <=, ==`, etc.). Écrasera la valeur de succès critique si elle est définie [avec la syntaxe associée](../introduction/expression.mdx#Succès-et-échecs-critiques).
+- `échec_critique` : Comme ci-dessus mais pour les échecs critiques.
+- `commentaire` : Commentaires facultatifs qui remplaceront les commentaires (éventuellement) présents dans la valeur du `dé`.
 - `?caché` : Option pour rendre le jet invisible (voir [Jets invisibles](../config/threads.md#jets-invisibles))
 :::
 

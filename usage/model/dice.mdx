@@ -74,13 +74,14 @@ Les snippets peuvent contenir des commentaires, des expressions mathématiques, 
 :::
 
 :::usage
-**`/snippets [*dice] (expression) (opposition) (seuil_reussite) (commentaire)`**
+**`/snippets [*dice] (expression) (opposition) (seuil_reussite) (succès_critique) (échec_critique) (commentaire)`**
 - <CL>*dice</CL> : Le nom du snippet (dé sauvegardé)
 - <CL>expression</CL> : Expression mathématique
 - <CL>opposition</CL> : Seuil de réussite "secondaire", uniquement évalué s'il y a un seuil de réussite principal, enregistré dans le dé.
 - <CL>commentaire</CL> : Commentaire sur l'action, qui sera fusionné avec le commentaire s'il y en a déjà un dans le snippet.
 - <CL>seuil_reussite</CL> : Seuil de réussite (ex : `>=10`).
-
+- <CL>succès_critique</CL> : Écrase la valeur de succès critique. Nécessite d'être écrit avec son signe (`>=, <=, ==`, etc.). Écrasera la valeur de succès critique si elle est définie [avec la syntaxe associée](../../introduction/expression.mdx#Succès-et-échecs-critiques).
+- <CL>échec_critique</CL> : Comme ci-dessus mais pour les échecs critiques.
 :::
 
 Pour créer un snippet, [voir cette section](../../config/snippets.md).
