@@ -9,7 +9,7 @@ import {CL} from "@site/src/components/utils.tsx";
 
 - **<mark>`$`</mark>** :
 	  - <CL>Usage</CL> : Symbolise la valeur de la statistique utilisée dans la formule du dé.
-	  - <CL>Où ?</CL> Utilisé dans les dés types (`/dbroll`, `/calc`, formules critiques, etc.)
+	  - <CL>Où ?</CL> Utilisé dans les dés types (`/dbroll`, `/calc`, formules critiques, etc.) et la formule personnalisée.
 
       :::example
       - `1d6 > $` : Compare le résultat du dé à la valeur de la statistique sélectionnée.
@@ -42,6 +42,15 @@ import {CL} from "@site/src/components/utils.tsx";
 	  - <CL>Usage :</CL> Ajoute un commentaire à un dé.
 	  - <CL>Où ?</CL> Dans des [dés partagés](./expression.mdx#jets-uniques-partagés-réutilisation-de-résultats). 
     :::example `1d20;&-2[Perte de PV]` : Applique -2 au résultat du jet de dé et annote la seconde ligne de résultat.
+    :::
+
+- **<mark>`[valeur]`</mark>**:
+	  - <CL>Usage :</CL> Utilise la valeur entre crochet comme un nombre "statistiques" qui remplacera le `$` dans les formules personnalisées.
+	  - <CL>Où ?</CL> Dans tous les dés écrit par l'utilisateur, macro et snippets.
+    :::example[ `$+2` ]
+      - `1d6 + [2]` : `[2]` sera remplacé par `2+2`
+      - `1d6 > [10]` : `[10]` sera remplacé par `10+2`
+      - `1d6 + [$dextérité+$constitution]` : `[$dextérité+$constitution]` sera remplacé par `$dextérité+$constitution+2`
     :::
 
 - **<mark>`#commentaire`</mark>** :
