@@ -18,14 +18,17 @@ Ce bot détecte la notation des dés et envoie le résultat selon trois méthode
    ![Semi-directe](/assets/rolls/semi-direct.gif)
 
 
-Il est aussi possible d'utiliser des commandes slash pour lancer des dés, comme `/roll` ([voir ici pour plus d'information](../usage/index.md)).
+Vous pouvez aussi utiliser des commandes slash pour lancer des dés, comme `/roll` ([voir ici pour plus d'information](../usage/index.md)).
 
 :::tip
-Il est possible, dans la notation textuelle, de mentionner :
-- Une statistique, via `$statistique` (ex. `$force`).[^1]
+Il est possible de mentionner :
+- Une statistique, via `$statistique` (ex. `$force`) à condition que l'utilisateur ait enregistrée une fiche ou des attributs.[^1]
 - Un personnage, via `@personnage` (ex. `@Bob`).
 - Une opposition, en "superposant" les signes : `1d100>20>10` (le dernier élément sera considéré comme l'opposition).
-À condition que le joueur ait une fiche enregistrée.
 :::
 
+Enfin, vous pouvez modifier les commentaires d'un jet de dés en répondant au message du résultat avec un commentaire préfixé par `///` (ex. `/// Mon commentaire`). Seuls vos propres commentaires peuvent être modifiés. Cette modification est possible sur tous les résultats de dés lancés par le bot, que ce soit via une commande slash ou via un message.
+
 [^1]: Pour utiliser la valeur d'une statistique comme nombre de dés, il faut utiliser `($stat)dX` (ex. `($force)d20`).
+
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>

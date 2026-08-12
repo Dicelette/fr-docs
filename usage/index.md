@@ -95,4 +95,4 @@ Il existe plusieurs commandes d'aide, en fonction de ce dont vous avez besoin :
 - `/aide suggestion` : Affiche un lien pour faire une suggestion.
 - `/info` : Affiche les statistiques générales du bot (nombre de serveur, version, uptime…) ainsi que des liens utiles.
 
-<small>Pour la description complète des champs de commandes : [voir la syntaxe](../introduction/format.mdx).</small>
+<small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>
