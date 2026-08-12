@@ -76,6 +76,14 @@ De manière évidente, le karma ne fonctionne que pour les dés lancés avec le 
 
 Cette commande permet de choisir aléatoirement une ou plusieurs options parmi une liste fournie.
 
+## 8ball
+:::usage
+**`/8ball (question)`**
+- `question` : La question à poser à la boule magique.
+- `?inclure_évasif` : Permet d'inclure les réponses évasives ("Peut-être", "Je ne sais pas", etc.) dans les réponses possibles.
+:::
+
+Pose une question à la [boule magique](https://fr.wikipedia.org/wiki/Magic_8-Ball) et obtenez une réponse aléatoire parmi les réponses possibles.
 
 ## Aide
 
