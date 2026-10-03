@@ -6,8 +6,8 @@ sidebar_position: 7
 Cette commande permet de créer une formule personnalisée [Mathjs](https://mathjs.org/), qui sert de "modèle". Ce modèle va automatiquement remplacer les valeurs entre crochet `[]`.
 
 Les formules personnalisées peuvent être créé de deux manières :
-- Soit par un utilisateur pour chaque serveur, via la commande `/user_config formule_personnalisée`
-- Soit par un administrateur pour le serveur, via la commande `/config formule_personnalisée`
+- Soit par un utilisateur pour chaque serveur, via la commande `/settings formule_personnalisée`
+- Soit par un administrateur pour le serveur, via la commande `/admin formule_personnalisée`
 
 :::info
 Si une formule personnalisée est créée par un administrateur pour le serveur, elle sera prioritaire sur celle créée par un utilisateur.
@@ -36,7 +36,7 @@ Les dés peuvent être utilisés à la fois dans la formule personnalisée que d
 ## Configuration
 
 :::usage
-**`/user_config formule_personnalisée configurer (formule)`**
+**`/settings formule_personnalisée configurer (formule)`**
 - `formule` : La formule personnalisée à utiliser. Elle doit être une formule valide Mathjs, avec le symbole `$` pour représenter la valeur entre crochet `[]`.
 :::
 
@@ -45,17 +45,17 @@ Si l'option `formule` est laissée vide, la formule personnalisée sera supprim�
 Lors de la configuration, les formules sont vérifiées contre les règles de Mathjs. Si la formule n'est pas valide, un message d'erreur sera affiché.
 
 :::tip
-La commande administrative `/config formule_personnalisée` fonctionne de la même manière.
+La commande administrative `/admin formule_personnalisée` fonctionne de la même manière.
 :::
 
 ## Affichage
 
 :::usage
-**`/user_config formule_personnalisée afficher`**
+**`/settings formule_personnalisée afficher`**
 :::
 
 Permet d'afficher la formule personnalisée actuellement configurée pour l'utilisateur ou le serveur. Si aucune formule n'est configurée, un message d'erreur sera affiché.
 
 :::tip
-Son alter-égo administratif `/config formule_personnalisée afficher` fonctionne de la même manière.
+Son alter-égo administratif `/admin formule_personnalisée afficher` fonctionne de la même manière.
 :::

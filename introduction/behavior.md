@@ -33,7 +33,7 @@ Il est aussi possible, via la commande [`/result_channel`](../config/threads.md)
 
 Le bot enverra **aussi** le résultat dans le channel dans lequel la commande a été initialement envoyée. Ce message :
 
-- Sera supprimé après 3 minutes (configurable avec `/config supprimer_après`).
+- Sera supprimé après 3 minutes (configurable avec `/admin supprimer_après`).
 - Contiendra un lien vers le message dans le log.
 
 # Utilisation

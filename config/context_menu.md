@@ -12,8 +12,8 @@ Pour ouvrir un menu contextuel, faites un clic droit (ou un appui long sur mobil
 Cette commande permet de créer un lien direct vers un résultat de dé lancé avec le bot. Utile pour partager un résultat précis dans un autre canal ou avec un autre utilisateur.
 
 Cette commande peut être personnalisée de deux façons :
-- Par utilisateur, pour chaque serveur, via la commande `/user_config créer_lien`
-- Par serveur, par les administrateurs, via la commande `/config créer_lien`
+- Par utilisateur, pour chaque serveur, via la commande `/settings créer_lien`
+- Par serveur, par les administrateurs, via la commande `/admin créer_lien`
 
 :::important
 Le format du serveur a la priorité sur le format de l'utilisateur.
@@ -22,7 +22,7 @@ Le format du serveur a la priorité sur le format de l'utilisateur.
 ## Format
 
 :::usage
-**`/config créer_lien format [final] (results) (dé) (info) (nom) (dé_original) (personnage) (jointure_résultats)`**
+**`/admin créer_lien format [final] (results) (dé) (info) (nom) (dé_original) (personnage) (jointure_résultats)`**
 - `dé` : Le résultat du dé en lui-même, généralement `[RES](SIGN)(COMPARAISON)`, par exemple `[29]>=10`.
 - `info` : Le texte d'information qui est le texte de critiques (dont customisés), d'échec ou de réussite.
 - `nom` : Le nom de la statistique ou de la macro, si une est trouvée.
@@ -95,7 +95,7 @@ Ce qui donne : ``[[__Force__ :  Échec critique - `[29] ⩾ 10`]](<https://disco
 ## Affichage
 
 :::usage
-**`/config créer_lien afficher`**
+**`/admin créer_lien afficher`**
 :::
 
 Permet d'afficher la liste des formats de lien actuels pour le serveur, ainsi qu'un exemple basé sur le format suivant :
@@ -108,7 +108,7 @@ __**Personnage**__ (<@000000000000000000>)  (\`>= 11\`):
 ## Reset
 
 :::usage
-**`/config créer_lien reset`**
+**`/admin créer_lien reset`**
 :::
 
 Supprime le format personnalisé actuel et rétablit les valeurs par défaut.

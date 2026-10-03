@@ -15,7 +15,7 @@ Les [attributs](./attributes.md) peuvent être utilisés dans un snippet, à con
 # Création de snippets
 
 :::usage
-**`/user_config snippets créer [nom] [dé]`**
+**`/settings snippets créer [nom] [dé]`**
 - `nom` : Nom du snippet
 - `dé` : Dé à lancer (ex : `1d20+5`)
 :::
@@ -27,7 +27,7 @@ Si le snippet existe déjà, le dé sera mis à jour vers la nouvelle valeur.
 # Suppression
 
 :::usage
-**`/user_config snippets supprimer [*nom]`**
+**`/settings snippets supprimer [*nom]`**
 - `*nom` : Nom du snippet à supprimer
 :::
 
@@ -38,7 +38,7 @@ Permet de supprimer un snippet existant de la liste.
 # Liste des snippets
 
 :::usage
-**`/user_config snippets lister`**
+**`/settings snippets lister`**
 :::
 
 Affiche la liste des snippets existants pour l'utilisateur.
@@ -48,7 +48,7 @@ Affiche la liste des snippets existants pour l'utilisateur.
 # Exporter les snippets
 
 :::usage
-**`/user_config snippets export`**
+**`/settings snippets export`**
 :::
 
 Permet d’exporter tous les snippets de l’utilisateur au format JSON, pour les sauvegarder ou les partager.
@@ -60,7 +60,7 @@ Permet d’exporter tous les snippets de l’utilisateur au format JSON, pour le
 Importe des snippets depuis un fichier JSON. Cela permet de transférer ou partager facilement des données entre différents serveurs ou comptes.
 
 :::usage
-**`/user_config snippets import [fichier] (?écraser)`**
+**`/settings snippets import [fichier] (?écraser)`**
 - `fichier` : Données JSON des snippets à importer
 - `?écraser` : Remplace les données existantes au lieu de les fusionner.
 :::

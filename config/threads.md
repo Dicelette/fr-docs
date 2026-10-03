@@ -17,19 +17,19 @@ Si le jet est effectué dans un fil commençant par `🎲`, le résultat ne sera
 ## Configurer l’envoi des résultats
 
 :::usage
-**`/config result_channel [?disable_thread] (#channel)`**
+**`/admin result_channel [?disable_thread] (#channel)`**
 - `?disable_thread` : Ne pas créer de thread, envoyer directement dans le salon indiqué.
 - `#channel` : Salon cible pour les résultats.
 :::
 
 - Si `disable_thread` est activé, les résultats sont envoyés dans le salon sans création de thread (et l’auto-suppression est désactivée).
 - Si un salon est mentionné, les résultats seront envoyés dans un thread de ce salon (sauf si `disable_thread` est activé).
-- Sans argument, le comportement correspond à `/config result_channel true`.
+- Sans argument, le comportement correspond à `/admin result_channel true`.
 
 :::example
-- **Envoyer dans un salon spécifique** : `/config result_channel #channel`
-- **Désactiver la création automatique/le salon résultat** : `/config result_channel true`
-- **Utiliser la création de thread automatique** : `/config result_channel false`
+- **Envoyer dans un salon spécifique** : `/admin result_channel #channel`
+- **Désactiver la création automatique/le salon résultat** : `/admin result_channel true`
+- **Utiliser la création de thread automatique** : `/admin result_channel false`
 :::
 
 Si la copie est totalement désactivée, la [suppression automatique](./display.md#délais-avant-suppression) des résultats le sera aussi.
@@ -37,7 +37,7 @@ Si la copie est totalement désactivée, la [suppression automatique](./display.
 ## Jets invisibles
 
 :::usage
-**`/config jet_invisible [?basculer] (#channel)`**
+**`/admin jet_invisible [?basculer] (#channel)`**
 - `?basculer` : Active/désactive l’option.
 - `#channel` : (optionnel) Salon où sauvegarder les jets cachés.
 :::

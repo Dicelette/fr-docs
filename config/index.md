@@ -4,11 +4,11 @@ sidebar_position: 1
 ---
 Toutes les commandes d'administration sont restreintes par défaut aux membres ayant la permission <mark>Gérer les rôles</mark>.
 
-La commande `/config afficher` permet de voir la configuration actuelle du serveur.
+La commande `/admin afficher` permet de voir la configuration actuelle du serveur.
 
 :::usage
-- **`/config afficher général`** : Affiche la configuration générale du serveur.
-- **`/config afficher modèle`** : Affiche la configuration du modèle (liens, noms des statistiques et celles exclues, noms de dés globaux), si elle existe.
+- **`/admin afficher général`** : Affiche la configuration générale du serveur.
+- **`/admin afficher modèle`** : Affiche la configuration du modèle (liens, noms des statistiques et celles exclues, noms de dés globaux), si elle existe.
 :::
 
 > [!info]
@@ -17,7 +17,7 @@ La commande `/config afficher` permet de voir la configuration actuelle du serve
 ## Changer la langue
 
 :::usage
-**`/config changer_langue [langue]`**
+**`/admin changer_langue [langue]`**
 - `[langue]` : `fr` ou `en` (français ou anglais)
 :::
 
@@ -28,7 +28,7 @@ Pour le moment, seules les langues française et anglaise sont disponibles.
 ## Éditer le bot
 
 :::usage
-**`/config éditer_moi (pseudo) (bio) (avatar) (bannière)`**
+**`/admin éditer_moi (pseudo) (bio) (avatar) (bannière)`**
 - `(pseudo)` : Nouveau pseudo du bot sur le serveur.
 - `(bio)` : Nouvelle biographie du bot.
 - `(avatar)` : Nouvelle image d'avatar du bot, sous forme de fichier.
@@ -42,7 +42,7 @@ Lorsqu'une valeur n'est pas fournie, le champ correspondant sera réinitialisé 
 ## Pitié
 
 :::usage
-**`/config pitié (seuil)`**
+**`/admin pitié (seuil)`**
 - `(seuil)` : Nombre d'échecs consécutifs avant l'activation de la pitié (min : 2).
 :::
 Active la pitié sur les jets de dés : après un certain nombre d'échecs d'affilée, le bot garantit un succès automatique au jet suivant.

@@ -56,7 +56,7 @@ Pour être utilisé dans un snippet ou une macro, un attribut doit d’abord êt
 # Création d'un attribut
 
 :::usage
-**`/user_config attribut créer [nom] [valeur]`**
+**`/settings attribut créer [nom] [valeur]`**
 - `nom` : Nom de l'attribut
 - `valeur` : Nombre à enregistrer
 :::
@@ -68,7 +68,7 @@ Comme pour les snippets, si l’attribut existe déjà, sa valeur sera simplemen
 # Suppression
 
 :::usage
-**`/user_config attributs supprimer [*nom]`**
+**`/settings attributs supprimer [*nom]`**
 - `*nom` : Nom du snippet à supprimer
 :::
 
@@ -78,7 +78,7 @@ Permet de supprimer un attribut existant depuis la liste des attributs.
 # Lister les attributs
 
 :::usage
-**`/user_config attributs lister`**
+**`/settings attributs lister`**
 :::
 
 Affiche la liste des attributs existants pour l’utilisateur.
@@ -88,7 +88,7 @@ Affiche la liste des attributs existants pour l’utilisateur.
 # Exporter les attributs
 
 :::usage
-**`/user_config attributs export`**
+**`/settings attributs export`**
 :::
 
 Permet d’exporter l’ensemble des attributs de l’utilisateur au format JSON, afin de les sauvegarder ou de les partager.
@@ -100,7 +100,7 @@ Permet d’exporter l’ensemble des attributs de l’utilisateur au format JSON
 Importe des attributs à partir d’un fichier JSON. Cela permet de transférer ou partager facilement des données entre différents serveurs ou comptes.
 
 :::usage
-**`/user_config attributs import [fichier] (?écraser)`**
+**`/settings attributs import [fichier] (?écraser)`**
 - `fichier` : Données JSON des attributs à importer
 - `?écraser` : Permet d'écraser les données plutôt que de les fusionner avec les anciennes.
 :::
@@ -117,7 +117,7 @@ Lors de l’import, les attributs sont validés et seuls ceux conformes seront a
 Permet de remplacer les attributs inconnus d’un jet de dés par une valeur par défaut. 
 
 :::usage
-**`/user_config attributs replacer_inconnu (valeur)`**
+**`/settings attributs replacer_inconnu (valeur)`**
 - `valeur` : Valeur à utiliser pour remplacer les attributs inconnus
 :::
 

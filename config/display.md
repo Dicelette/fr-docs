@@ -8,7 +8,7 @@ Diverses options permettent de personnaliser l’affichage des résultats des je
 ## Affichage des timestamps
 
 :::usage
-**`/config timestamp [?basculer]`**
+**`/admin timestamp [?basculer]`**
 - `?basculer` : Active/désactive l’affichage du timestamp.
 :::
 
@@ -23,7 +23,7 @@ Le timestamp s’adapte à l’heure du client.
 ## Délais avant suppression
 
 :::usage
-**`/config supprimer_après [temps]`**
+**`/admin supprimer_après [temps]`**
 - `[temps]` : Durée en secondes (0 = jamais supprimé).
 :::
 
@@ -40,7 +40,7 @@ Permet d’avoir à la fois un log dédié et de garder le résultat indéfinime
 ### Lien vers le contexte du dé
 
 :::usage
-**`/config contexte [?basculer]`**
+**`/admin contexte [?basculer]`**
 - `?basculer` : Active/désactive le lien vers le contexte.
 :::
 
@@ -62,7 +62,7 @@ L'option est désactivée s'il n'y a ni channel ni thread de sauvegarde pour le 
 ### Lien vers la sauvegarde du dé
 
 :::usage
-**`/config lien_sauvegarde [?basculer]`**
+**`/admin lien_sauvegarde [?basculer]`**
 - `?basculer` : Active/désactive le lien vers la sauvegarde.
 :::
 
@@ -73,7 +73,7 @@ Ajoute un lien vers la sauvegarde du dé dans le message de résultat.
 ## Ordre de tri
 
 :::usage
-**`/config ordre_tri (?ordre)`**
+**`/admin ordre_tri (?ordre)`**
 - `?ordre` : Ordre choisi pour l'affichage des résultats. À choisir entre :
   - <u>Croissant</u>
   - <u>Décroissant</u>
@@ -90,7 +90,7 @@ Si le symbole de tri est ajouté au dé, alors il aura priorité sur la configur
 ## Désactiver la comparaison
 
 :::usage
-**/config désactiver_comparaison (?basculer)**
+**/admin désactiver_comparaison (?basculer)**
 - `?basculer` : Sur `True` désactivera les messages de succès ou d'échec.
 :::
 

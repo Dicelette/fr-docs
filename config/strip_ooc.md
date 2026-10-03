@@ -4,7 +4,7 @@ description: Configuration de la suppression automatique des messages HRP dans d
 sidebar_position: 5
 ---
 
-La commande `/config supprimer_hrp` permet de configurer la suppression automatique des messages hors roleplay (HRP) dans des salons spécifiques.
+La commande `/admin supprimer_hrp` permet de configurer la suppression automatique des messages hors roleplay (HRP) dans des salons spécifiques.
 
 :::info
 Cette fonctionnalité est particulièrement utile pour maintenir l'immersion dans les salons de roleplay en supprimant automatiquement les messages HRP après un délai défini.
@@ -13,7 +13,7 @@ Cette fonctionnalité est particulièrement utile pour maintenir l'immersion dan
 ## Configuration de base
 
 :::usage
-**`/config supprimer_hrp (préfix) (suffixe) (regex) (timer) (#channel) (?thread_mode)`**
+**`/admin supprimer_hrp (préfix) (suffixe) (regex) (timer) (#channel) (?thread_mode)`**
 - `préfix` : Préfixe des messages HRP à supprimer
 - `suffixe` : Suffixe des messages HRP à supprimer
 - `regex` : Expression régulière pour les messages HRP à supprimer
@@ -44,19 +44,19 @@ Les expressions régulières peuvent être complexes et entraîner des suppressi
 :::example
 **Suppression avec préfixe/suffixe :**
 ```
-/config supprimer_hrp prefix:- suffix:- timer:180 channel:#hrp
+/admin supprimer_hrp prefix:- suffix:- timer:180 channel:#hrp
 ```
 Supprime les messages HRP encadrés par `-` (ex : `-message hrp-`) et les transfère dans `#hrp` après 3 minutes.
 
 **Suppression avec regex :**
 ```
-/config supprimer_hrp regex:\(hrp::(.*)\) timer:60
+/admin supprimer_hrp regex:\(hrp::(.*)\) timer:60
 ```
 Supprime les messages du type `(hrp:: message)` après une minute.
 
 **Suppression directe :**
 ```
-/config supprimer_hrp prefix:((( suffix:))) timer:120
+/admin supprimer_hrp prefix:((( suffix:))) timer:120
 ```
 Supprime les messages encadrés par `(((` et `)))` après 2 minutes sans sauvegarde.
 :::
@@ -75,8 +75,8 @@ Lors de l'utilisation de la commande, une interface de sélection apparaîtra po
 Pour désactiver la suppression des messages HRP :
 
 :::usage
-**`/config supprimer_hrp`** (sans paramètres)  
-**`/config supprimer_hrp timer:0`**
+**`/admin supprimer_hrp`** (sans paramètres)  
+**`/admin supprimer_hrp timer:0`**
 :::
 
 Les deux méthodes permettent de désactiver complètement la fonctionnalité.

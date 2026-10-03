@@ -6,7 +6,7 @@ sidebar_position: 6
 ## Activer l’auto-enregistrement
 
 :::usage
-**`/config auto_enregistrement [?basculer] (?moderation_validation)`**
+**`/admin auto_enregistrement [?basculer] (?moderation_validation)`**
 - `?basculer` : Active/désactive l’option.
 - `?moderation_validation` : Seuls les modérateurs peuvent valider la fiche après l’auto-enregistrement par le joueur.
 - `?interdire_channel` : L’utilisateur ne peut pas définir de channel (par ID) pour enregistrer son personnage. Si défini sur `true`, la fiche sera envoyée dans le channel par défaut.

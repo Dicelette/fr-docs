@@ -4,14 +4,14 @@ sidebar_position: 3
 ---
 
 :::usage
-**<mark>`/config auto_role dé`</mark> (@role)**  
-**<mark>`/config auto_role stats`</mark> (@role)**
+**<mark>`/admin auto_role dé`</mark> (@role)**  
+**<mark>`/admin auto_role stats`</mark> (@role)**
 - `@role` : Rôle à attribuer lors de la validation des statistiques/ ajout d'un dé.
 :::
 
 Permet d'ajouter automatiquement des rôles lors de certaines actions :
-- Ajout d'un dé (<mark>`/config auto_role dé`</mark>)
-- Validation de statistiques (<mark>`/config auto_role stats`</mark>)
+- Ajout d'un dé (<mark>`/admin auto_role dé`</mark>)
+- Validation de statistiques (<mark>`/admin auto_role stats`</mark>)
 
 Cela permet notamment de restreindre l'utilisation de <mark>`/macro`</mark> et <mark>`/dbroll`</mark> à certains rôles.
 
