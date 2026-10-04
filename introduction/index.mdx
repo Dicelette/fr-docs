@@ -5,6 +5,117 @@ sidebar_position: 1
 
 Bienvenue ! 🎲 Voici un compagnon pour vos aventures sur Discord : un bot polyvalent, conçu pour rendre vos sessions de jeu de rôle plus fluides et agréables.
 
+Cette page présente la syntaxe de base du bot, celle que vous utiliserez à chaque partie, puis vous indique où trouver le reste de la documentation.
+
+## Lancer un dé
+
+Dicelette lit directement vos messages : il n'est pas nécessaire de passer par une commande pour lancer un dé. Trois notations existent, selon ce que vous souhaitez faire de votre message.
+
+| Notation         | Exemple                    | Résultat                                                                                                                                                      |
+|------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Directe**      | `1d20`                     | Votre message est supprimé et remplacé par le résultat, envoyé dans le salon et dans le log.                                                                  |
+| **Indirecte**    | `Je force la porte [1d20]` | Votre message est conservé. Seul le contenu des crochets est lancé : le bot répond avec le résultat, et le log contient un lien vers votre message d'origine. |
+| **Semi-directe** | `1d20 Je force la porte`   | Le premier dé trouvé est lancé, et le reste du message est envoyé dans le log comme [commentaire](#commentaires).                                             |
+
+Vous pouvez aussi utiliser la commande slash `/roll` (ex. `/roll 1d20+3`). Dans tous les cas, les résultats sont centralisés dans un fil de discussion préfixé par `🎲`, le *log* : voir le [comportement par défaut](./behavior.md).
+
+Pour le détail des trois notations, consultez [Envoi de message](../usage/message.md) et les [commandes de base](../usage/index.md#lancer-de-dés).
+
+## Commentaires
+
+Un commentaire ajoute du contexte à un jet : il est affiché avec le résultat. Selon ce que vous voulez annoter, il existe plusieurs façons d'en écrire un.
+
+- **Commentaire global : `#commentaire`**. Placé à la fin du dé, il annote tout le jet. Dans un message direct, le `#` peut être omis : c'est ce qui permet la notation semi-directe.
+
+  :::example
+  - `/roll 1d20+5 #Attaque`
+  - `1d20 Je force la porte`
+  :::
+
+- **Commentaire d'une ligne : `[commentaire]`**. Dans un [jet partagé](./expression.mdx#jets-uniques-partagés-réutilisation-de-résultats) (`;&`), il annote une formule précise.
+
+  :::example[ `1d20;&-2 [perte pv] #commentaire` ]
+  :::
+
+- **Modifier un commentaire après coup : `///`**. Répondez au message du résultat avec `/// Mon commentaire`. Seuls vos propres commentaires peuvent être modifiés, sur tous les résultats lancés par le bot (commande slash ou message). `///` est le préfixe par défaut : [il est possible de le modifier](../config/user%20settings/comment_prefix.md).
+
+Avec l'exemple de jet partagé ci-dessus, le résultat affiche le commentaire global en tête, et le commentaire de ligne souligné devant la formule concernée :
+
+:::roll[ `1d20;&-2 [perte pv] #commentaire` ]
+*commentaire*  
+  ※ `1d20` ⟶ `[2]` = ` 2 `  
+  ◈ <u>perte pv</u> — `[1d20]-2` ⟶ `[2]-2` = ` 0 `  
+:::
+
+:::warning Les commentaires sont sensibles aux espaces
+- Un commentaire `[entre crochets]` ou `#global` doit être précédé d'un espace.
+- Le `#` d'un commentaire global doit être collé à son texte : `#Attaque`.
+- Dans un jet partagé, n'ajoutez pas d'espace avant ou après le `;` qui sépare les formules, sinon la suite sera considérée comme un commentaire.
+:::
+
+:::tip Les crochets `[]` ont plusieurs sens
+- Dans un message, `[1d20]` désigne un dé à lancer ([notation indirecte](#lancer-un-dé)).
+- Après un jet partagé, `[texte]` est un commentaire.
+- Dans les dés d'un modèle, les macros et les snippets, `[valeur]` est un nombre traité comme une statistique : voir la page [Syntaxe](./format.mdx).
+:::
+
+## Statistiques et personnages
+
+Si vous avez enregistré une fiche de personnage (ou des attributs), vous pouvez utiliser vos statistiques directement dans un jet :
+
+- **`$statistique`** : valeur d'une statistique, par exemple `1d20 + $force`. Pour l'utiliser comme nombre de dés, écrivez `($force)d20`.
+- **`@personnage`** : lance le dé avec un personnage précis, par exemple `1d100 @Bob`.
+
+Les modérateurs peuvent aussi mentionner un joueur dans un message direct pour lancer un dé à sa place.
+
+Pour créer votre premier personnage, voir [Fiche de personnage](../sheet/model/index.md) et [Enregistrer un utilisateur](../sheet/user.md).
+
+## Réussites et échecs
+
+Quand un dé est suivi d'un signe de comparaison (`>`, `<`, `=`…), le bot compare le résultat et indique s'il s'agit d'un succès ou d'un échec. Avec `1d20>10` :
+
+:::roll[ **Succès** — `1d20` ⟶ `[20]` = `[20] > 10` ]
+:::
+
+- Pour ajouter une **opposition**, superposez les signes : `1d100>20>10` (le dernier est l'opposition).
+- Pour **compter** les dés qui passent une comparaison plutôt que de comparer le total, placez-les entre accolades : `{3d12>20}`.
+
+Le détail de ces règles se trouve dans la page [Notations des dés](./expression.mdx#les-comparateurs).
+
+## Aller plus loin dans les jets
+
+- **Jets partagés** : `1d20;&+5;&*2` lance un seul dé et applique plusieurs formules dessus. → [Jets uniques partagés](./expression.mdx#jets-uniques-partagés-réutilisation-de-résultats)
+- **Lancers en masse** : `4#2d10` répète le jet quatre fois. → [Lancers en masse](./expression.mdx#lancers-en-masse-bulk-rolls)
+- **Expressions mathématiques** : `1d6 + {{ceil($ / 2)}}`, utilisable dans les dés d'un modèle, `/calc`, `/dbroll`, etc. → [Expressions mathématiques](./expression.mdx#expressions-mathématiques-avec-mathjs)
+- **Critiques** : `{cs:<2}` et `{cf:>10}` définissent des seuils de réussite et d'échec critiques. → [Succès et échecs critiques](./expression.mdx#succès-et-échecs-critiques)
+- **Symboles** : la liste complète (`$`, `{exp}`, `{{...}}`, `&`…) est dans la page [Syntaxe](./format.mdx).
+
+## Lire la syntaxe des commandes
+
+Dans la documentation, les champs des commandes sont décrits ainsi :
+
+- <mark class='green'>`[champ]`</mark> : obligatoire.
+- <mark class='green'>`(champ)`</mark> : facultatif.
+- <mark class='green'>`(*champ)`</mark> : auto-complété.
+- <mark class='green'>`@champ`</mark> : une mention (utilisateur ou rôle, selon la commande).
+- <mark class='green'>`#champ`</mark> : un salon.
+- <mark class='green'>`?champ`</mark> : une valeur vrai/faux.
+
+Par exemple, `/roll (dice) (?caché)` désigne une commande dont les deux champs sont facultatifs, le second étant un vrai/faux. Voir la page [Syntaxe](./format.mdx#syntaxe-des-commandes) pour l'auto-complétion des personnages.
+
+## Par où continuer ?
+
+| Vous voulez…                                                   | Page                                                             |
+|----------------------------------------------------------------|------------------------------------------------------------------|
+| Être guidé pas à pas                                           | [Guide pas à pas](./tutorial.mdx)                                |
+| Comprendre où arrivent les résultats (fils, forums, réactions) | [Comportement par défaut](./behavior.md)                         |
+| Maîtriser les symboles et les notations de dés                 | [Syntaxe](./format.mdx) et [Notations des dés](./expression.mdx) |
+| Connaître toutes les commandes                                 | [Commandes](../usage/index.md)                                   |
+| Créer un modèle et des fiches de personnage                    | [Fiche de personnage](../sheet/model/index.md)                   |
+| Adapter le bot à votre serveur                                 | [Configuration](../config/index.md)                              |
+| Une réponse rapide ou une définition                           | [FAQ](./faq.md) et [Glossaire](./glossary.md)                    |
+| Savoir comment sont stockées vos données                       | [Fonctionnement technique](../dev/technique.md)                  |
+
 ## Fonctionnalités principales
 
 ### 🎲 Système de dés avancé
@@ -31,7 +142,7 @@ Bienvenue ! 🎲 Voici un compagnon pour vos aventures sur Discord : un bot poly
 - **[Options d'affichage](../config/display.md)** : Personnalisez l'affichage des résultats (timestamps, délais de suppression, lien d'ancrage...)
 - **Support multilingue** : Interface disponible en français et anglais
 
-### 🎭 Fonctionnalités pour maîtres de jeu[^2]
+### 🎭 Fonctionnalités pour maîtres de jeu[^1]
 
 - **Jets pour les joueurs** : Effectuez des jets au nom de vos joueurs.
 - **Jet invisible** : Faites des jets cachés aux joueurs pour maintenir le suspense.
@@ -43,51 +154,12 @@ Bienvenue ! 🎲 Voici un compagnon pour vos aventures sur Discord : un bot poly
 - **Nettoyage automatique** : Gestion intelligente des données obsolètes
 - **Interface utilisateur intuitive** : Formulaires et menus interactifs pour simplifier l'utilisation
 
-## Comment ça fonctionne
+## Vos données
 
-### Architecture technique
-
-Le bot utilise l'API [@diceRoller](https://dice-roller.github.io/documentation/) pour tous les calculs de dés, garantissant des résultats fiables et une grande variété d'expressions supportées.
-
-### Approche respectueuse des données
-
-Contrairement à d'autres solutions, ce bot privilégie votre contrôle sur vos données :
-- **Stockage minimal** : Seuls les identifiants des messages et informations essentielles sont sauvegardés
-- **Contrôle total** : Vos fiches de personnage restent dans vos messages Discord
-- **Nettoyage automatique** : Les données obsolètes sont supprimées automatiquement
-
-Cette approche vous garantit une sécurité maximale et un contrôle total sur vos informations de jeu.
-
-## Gestion des données
-
-### Ce qui est stocké
-
-Le bot utilise une base de données SQLite3[^1] pour conserver uniquement :
-- Les identifiants des messages contenant vos fiches
-- Les liens entre utilisateurs et leurs personnages
-- Les paramètres de configuration du serveur
-- Les modèles de statistiques personnalisés
-
-### Nettoyage automatique
-
-Les données sont automatiquement supprimées dans plusieurs cas :
-- Suppression des messages ou canaux enregistrés
-- Expulsion du bot du serveur
-- Utilisation des fonctionnalités de nettoyage intégrées
-
-### Respect de la vie privée
-
-:::note Contact pour suppression
-Si vous souhaitez supprimer vos données après avoir quitté un serveur, contactez-nous via Discord (`@mara__li`) ou par e-mail (`lisandra_dev@yahoo.com`) avec votre identifiant Discord ou l'ID du serveur.
-:::
-
-:::warning Nettoyage manuel
-En cas de problème avec la suppression automatique, utilisez les commandes de suppression manuelle disponibles dans le bot pour nettoyer vos données.
-:::
+Dicelette ne conserve que l'essentiel (identifiants de messages, liens entre joueurs et personnages, paramètres du serveur et modèles) : vos fiches de personnage restent dans vos messages Discord. Pour le détail du stockage, du nettoyage automatique et pour demander la suppression de vos données, voir [Fonctionnement technique](../dev/technique.md).
 
 ---
 
 🚀 **Prêt à commencer ?** [Invitez le bot sur votre serveur](https://discord.com/api/oauth2/authorize?client_id=1182819335878754385&permissions=395137215504&scope=bot+applications.commands)
 
-[^1]: Base de données locale utilisant [Enmap](https://enmap.evie.dev/) pour une gestion optimisée.
-[^2]: Par défaut, les joueurs disposant de la permission <mark>Gérer les rôles</mark> sont considérés comme des "maîtres de jeu".
+[^1]: Par défaut, les joueurs disposant de la permission <mark>Gérer les rôles</mark> sont considérés comme des "maîtres de jeu".

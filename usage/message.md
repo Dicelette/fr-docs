@@ -27,7 +27,7 @@ Il est possible de mentionner :
 - Une opposition, en "superposant" les signes : `1d100>20>10` (le dernier élément sera considéré comme l'opposition).
 :::
 
-Enfin, vous pouvez modifier les commentaires d'un jet de dés en répondant au message du résultat avec un commentaire préfixé par `///` (ex. `/// Mon commentaire`). Seuls vos propres commentaires peuvent être modifiés. Cette modification est possible sur tous les résultats de dés lancés par le bot, que ce soit via une commande slash ou via un message.
+Enfin, vous pouvez modifier les commentaires d'un jet de dés en répondant au message du résultat avec un commentaire préfixé par `///` par défaut (ex. `/// Mon commentaire`). Seuls vos propres commentaires peuvent être modifiés. Cette modification est possible sur tous les résultats de dés lancés par le bot, que ce soit via une commande slash ou via un message. [Il est possible de modifier ce préfixe](../config/user%20settings/comment_prefix.md).
 
 [^1]: Pour utiliser la valeur d'une statistique comme nombre de dés, il faut utiliser `($stat)dX` (ex. `($force)d20`).
 
