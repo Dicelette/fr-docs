@@ -40,7 +40,7 @@ Les données sont automatiquement supprimés sur le bot lorsqu'il est supprimé 
 Dicelette ne peut être tenu responsable des dommages directs, indirects, accessoires, spéciaux ou consécutifs résultant de l'utilisation ou de l'incapacité à utiliser Dicelette. Dicelette n'offre aucune garantie quant à la disponibilité, l'exactitude, ou la fiabilité du service.
 
 #### 7. Modification des CGU
-Dicelette se réserve le droit de modifier ces CGU à tout moment. Les modifications seront publiées sur le site web officiel [Dicelette](https://dicelette.github.io/). Il est de votre responsabilité de consulter régulièrement ces CGU pour prendre connaissance des éventuelles modifications.
+Dicelette se réserve le droit de modifier ces CGU à tout moment. Les modifications seront publiées sur le site web officiel [Dicelette](https://www.dicelette.app/). Il est de votre responsabilité de consulter régulièrement ces CGU pour prendre connaissance des éventuelles modifications.
 
 #### 8. Résiliation
 Dicelette se réserve le droit de suspendre ou de résilier l'accès au bot à tout moment et sans préavis en cas de violation de ces CGU ou pour toute autre raison jugée nécessaire.

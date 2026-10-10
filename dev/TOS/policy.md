@@ -4,7 +4,7 @@ title: Politique de Confidentialité
 
 ### Politique de Confidentialité de Dicelette
 
-Bienvenue sur Dicelette (https://dicelette.github.io/). La protection de votre vie privée est essentielle pour nous. Cette politique de confidentialité décrit comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre bot Discord Dicelette.
+Bienvenue sur Dicelette (https://www.dicelette.app/). La protection de votre vie privée est essentielle pour nous. Cette politique de confidentialité décrit comment nous collectons, utilisons, divulguons et protégeons vos informations lorsque vous utilisez notre bot Discord Dicelette.
 
 #### 1. Collecte d'Informations
 
@@ -51,4 +51,4 @@ Si vous avez des questions concernant cette politique de confidentialité, veuil
 
 ---
 
-Pour plus d'informations, veuillez consulter nos [Conditions d'Utilisation](https://dicelette.github.io/docs/TOS).
+Pour plus d'informations, veuillez consulter nos [Conditions d'Utilisation](https://www.dicelette.app/docs/TOS).
