@@ -88,11 +88,12 @@ Pose une question à la [boule magique](https://fr.wikipedia.org/wiki/Magic_8-Ba
 ## Aide
 
 Il existe plusieurs commandes d'aide, en fonction de ce dont vous avez besoin :
-- `/aide info` : Affiche les infos générales sur le bot, notamment comment lancer un dé ou créer une scène.
-- `/aide admin` : Affiche les commandes d'administration, comme pour [logs](../config/logs.md) ou [result_channel](../config/threads.md#configurer-lenvoi-des-résultats).
-- `/aide enregister` : Affiche l'aide spécifique pour enregistrer un modèle de serveur et les fiches de personnages et vous dirige vers [la documentation](../sheet/model/index.md).
-- `/aide bug` : Affiche un lien pour créer un rapport de bug.
-- `/aide suggestion` : Affiche un lien pour faire une suggestion.
-- `/info` : Affiche les statistiques générales du bot (nombre de serveur, version, uptime…) ainsi que des liens utiles.
+- `/commandes info` : Affiche les infos générales sur le bot, notamment comment lancer un dé ou créer une scène.
+- `/commandes admin` : Affiche les commandes d'administration, comme pour [logs](../config/logs.md) ou [result_channel](../config/threads.md#configurer-lenvoi-des-résultats).
+- `/commandes enregister` : Affiche l'aide spécifique pour enregistrer un modèle de serveur et les fiches de personnages et vous dirige vers [la documentation](../sheet/model/index.md).
+- `/commandes bug` : Affiche un lien pour créer un rapport de bug.
+- `/commandes suggestion` : Affiche un lien pour faire une suggestion.
+- `/aide` : Aide générale (syntaxe, utilisation) du bot.
+- `/info` : Affiche les statistiques générales du bot (nombre de serveurs, version, uptime…) ainsi que des liens utiles.
 
 <small>Pour plus d’informations sur la syntaxe des champs : [consultez la page dédiée](../introduction/format.mdx).</small>
